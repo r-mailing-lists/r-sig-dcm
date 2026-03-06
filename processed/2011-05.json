@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2011-05",
+  "messages": [
+    {
+      "id": "msg-34cb6dbf095a",
+      "message_id": "<D30F729B3BC6D94D94562FEC1BCBFFB541ED3AF9@TK5EX14MBXC115.redmond.corp.microsoft.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "e5489deb319b72c86de8f8981728913014c894c51d7b498896218a0a0d719526",
+      "date": "2011-05-09T20:12:02Z",
+      "subject": "[R-sig-DCM] Feedback on AMA ART Forum 2011?",
+      "subject_clean": "Feedback on AMA ART Forum 2011?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110509/3ca3d562/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110509/3ca3d562/attachment.pl>",
+      "thread_id": "thread-34cb6dbf095a",
+      "thread_depth": 0,
+      "month": "2011-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-34cb6dbf095a",
+      "subject": "Feedback on AMA ART Forum 2011?",
+      "message_count": 1,
+      "participants": [
+        "Chris Chapman"
+      ],
+      "started": "2011-05-09T20:12:02+00:00",
+      "last_reply": "2011-05-09T20:12:02+00:00",
+      "root_message_id": "msg-34cb6dbf095a"
+    }
+  ]
+}

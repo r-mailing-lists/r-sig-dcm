@@ -1,0 +1,1865 @@
+From dimitri.dcm at gmail.com  Wed Mar  2 19:03:35 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 2 Mar 2011 13:03:35 -0500
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+Message-ID: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110302/cae09309/attachment.pl>
+
+From ralph.wirth at gfk.com  Wed Mar  2 19:07:55 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Wed, 2 Mar 2011 19:07:55 +0100
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+
+I'd say if the groups that are defined by the covariate are very different with regard to their preferences (i.e. utility parameters) and at the same time the members of each group are very homogeneous, then the covariate is a "strong" covariate.
+
+
+
+
+
+
+
+-----Urspr?ngliche Nachricht-----
+Von: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri Liakhovitski
+Gesendet: Mittwoch, 2. M?rz 2011 19:04
+An: R DCM List
+Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+Guys, I could ask some of you individually but it's always better to talk to
+several smart guys at a time.
+Some of you know I am working on a project for an ART-Forum which explores
+the issue of covariates in CBC/HB estimation: Is estimation with covariates
+useful?
+
+I have a question: what do YOU THINK is a "strong" covariate? (and let's
+assume we know what the true utilities and their dependence on the covariate
+are)
+I am looking less for a mathematical answer (although it's OK if it is) and
+more for a conceptual answer, maybe even with examples. Like: assume we have
+a covariate with only 2 levels (i.e., respondents belong to 2 groups): what
+should their preferences be like in order for us to be able to say: group
+membership a strong covariate / weak covariate? And if we have 3 groups?
+Also, I am looking less for a "correct" answer and more for your opinions.
+
+Looking forward to your replies!
+
+Dimitri Liakhovitski
+ninah.com
+
+        [[alternative HTML version deleted]]
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential ...{{dropped:4}}
+
+
+From cnchapman at msn.com  Wed Mar  2 19:21:39 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Wed, 2 Mar 2011 10:21:39 -0800
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <COL115-DS148AB8F873E65D5EDFFA60B0C00@phx.gbl>
+
+Agreed, although the form of the answer depends on the question.  My first 
+thought is to conceptualize it in terms of the business problem and outcome, 
+i.e., whether including the covariate changes the predicted outcome by a 
+"meaningful" amount in the context of the business question.
+
+For instance, assume the business question involves predicting market share 
+from a CBC type study, and that we're comparing Product 1 vs. Product 2. 
+Suppose further that the baseline preference, without using covariates, is 
+estimated as 50/50.  If including covariates led to estimating preference as 
+51/49 (for group 1, and vice versa for group 2, in your problem), then I'd 
+say that is *not* a meaningful difference for most business contexts.  OTOH, 
+seeing the estimate move to 60/40 almost certainly would be meaningful.
+
+One might specify this in terms of standard errors, etc., but IMHO the 
+bottom line is that "significance" depends on the importance of the observed 
+difference for the business problem, not on the number of SEs in themselves.
+
+--------------------------------------------------
+From: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+Sent: Wednesday, March 02, 2011 10:07 AM
+To: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>; "R DCM List" 
+<r-sig-dcm at r-project.org>
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+> I'd say if the groups that are defined by the covariate are very different 
+> with regard to their preferences (i.e. utility parameters) and at the same 
+> time the members of each group are very homogeneous, then the covariate is 
+> a "strong" covariate.
+>
+>
+>
+>
+>
+>
+>
+> -----Urspr?ngliche Nachricht-----
+> Von: r-sig-dcm-bounces at r-project.org 
+> [mailto:r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri 
+> Liakhovitski
+> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+> An: R DCM List
+> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>
+> Guys, I could ask some of you individually but it's always better to talk 
+> to
+> several smart guys at a time.
+> Some of you know I am working on a project for an ART-Forum which explores
+> the issue of covariates in CBC/HB estimation: Is estimation with 
+> covariates
+> useful?
+>
+> I have a question: what do YOU THINK is a "strong" covariate? (and let's
+> assume we know what the true utilities and their dependence on the 
+> covariate
+> are)
+> I am looking less for a mathematical answer (although it's OK if it is) 
+> and
+> more for a conceptual answer, maybe even with examples. Like: assume we 
+> have
+> a covariate with only 2 levels (i.e., respondents belong to 2 groups): 
+> what
+> should their preferences be like in order for us to be able to say: group
+> membership a strong covariate / weak covariate? And if we have 3 groups?
+> Also, I am looking less for a "correct" answer and more for your opinions.
+>
+[[elided Hotmail spam]]
+>
+> Dimitri Liakhovitski
+> ninah.com
+>
+>        [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+>
+> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; 
+> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp 
+> (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm 
+> R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+> This email and any attachments may contain confidential ...{{dropped:4}}
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From dimitri.dcm at gmail.com  Wed Mar  2 19:26:20 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 2 Mar 2011 13:26:20 -0500
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110302/fa0436ca/attachment.pl>
+
+From cnchapman at msn.com  Thu Mar  3 00:14:09 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Wed, 2 Mar 2011 15:14:09 -0800
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com><C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+Message-ID: <COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+
+I think I'm missing something here ... but seems that it depends on the use. 
+If you're using those to estimate share of preference (as I would assume), 
+then Scenario 2 would be "stronger" because the predicted preference share 
+differences are larger: (excuse the formatting)
+
+Scenario 1                Raw utilities
+	A=Features 1+3	B=Features 2+4	exp(A)	            exp(B)	sumPref 
+A	Pref B
+Group 1	    -1	                1	            0.367879441	2.7182818283.08616127	12%	88%Group 2	    1	                -1	        2.718281828 
+0.367879441	3.08616127	88%	12%
+
+Scenario 2                Raw utilities
+	A=Features 1+3	B=Features 2+4	exp(A)	        exp(B)	sumPref 
+A	Pref B
+Group 1	    -2	                2	        0.135335283	            7.3890560997.524391382	2%	98%Group 2	     2	                -2	        7.389056099 
+0.135335283	7.524391382	98%	2%
+
+OTOH, if the use is to predict something else from the utilities 
+(questionable, since they probably should be zero-centered diffs instead), 
+then the utilities shown are just linear transforms of one another (assuming 
+the utilities have the same property as their means). 
+cor(mean.scenario1,mean.scenario2) = 1.0.   In that case, the predictions 
+would be the same either way, in which case they're equally "strong".
+
+And of course, as you noted WRT Ralph's comment, it depends on variance.  If 
+the variance is equal in both cases (e.g., 1) then Scenario 2 could be 
+regarded as "stronger" because the mean difference has a larger effect size.
+
+But I'm not sure if that's what you're asking ... :-)
+
+--------------------------------------------------
+From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+Sent: Wednesday, March 02, 2011 10:26 AM
+To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+Cc: "R DCM List" <r-sig-dcm at r-project.org>
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+> I totally agree with everything you've written, Chris. But let me stick 
+> for
+> a second to actual values of utilities. I am not asking: is this covariate
+> strong/weak for practical reasons, but rather: which of the 2 is
+> stronger/weaker.
+>
+> Now to what Ralph's written: So, the variance is small (within group) 
+> would
+> imply a stronger covariate. Agreed. How about the means? For example, 
+> let's
+> discuss only 1 attribute with 4 levels.
+>
+> Covariate Scenario 1:
+> Group 1's beta means are -2, -1, +1, and +2.
+> Group 2's beta means are +2, +1, -1, and -2.
+>
+> Covariate Scenario 2:
+> Group 1's beta means are -4, -2, +2, and +4.
+> Group 2's beta means are +4, +2, -2, and -4.
+>
+> Which covariate is stronger?
+> Dimitri
+>
+>
+> On Wed, Mar 2, 2011 at 1:07 PM, Wirth, Ralph (GfK SE)
+> <ralph.wirth at gfk.com>wrote:
+>
+>> I'd say if the groups that are defined by the covariate are very 
+>> different
+>> with regard to their preferences (i.e. utility parameters) and at the 
+>> same
+>> time the members of each group are very homogeneous, then the covariate 
+>> is a
+>> "strong" covariate.
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> -----Urspr?ngliche Nachricht-----
+>> Von: r-sig-dcm-bounces at r-project.org [mailto:
+>> r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri Liakhovitski
+>> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+>> An: R DCM List
+>> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>
+>> Guys, I could ask some of you individually but it's always better to talk
+>> to
+>> several smart guys at a time.
+>> Some of you know I am working on a project for an ART-Forum which 
+>> explores
+>> the issue of covariates in CBC/HB estimation: Is estimation with 
+>> covariates
+>> useful?
+>>
+>> I have a question: what do YOU THINK is a "strong" covariate? (and let's
+>> assume we know what the true utilities and their dependence on the
+>> covariate
+>> are)
+>> I am looking less for a mathematical answer (although it's OK if it is) 
+>> and
+>> more for a conceptual answer, maybe even with examples. Like: assume we
+>> have
+>> a covariate with only 2 levels (i.e., respondents belong to 2 groups): 
+>> what
+>> should their preferences be like in order for us to be able to say: group
+>> membership a strong covariate / weak covariate? And if we have 3 groups?
+>> Also, I am looking less for a "correct" answer and more for your 
+>> opinions.
+>>
+[[elided Hotmail spam]]
+>>
+>> Dimitri Liakhovitski
+>> ninah.com
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+>>
+>> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+>> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp
+>> (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, 
+>> Wilhelm
+>> R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+>> This email and any attachments may contain confidentia...{{dropped:8}}
+>
+>
+
+
+
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From ralph.wirth at gfk.com  Thu Mar  3 09:57:17 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Thu, 3 Mar 2011 09:57:17 +0100
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com><C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+
+I'm not sure if you can evaluate the strength of covariates based on preference shares. Completely different utility values can result in the same preference shares, but still: the groups are different with regard to their utilities, and this difference in utilities is what covariates should explain. Based on this reasoning, I'd say group 2's covariate is "stronger". It's basically an ANOVA/t-test logic: the higher the value of the test statistic, the stronger is the covariate that defines the investigated groups.
+
+This issue reminds me a lot of the issue of how to simulate preference segments. You can find a lot information about how to simulate them (and about which segments are distinctive, which are not) in the papers of e.g. Vriens, Wedel, Wilms (I think 1997) and Andrews et al. (2002 or 2003).
+
+
+
+
+
+
+
+-----Urspr?ngliche Nachricht-----
+Von: Chris Chapman [mailto:cnchapman at msn.com]
+Gesendet: Donnerstag, 3. M?rz 2011 00:14
+An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+Cc: R DCM List
+Betreff: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+I think I'm missing something here ... but seems that it depends on the use.
+If you're using those to estimate share of preference (as I would assume),
+then Scenario 2 would be "stronger" because the predicted preference share
+differences are larger: (excuse the formatting)
+
+Scenario 1                Raw utilities
+        A=Features 1+3  B=Features 2+4  exp(A)              exp(B)      sumPref
+A       Pref B
+Group 1     -1                  1                   0.367879441 2.7182818283.08616127   12%     88%Group 2          1                   -1              2.718281828
+0.367879441     3.08616127      88%     12%
+
+Scenario 2                Raw utilities
+        A=Features 1+3  B=Features 2+4  exp(A)          exp(B)  sumPref
+A       Pref B
+Group 1     -2                  2               0.135335283                 7.3890560997.524391382      2%      98%Group 2           2                  -2              7.389056099
+0.135335283     7.524391382     98%     2%
+
+OTOH, if the use is to predict something else from the utilities
+(questionable, since they probably should be zero-centered diffs instead),
+then the utilities shown are just linear transforms of one another (assuming
+the utilities have the same property as their means).
+cor(mean.scenario1,mean.scenario2) = 1.0.   In that case, the predictions
+would be the same either way, in which case they're equally "strong".
+
+And of course, as you noted WRT Ralph's comment, it depends on variance.  If
+the variance is equal in both cases (e.g., 1) then Scenario 2 could be
+regarded as "stronger" because the mean difference has a larger effect size.
+
+But I'm not sure if that's what you're asking ... :-)
+
+--------------------------------------------------
+From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+Sent: Wednesday, March 02, 2011 10:26 AM
+To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+Cc: "R DCM List" <r-sig-dcm at r-project.org>
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+> I totally agree with everything you've written, Chris. But let me stick
+> for
+> a second to actual values of utilities. I am not asking: is this covariate
+> strong/weak for practical reasons, but rather: which of the 2 is
+> stronger/weaker.
+>
+> Now to what Ralph's written: So, the variance is small (within group)
+> would
+> imply a stronger covariate. Agreed. How about the means? For example,
+> let's
+> discuss only 1 attribute with 4 levels.
+>
+> Covariate Scenario 1:
+> Group 1's beta means are -2, -1, +1, and +2.
+> Group 2's beta means are +2, +1, -1, and -2.
+>
+> Covariate Scenario 2:
+> Group 1's beta means are -4, -2, +2, and +4.
+> Group 2's beta means are +4, +2, -2, and -4.
+>
+> Which covariate is stronger?
+> Dimitri
+>
+>
+> On Wed, Mar 2, 2011 at 1:07 PM, Wirth, Ralph (GfK SE)
+> <ralph.wirth at gfk.com>wrote:
+>
+>> I'd say if the groups that are defined by the covariate are very
+>> different
+>> with regard to their preferences (i.e. utility parameters) and at the
+>> same
+>> time the members of each group are very homogeneous, then the covariate
+>> is a
+>> "strong" covariate.
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> -----Urspr?ngliche Nachricht-----
+>> Von: r-sig-dcm-bounces at r-project.org [mailto:
+>> r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri Liakhovitski
+>> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+>> An: R DCM List
+>> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>
+>> Guys, I could ask some of you individually but it's always better to talk
+>> to
+>> several smart guys at a time.
+>> Some of you know I am working on a project for an ART-Forum which
+>> explores
+>> the issue of covariates in CBC/HB estimation: Is estimation with
+>> covariates
+>> useful?
+>>
+>> I have a question: what do YOU THINK is a "strong" covariate? (and let's
+>> assume we know what the true utilities and their dependence on the
+>> covariate
+>> are)
+>> I am looking less for a mathematical answer (although it's OK if it is)
+>> and
+>> more for a conceptual answer, maybe even with examples. Like: assume we
+>> have
+>> a covariate with only 2 levels (i.e., respondents belong to 2 groups):
+>> what
+>> should their preferences be like in order for us to be able to say: group
+>> membership a strong covariate / weak covariate? And if we have 3 groups?
+>> Also, I am looking less for a "correct" answer and more for your
+>> opinions.
+>>
+>> Looking forward to your replies!
+>>
+>> Dimitri Liakhovitski
+>> ninah.com
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+>>
+>> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+>> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp
+>> (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent,
+>> Wilhelm
+>> R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+>> This email and any attachments may contain confidentia...{{dropped:8}}
+>
+>
+
+
+
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential ...{{dropped:4}}
+
+
+From dimitri.dcm at gmail.com  Thu Mar  3 16:14:56 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Thu, 3 Mar 2011 10:14:56 -0500
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110303/f18394d2/attachment.pl>
+
+From ralph.wirth at gfk.com  Thu Mar  3 16:52:32 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Thu, 3 Mar 2011 16:52:32 +0100
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C498D6FD@NUEW-EXMBCRA1.gfk.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110303/520facf0/attachment.pl>
+
+From michael.conklin at markettools.com  Thu Mar  3 16:56:01 2011
+From: michael.conklin at markettools.com (Michael Conklin)
+Date: Thu, 3 Mar 2011 15:56:01 +0000
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+Message-ID: <61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com>
+
+Chris's point is that even though the covariate has a strong effect on utilities (which makes it a strong covariate), it matters not if it won't change any business decisions because it has no impact on share.  It is the difference between technical importance and practical importance. It's like statistical significance....given enough sample size two means can be statistically different but the difference can be of no practical importance (except for implying that you grossly overpaid for sample).
+
+W. Michael Conklin
+Chief Methodologist
+Google Voice: (612) 56STATS
+
+MarketTools, Inc. | www.markettools.com
+6465 Wayzata Blvd | Suite 170 |? St. Louis Park, MN 55426. ?PHONE: 952.417.4719 | CELL: 612.201.8978 ??
+This email and attachment(s) may contain confidential and/or proprietary information and is intended only for the intended addressee(s) or its authorized agent(s). Any disclosure, printing, copying or use of such information is strictly prohibited. If this email and/or attachment(s) were received in error, please immediately notify the sender and delete all copies
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of Dimitri Liakhovitski
+Sent: Thursday, March 03, 2011 9:15 AM
+To: Wirth, Ralph (GfK SE)
+Cc: R DCM List
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+That's funny - I was thinking about it and was about to address the same point (about shares), but Ralph was beat me to it.
+Upon reflexion, my problem with using shares is this: if one tries to study covariates, defining the strengh of covariates in terms of changes in shares seems circular. It's like saying "Look, the shares for 2 groups are pretty different, so it's a strong covariate". Or: "Look, the shares for 2 groups are not very different, so it's not a strong covariate." Ralph is probably right that very different utilities might result in the same shares. In
+fact: what if even very strong covariates produce a negligible difference in shares between groups? It would be a finding by itself, and that's what we are trying to find out. Hence, we need a definition of covariate strength that is pure and not outcome (share) related. Makes sense?
+Until now I have not been able to define the relative strength/weakness of a covariate other than by referring to the spread of the means (like in Scenario 2). Probably, variance is also an important consideration, as Ralph mentioned. Not sure what else...
+
+Ralph, do you happen to have the titles of these references?
+Thanks!
+
+Dimitri
+
+
+On Thu, Mar 3, 2011 at 3:57 AM, Wirth, Ralph (GfK SE)
+<ralph.wirth at gfk.com>wrote:
+
+> I'm not sure if you can evaluate the strength of covariates based on 
+> preference shares. Completely different utility values can result in 
+> the same preference shares, but still: the groups are different with 
+> regard to their utilities, and this difference in utilities is what 
+> covariates should explain. Based on this reasoning, I'd say group 2's covariate is "stronger".
+> It's basically an ANOVA/t-test logic: the higher the value of the test 
+> statistic, the stronger is the covariate that defines the investigated 
+> groups.
+>
+> This issue reminds me a lot of the issue of how to simulate preference 
+> segments. You can find a lot information about how to simulate them 
+> (and about which segments are distinctive, which are not) in the papers of e.g.
+> Vriens, Wedel, Wilms (I think 1997) and Andrews et al. (2002 or 2003).
+>
+>
+>
+>
+>
+>
+>
+> -----Urspr?ngliche Nachricht-----
+> Von: Chris Chapman [mailto:cnchapman at msn.com]
+> Gesendet: Donnerstag, 3. M?rz 2011 00:14
+> An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+> Cc: R DCM List
+> Betreff: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>
+> I think I'm missing something here ... but seems that it depends on 
+> the use.
+> If you're using those to estimate share of preference (as I would 
+> assume), then Scenario 2 would be "stronger" because the predicted 
+> preference share differences are larger: (excuse the formatting)
+>
+> Scenario 1                Raw utilities
+>        A=Features 1+3  B=Features 2+4  exp(A)              exp(B)
+>  sumPref
+> A       Pref B
+> Group 1     -1                  1                   0.367879441
+> 2.7182818283.08616127   12%     88%Group 2          1                   -1
+>            2.718281828
+> 0.367879441     3.08616127      88%     12%
+>
+> Scenario 2                Raw utilities
+>        A=Features 1+3  B=Features 2+4  exp(A)          exp(B)  sumPref
+> A       Pref B
+> Group 1     -2                  2               0.135335283
+> 7.3890560997.524391382      2%      98%Group 2           2
+>  -2              7.389056099
+> 0.135335283     7.524391382     98%     2%
+>
+> OTOH, if the use is to predict something else from the utilities 
+> (questionable, since they probably should be zero-centered diffs 
+> instead), then the utilities shown are just linear transforms of one 
+> another (assuming the utilities have the same property as their 
+> means).
+> cor(mean.scenario1,mean.scenario2) = 1.0.   In that case, the predictions
+> would be the same either way, in which case they're equally "strong".
+>
+> And of course, as you noted WRT Ralph's comment, it depends on variance.
+>  If
+> the variance is equal in both cases (e.g., 1) then Scenario 2 could be 
+> regarded as "stronger" because the mean difference has a larger effect 
+> size.
+>
+> But I'm not sure if that's what you're asking ... :-)
+>
+> --------------------------------------------------
+> From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+> Sent: Wednesday, March 02, 2011 10:26 AM
+> To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+> Cc: "R DCM List" <r-sig-dcm at r-project.org>
+> Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>
+> > I totally agree with everything you've written, Chris. But let me 
+> > stick for a second to actual values of utilities. I am not asking: 
+> > is this
+> covariate
+> > strong/weak for practical reasons, but rather: which of the 2 is 
+> > stronger/weaker.
+> >
+> > Now to what Ralph's written: So, the variance is small (within 
+> > group) would imply a stronger covariate. Agreed. How about the 
+> > means? For example, let's discuss only 1 attribute with 4 levels.
+> >
+> > Covariate Scenario 1:
+> > Group 1's beta means are -2, -1, +1, and +2.
+> > Group 2's beta means are +2, +1, -1, and -2.
+> >
+> > Covariate Scenario 2:
+> > Group 1's beta means are -4, -2, +2, and +4.
+> > Group 2's beta means are +4, +2, -2, and -4.
+> >
+> > Which covariate is stronger?
+> > Dimitri
+> >
+> >
+> > On Wed, Mar 2, 2011 at 1:07 PM, Wirth, Ralph (GfK SE)
+> > <ralph.wirth at gfk.com>wrote:
+> >
+> >> I'd say if the groups that are defined by the covariate are very 
+> >> different with regard to their preferences (i.e. utility 
+> >> parameters) and at the same time the members of each group are very 
+> >> homogeneous, then the covariate is a "strong" covariate.
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >> -----Urspr?ngliche Nachricht-----
+> >> Von: r-sig-dcm-bounces at r-project.org [mailto:
+> >> r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri 
+> >> Liakhovitski
+> >> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+> >> An: R DCM List
+> >> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+> >>
+> >> Guys, I could ask some of you individually but it's always better 
+> >> to
+> talk
+> >> to
+> >> several smart guys at a time.
+> >> Some of you know I am working on a project for an ART-Forum which 
+> >> explores the issue of covariates in CBC/HB estimation: Is 
+> >> estimation with covariates useful?
+> >>
+> >> I have a question: what do YOU THINK is a "strong" covariate? (and 
+> >> let's assume we know what the true utilities and their dependence 
+> >> on the covariate
+> >> are)
+> >> I am looking less for a mathematical answer (although it's OK if it 
+> >> is) and more for a conceptual answer, maybe even with examples. 
+> >> Like: assume we have a covariate with only 2 levels (i.e., 
+> >> respondents belong to 2 groups):
+> >> what
+> >> should their preferences be like in order for us to be able to say:
+> group
+> >> membership a strong covariate / weak covariate? And if we have 3 groups?
+> >> Also, I am looking less for a "correct" answer and more for your 
+> >> opinions.
+> >>
+> >> Looking forward to your replies!
+> >>
+> >> Dimitri Liakhovitski
+> >> ninah.com
+> >>
+> >>         [[alternative HTML version deleted]]
+> >>
+> >> _______________________________________________
+> >> R-SIG-DCM mailing list
+> >> R-SIG-DCM at r-project.org
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> >>
+> >>
+> >> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 
+> >> 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), 
+> >> Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, 
+> >> Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory 
+> >> Board: Dr. Arno Mahlert This email and any attachments may contain 
+> >> confidentia...{{dropped:8}}
+> >
+> >
+>
+>
+>
+> > _______________________________________________
+> > R-SIG-DCM mailing list
+> > R-SIG-DCM at r-project.org
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> >
+>
+>
+> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; 
+> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela 
+> Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. 
+> Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. 
+> Arno Mahlert This email and any attachments may contain 
+> confidentia...{{dropped:8}}
+
+
+From ralph.wirth at gfk.com  Thu Mar  3 17:00:30 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Thu, 3 Mar 2011 17:00:30 +0100
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+	<61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com>
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C498D723@NUEW-EXMBCRA1.gfk.com>
+
+I couldn't agree more, Michael! Significance does not mean relevance....
+
+But I think if you want to study the effect of strong/weak covariates regarding HB-estimation- like Dimitri, you should define the strength according to the underlying model (i.e. strong covariate = strong differences in the utilities).
+
+
+
+-----Urspr?ngliche Nachricht-----
+Von: Michael Conklin [mailto:michael.conklin at markettools.com]
+Gesendet: Donnerstag, 3. M?rz 2011 16:56
+An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+Cc: R DCM List
+Betreff: RE: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+Chris's point is that even though the covariate has a strong effect on utilities (which makes it a strong covariate), it matters not if it won't change any business decisions because it has no impact on share.  It is the difference between technical importance and practical importance. It's like statistical significance....given enough sample size two means can be statistically different but the difference can be of no practical importance (except for implying that you grossly overpaid for sample).
+
+W. Michael Conklin
+Chief Methodologist
+Google Voice: (612) 56STATS
+
+MarketTools, Inc. | www.markettools.com
+6465 Wayzata Blvd | Suite 170 |  St. Louis Park, MN 55426.  PHONE: 952.417.4719 | CELL: 612.201.8978
+This email and attachment(s) may contain confidential and/or proprietary information and is intended only for the intended addressee(s) or its authorized agent(s). Any disclosure, printing, copying or use of such information is strictly prohibited. If this email and/or attachment(s) were received in error, please immediately notify the sender and delete all copies
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of Dimitri Liakhovitski
+Sent: Thursday, March 03, 2011 9:15 AM
+To: Wirth, Ralph (GfK SE)
+Cc: R DCM List
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+That's funny - I was thinking about it and was about to address the same point (about shares), but Ralph was beat me to it.
+Upon reflexion, my problem with using shares is this: if one tries to study covariates, defining the strengh of covariates in terms of changes in shares seems circular. It's like saying "Look, the shares for 2 groups are pretty different, so it's a strong covariate". Or: "Look, the shares for 2 groups are not very different, so it's not a strong covariate." Ralph is probably right that very different utilities might result in the same shares. In
+fact: what if even very strong covariates produce a negligible difference in shares between groups? It would be a finding by itself, and that's what we are trying to find out. Hence, we need a definition of covariate strength that is pure and not outcome (share) related. Makes sense?
+Until now I have not been able to define the relative strength/weakness of a covariate other than by referring to the spread of the means (like in Scenario 2). Probably, variance is also an important consideration, as Ralph mentioned. Not sure what else...
+
+Ralph, do you happen to have the titles of these references?
+Thanks!
+
+Dimitri
+
+
+On Thu, Mar 3, 2011 at 3:57 AM, Wirth, Ralph (GfK SE)
+<ralph.wirth at gfk.com>wrote:
+
+> I'm not sure if you can evaluate the strength of covariates based on
+> preference shares. Completely different utility values can result in
+> the same preference shares, but still: the groups are different with
+> regard to their utilities, and this difference in utilities is what
+> covariates should explain. Based on this reasoning, I'd say group 2's covariate is "stronger".
+> It's basically an ANOVA/t-test logic: the higher the value of the test
+> statistic, the stronger is the covariate that defines the investigated
+> groups.
+>
+> This issue reminds me a lot of the issue of how to simulate preference
+> segments. You can find a lot information about how to simulate them
+> (and about which segments are distinctive, which are not) in the papers of e.g.
+> Vriens, Wedel, Wilms (I think 1997) and Andrews et al. (2002 or 2003).
+>
+>
+>
+>
+>
+>
+>
+> -----Urspr?ngliche Nachricht-----
+> Von: Chris Chapman [mailto:cnchapman at msn.com]
+> Gesendet: Donnerstag, 3. M?rz 2011 00:14
+> An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+> Cc: R DCM List
+> Betreff: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>
+> I think I'm missing something here ... but seems that it depends on
+> the use.
+> If you're using those to estimate share of preference (as I would
+> assume), then Scenario 2 would be "stronger" because the predicted
+> preference share differences are larger: (excuse the formatting)
+>
+> Scenario 1                Raw utilities
+>        A=Features 1+3  B=Features 2+4  exp(A)              exp(B)
+>  sumPref
+> A       Pref B
+> Group 1     -1                  1                   0.367879441
+> 2.7182818283.08616127   12%     88%Group 2          1                   -1
+>            2.718281828
+> 0.367879441     3.08616127      88%     12%
+>
+> Scenario 2                Raw utilities
+>        A=Features 1+3  B=Features 2+4  exp(A)          exp(B)  sumPref
+> A       Pref B
+> Group 1     -2                  2               0.135335283
+> 7.3890560997.524391382      2%      98%Group 2           2
+>  -2              7.389056099
+> 0.135335283     7.524391382     98%     2%
+>
+> OTOH, if the use is to predict something else from the utilities
+> (questionable, since they probably should be zero-centered diffs
+> instead), then the utilities shown are just linear transforms of one
+> another (assuming the utilities have the same property as their
+> means).
+> cor(mean.scenario1,mean.scenario2) = 1.0.   In that case, the predictions
+> would be the same either way, in which case they're equally "strong".
+>
+> And of course, as you noted WRT Ralph's comment, it depends on variance.
+>  If
+> the variance is equal in both cases (e.g., 1) then Scenario 2 could be
+> regarded as "stronger" because the mean difference has a larger effect
+> size.
+>
+> But I'm not sure if that's what you're asking ... :-)
+>
+> --------------------------------------------------
+> From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+> Sent: Wednesday, March 02, 2011 10:26 AM
+> To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+> Cc: "R DCM List" <r-sig-dcm at r-project.org>
+> Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>
+> > I totally agree with everything you've written, Chris. But let me
+> > stick for a second to actual values of utilities. I am not asking:
+> > is this
+> covariate
+> > strong/weak for practical reasons, but rather: which of the 2 is
+> > stronger/weaker.
+> >
+> > Now to what Ralph's written: So, the variance is small (within
+> > group) would imply a stronger covariate. Agreed. How about the
+> > means? For example, let's discuss only 1 attribute with 4 levels.
+> >
+> > Covariate Scenario 1:
+> > Group 1's beta means are -2, -1, +1, and +2.
+> > Group 2's beta means are +2, +1, -1, and -2.
+> >
+> > Covariate Scenario 2:
+> > Group 1's beta means are -4, -2, +2, and +4.
+> > Group 2's beta means are +4, +2, -2, and -4.
+> >
+> > Which covariate is stronger?
+> > Dimitri
+> >
+> >
+> > On Wed, Mar 2, 2011 at 1:07 PM, Wirth, Ralph (GfK SE)
+> > <ralph.wirth at gfk.com>wrote:
+> >
+> >> I'd say if the groups that are defined by the covariate are very
+> >> different with regard to their preferences (i.e. utility
+> >> parameters) and at the same time the members of each group are very
+> >> homogeneous, then the covariate is a "strong" covariate.
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >> -----Urspr?ngliche Nachricht-----
+> >> Von: r-sig-dcm-bounces at r-project.org [mailto:
+> >> r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri
+> >> Liakhovitski
+> >> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+> >> An: R DCM List
+> >> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+> >>
+> >> Guys, I could ask some of you individually but it's always better
+> >> to
+> talk
+> >> to
+> >> several smart guys at a time.
+> >> Some of you know I am working on a project for an ART-Forum which
+> >> explores the issue of covariates in CBC/HB estimation: Is
+> >> estimation with covariates useful?
+> >>
+> >> I have a question: what do YOU THINK is a "strong" covariate? (and
+> >> let's assume we know what the true utilities and their dependence
+> >> on the covariate
+> >> are)
+> >> I am looking less for a mathematical answer (although it's OK if it
+> >> is) and more for a conceptual answer, maybe even with examples.
+> >> Like: assume we have a covariate with only 2 levels (i.e.,
+> >> respondents belong to 2 groups):
+> >> what
+> >> should their preferences be like in order for us to be able to say:
+> group
+> >> membership a strong covariate / weak covariate? And if we have 3 groups?
+> >> Also, I am looking less for a "correct" answer and more for your
+> >> opinions.
+> >>
+> >> Looking forward to your replies!
+> >>
+> >> Dimitri Liakhovitski
+> >> ninah.com
+> >>
+> >>         [[alternative HTML version deleted]]
+> >>
+> >> _______________________________________________
+> >> R-SIG-DCM mailing list
+> >> R-SIG-DCM at r-project.org
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> >>
+> >>
+> >> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB
+> >> 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO),
+> >> Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein,
+> >> Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory
+> >> Board: Dr. Arno Mahlert This email and any attachments may contain
+> >> confidentia...{{dropped:8}}
+> >
+> >
+>
+>
+>
+> > _______________________________________________
+> > R-SIG-DCM mailing list
+> > R-SIG-DCM at r-project.org
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> >
+>
+>
+> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela
+> Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A.
+> Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr.
+> Arno Mahlert This email and any attachments may contain
+> confidentia...{{dropped:8}}
+
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential ...{{dropped:4}}
+
+
+From dimitri.dcm at gmail.com  Thu Mar  3 17:15:41 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Thu, 3 Mar 2011 11:15:41 -0500
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <C59CC56FB0448245A59147448F0C0FCB01C498D723@NUEW-EXMBCRA1.gfk.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+	<61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498D723@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <AANLkTikSVhf+Xj4-UoPQ7a=kM88hBGG_VDuKJprsJ5_7@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110303/eaca01cd/attachment.pl>
+
+From cnchapman at msn.com  Thu Mar  3 18:25:24 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Thu, 3 Mar 2011 09:25:24 -0800
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <AANLkTikSVhf+Xj4-UoPQ7a=kM88hBGG_VDuKJprsJ5_7@mail.gmail.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com><C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com><AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com><COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl><C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com><AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com><61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com><C59CC56FB0448245A59147448F0C0FCB01C498D723@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTikSVhf+Xj4-UoPQ7a=kM88hBGG_VDuKJprsJ5_7@mail.gmail.com>
+Message-ID: <COL115-DS104FB2D346D46B417776CAB0C30@phx.gbl>
+
+If a covariate is "important" in an MNL model, then it affects utilities.  I 
+think we're agreed on that.  And if affects the utilities (other than simply 
+rescaling them), then it affects share estimates because those are a 
+function of the utilities.  If that seems circular, it's by definition.  Of 
+course we don't have to *talk* about share estimates and often wouldn't in 
+an academic piece.  (I mentioned them because you asked for opinion about 
+how people view significance, and I think share is a straightforward place 
+to look, as Michael pointed out.)
+
+As for the research plan, I don't follow Step 2.  Knowing that a covariate 
+is "weak" (or whatever) only makes sense in terms of a model -- there is no 
+"weak" covariate in the absence of a specific model.  But if we know the 
+answer with regards to a specific model (i.e., that it's "a situation where 
+the impact is strong"), then what is to be learned by running the model 
+again?
+
+I guess I'm not sure of the underlying goal.  If the question is whether 
+various real-world factors affect data generation [YES], and whether MNL/HB 
+can recover those factors as meaningful "covariates" [MAYBE], then one might 
+approach this as a simulation and parameter recovery study.  In that case, 
+I'd suggest to make the data generation process as realistic and interesting 
+as possible, e.g., to have a reason why the modeled covariates are the kinds 
+one would expect to see in real data.
+
+I think it's an interesting problem, but it seems like there are many 
+thickets here :-)  Among the pieces that need definition, I think, are the 
+data generation process; how "covariates" relate to that -- in some way that 
+is not simply a restatement of their impact on an MNL model; and then 
+exactly what is to be learned from the results when they are included in an 
+MNL model.  For instance, "covariates were used to generate the data, but 
+after HB estimation there was only minor impact on the utilities" ... and 
+*then* what? How would we know whether such a result is interesting or not?
+
+I don't know whether that helps or not, but that would make it clearer to 
+me, at least.  Good luck!
+
+-- chris
+
+
+--------------------------------------------------
+From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+Sent: Thursday, March 03, 2011 8:15 AM
+To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+Cc: "R DCM List" <r-sig-dcm at r-project.org>
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+> Yes, agree with Ralph (but also agree with Mike). We are talking about 2
+> steps in research:
+>
+> 1. Figure out if using covariates in HB estimation help estimate utilities
+> (i.e., specific individual part worths and hit rate). Assume I tried doing
+> it and found - no, it does not help my estimation much. Next question will
+> be: Well, what was your covariate like? Maybe in the scenario you analyzed
+> the covariate was very weak (i.e., its impact on utilities was weak). Why
+> don't you consider a situation where the impact of the covariate is 
+> strong?
+> This is where my question is coming out from. I am struggling with finding 
+> a
+> situation where covariates are strong. Hence, my example with 2 scenarios.
+> Here, I cannot define covariate strength in terms of shares because it'd 
+> be
+> circular.
+> 2. Once I found the situations where the covariate is weak, medium strong,
+> strong, very strong - then I could run HB estimation with and without
+> covariates and compare my hit rate, my internal consistence (correlations)
+> and say: using the covariate helped/did not help much. Now, it'd be nice 
+> to
+> use share to illustrate the strengh of the impact on shares - to 
+> illustrate
+> the practical significance of the whole thing.
+>
+> No?
+[[elided Hotmail spam]]
+> Dimitri
+>
+>
+> On Thu, Mar 3, 2011 at 11:00 AM, Wirth, Ralph (GfK SE)
+> <ralph.wirth at gfk.com>wrote:
+>
+>> I couldn't agree more, Michael! Significance does not mean relevance....
+>>
+>> But I think if you want to study the effect of strong/weak covariates
+>> regarding HB-estimation- like Dimitri, you should define the strength
+>> according to the underlying model (i.e. strong covariate = strong
+>> differences in the utilities).
+>>
+>>
+>>
+>> -----Urspr?ngliche Nachricht-----
+>> Von: Michael Conklin [mailto:michael.conklin at markettools.com]
+>> Gesendet: Donnerstag, 3. M?rz 2011 16:56
+>> An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+>> Cc: R DCM List
+>> Betreff: RE: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>
+>> Chris's point is that even though the covariate has a strong effect on
+>> utilities (which makes it a strong covariate), it matters not if it won't
+>> change any business decisions because it has no impact on share.  It is 
+>> the
+>> difference between technical importance and practical importance. It's 
+>> like
+>> statistical significance....given enough sample size two means can be
+>> statistically different but the difference can be of no practical 
+>> importance
+>> (except for implying that you grossly overpaid for sample).
+>>
+>> W. Michael Conklin
+>> Chief Methodologist
+>> Google Voice: (612) 56STATS
+>>
+>> MarketTools, Inc. | www.markettools.com
+>> 6465 Wayzata Blvd | Suite 170 |  St. Louis Park, MN 55426.  PHONE:
+>> 952.417.4719 | CELL: 612.201.8978
+>> This email and attachment(s) may contain confidential and/or proprietary
+>> information and is intended only for the intended addressee(s) or its
+>> authorized agent(s). Any disclosure, printing, copying or use of such
+>> information is strictly prohibited. If this email and/or attachment(s) 
+>> were
+>> received in error, please immediately notify the sender and delete all
+>> copies
+>>
+>> -----Original Message-----
+>> From: r-sig-dcm-bounces at r-project.org [mailto:
+>> r-sig-dcm-bounces at r-project.org] On Behalf Of Dimitri Liakhovitski
+>> Sent: Thursday, March 03, 2011 9:15 AM
+>> To: Wirth, Ralph (GfK SE)
+>> Cc: R DCM List
+>> Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>
+>> That's funny - I was thinking about it and was about to address the same
+>> point (about shares), but Ralph was beat me to it.
+>> Upon reflexion, my problem with using shares is this: if one tries to 
+>> study
+>> covariates, defining the strengh of covariates in terms of changes in 
+>> shares
+>> seems circular. It's like saying "Look, the shares for 2 groups are 
+>> pretty
+>> different, so it's a strong covariate". Or: "Look, the shares for 2 
+>> groups
+>> are not very different, so it's not a strong covariate." Ralph is 
+>> probably
+>> right that very different utilities might result in the same shares. In
+>> fact: what if even very strong covariates produce a negligible difference
+>> in shares between groups? It would be a finding by itself, and that's 
+>> what
+>> we are trying to find out. Hence, we need a definition of covariate 
+>> strength
+>> that is pure and not outcome (share) related. Makes sense?
+>> Until now I have not been able to define the relative strength/weakness 
+>> of
+>> a covariate other than by referring to the spread of the means (like in
+>> Scenario 2). Probably, variance is also an important consideration, as 
+>> Ralph
+>> mentioned. Not sure what else...
+>>
+>> Ralph, do you happen to have the titles of these references?
+>> Thanks!
+>>
+>> Dimitri
+>>
+>>
+>> On Thu, Mar 3, 2011 at 3:57 AM, Wirth, Ralph (GfK SE)
+>> <ralph.wirth at gfk.com>wrote:
+>>
+>> > I'm not sure if you can evaluate the strength of covariates based on
+>> > preference shares. Completely different utility values can result in
+>> > the same preference shares, but still: the groups are different with
+>> > regard to their utilities, and this difference in utilities is what
+>> > covariates should explain. Based on this reasoning, I'd say group 2's
+>> covariate is "stronger".
+>> > It's basically an ANOVA/t-test logic: the higher the value of the test
+>> > statistic, the stronger is the covariate that defines the investigated
+>> > groups.
+>> >
+>> > This issue reminds me a lot of the issue of how to simulate preference
+>> > segments. You can find a lot information about how to simulate them
+>> > (and about which segments are distinctive, which are not) in the papers
+>> of e.g.
+>> > Vriens, Wedel, Wilms (I think 1997) and Andrews et al. (2002 or 2003).
+>> >
+>> >
+>> >
+>> >
+>> >
+>> >
+>> >
+>> > -----Urspr?ngliche Nachricht-----
+>> > Von: Chris Chapman [mailto:cnchapman at msn.com]
+>> > Gesendet: Donnerstag, 3. M?rz 2011 00:14
+>> > An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+>> > Cc: R DCM List
+>> > Betreff: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>> >
+>> > I think I'm missing something here ... but seems that it depends on
+>> > the use.
+>> > If you're using those to estimate share of preference (as I would
+>> > assume), then Scenario 2 would be "stronger" because the predicted
+>> > preference share differences are larger: (excuse the formatting)
+>> >
+>> > Scenario 1                Raw utilities
+>> >        A=Features 1+3  B=Features 2+4  exp(A)              exp(B)
+>> >  sumPref
+>> > A       Pref B
+>> > Group 1     -1                  1                   0.367879441
+>> > 2.7182818283.08616127   12%     88%Group 2          1
+>> -1
+>> >            2.718281828
+>> > 0.367879441     3.08616127      88%     12%
+>> >
+>> > Scenario 2                Raw utilities
+>> >        A=Features 1+3  B=Features 2+4  exp(A)          exp(B)  sumPref
+>> > A       Pref B
+>> > Group 1     -2                  2               0.135335283
+>> > 7.3890560997.524391382      2%      98%Group 2           2
+>> >  -2              7.389056099
+>> > 0.135335283     7.524391382     98%     2%
+>> >
+>> > OTOH, if the use is to predict something else from the utilities
+>> > (questionable, since they probably should be zero-centered diffs
+>> > instead), then the utilities shown are just linear transforms of one
+>> > another (assuming the utilities have the same property as their
+>> > means).
+>> > cor(mean.scenario1,mean.scenario2) = 1.0.   In that case, the 
+>> > predictions
+>> > would be the same either way, in which case they're equally "strong".
+>> >
+>> > And of course, as you noted WRT Ralph's comment, it depends on 
+>> > variance.
+>> >  If
+>> > the variance is equal in both cases (e.g., 1) then Scenario 2 could be
+>> > regarded as "stronger" because the mean difference has a larger effect
+>> > size.
+>> >
+>> > But I'm not sure if that's what you're asking ... :-)
+>> >
+>> > --------------------------------------------------
+>> > From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+>> > Sent: Wednesday, March 02, 2011 10:26 AM
+>> > To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+>> > Cc: "R DCM List" <r-sig-dcm at r-project.org>
+>> > Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>> >
+>> > > I totally agree with everything you've written, Chris. But let me
+>> > > stick for a second to actual values of utilities. I am not asking:
+>> > > is this
+>> > covariate
+>> > > strong/weak for practical reasons, but rather: which of the 2 is
+>> > > stronger/weaker.
+>> > >
+>> > > Now to what Ralph's written: So, the variance is small (within
+>> > > group) would imply a stronger covariate. Agreed. How about the
+>> > > means? For example, let's discuss only 1 attribute with 4 levels.
+>> > >
+>> > > Covariate Scenario 1:
+>> > > Group 1's beta means are -2, -1, +1, and +2.
+>> > > Group 2's beta means are +2, +1, -1, and -2.
+>> > >
+>> > > Covariate Scenario 2:
+>> > > Group 1's beta means are -4, -2, +2, and +4.
+>> > > Group 2's beta means are +4, +2, -2, and -4.
+>> > >
+>> > > Which covariate is stronger?
+>> > > Dimitri
+>> > >
+>> > >
+>> > > On Wed, Mar 2, 2011 at 1:07 PM, Wirth, Ralph (GfK SE)
+>> > > <ralph.wirth at gfk.com>wrote:
+>> > >
+>> > >> I'd say if the groups that are defined by the covariate are very
+>> > >> different with regard to their preferences (i.e. utility
+>> > >> parameters) and at the same time the members of each group are very
+>> > >> homogeneous, then the covariate is a "strong" covariate.
+>> > >>
+>> > >>
+>> > >>
+>> > >>
+>> > >>
+>> > >>
+>> > >>
+>> > >> -----Urspr?ngliche Nachricht-----
+>> > >> Von: r-sig-dcm-bounces at r-project.org [mailto:
+>> > >> r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri
+>> > >> Liakhovitski
+>> > >> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+>> > >> An: R DCM List
+>> > >> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>> > >>
+>> > >> Guys, I could ask some of you individually but it's always better
+>> > >> to
+>> > talk
+>> > >> to
+>> > >> several smart guys at a time.
+>> > >> Some of you know I am working on a project for an ART-Forum which
+>> > >> explores the issue of covariates in CBC/HB estimation: Is
+>> > >> estimation with covariates useful?
+>> > >>
+>> > >> I have a question: what do YOU THINK is a "strong" covariate? (and
+>> > >> let's assume we know what the true utilities and their dependence
+>> > >> on the covariate
+>> > >> are)
+>> > >> I am looking less for a mathematical answer (although it's OK if it
+>> > >> is) and more for a conceptual answer, maybe even with examples.
+>> > >> Like: assume we have a covariate with only 2 levels (i.e.,
+>> > >> respondents belong to 2 groups):
+>> > >> what
+>> > >> should their preferences be like in order for us to be able to say:
+>> > group
+>> > >> membership a strong covariate / weak covariate? And if we have 3
+>> groups?
+>> > >> Also, I am looking less for a "correct" answer and more for your
+>> > >> opinions.
+>> > >>
+[[elided Hotmail spam]]
+>> > >>
+>> > >> Dimitri Liakhovitski
+>> > >> ninah.com
+>> > >>
+>> > >>         [[alternative HTML version deleted]]
+>> > >>
+>> > >> _______________________________________________
+>> > >> R-SIG-DCM mailing list
+>> > >> R-SIG-DCM at r-project.org
+>> > >> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>> > >>
+>> > >>
+>> > >> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB
+>> > >> 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO),
+>> > >> Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein,
+>> > >> Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory
+>> > >> Board: Dr. Arno Mahlert This email and any attachments may contain
+>> > >> confidentia...{{dropped:8}}
+>> > >
+>> > >
+>> >
+>> >
+>> >
+>> > > _______________________________________________
+>> > > R-SIG-DCM mailing list
+>> > > R-SIG-DCM at r-project.org
+>> > > https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>> > >
+>> >
+>> >
+>> > GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+>> > Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela
+>> > Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A.
+>> > Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr.
+>> > Arno Mahlert This email and any attachments may contain
+>> > confidentia...{{dropped:8}}
+>>
+>>
+>>
+>> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+>> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp
+>> (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, 
+>> Wilhelm
+>> R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+>> This email and any attachments may contain confidentia...{{dropped:8}}
+>
+>
+
+
+
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From dimitri.dcm at gmail.com  Thu Mar  3 18:39:09 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Thu, 3 Mar 2011 12:39:09 -0500
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <COL115-DS104FB2D346D46B417776CAB0C30@phx.gbl>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com>
+	<COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl>
+	<C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com>
+	<61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C498D723@NUEW-EXMBCRA1.gfk.com>
+	<AANLkTikSVhf+Xj4-UoPQ7a=kM88hBGG_VDuKJprsJ5_7@mail.gmail.com>
+	<COL115-DS104FB2D346D46B417776CAB0C30@phx.gbl>
+Message-ID: <AANLkTi=9MybCGyatRpUWA2XaJQf7a1hnFxYuiOWXETcN@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110303/1a553173/attachment.pl>
+
+From TJohnson at harrisinteractive.com  Fri Mar  4 13:49:33 2011
+From: TJohnson at harrisinteractive.com (Johnson, Timothy)
+Date: Fri, 4 Mar 2011 12:49:33 -0000
+Subject: [R-sig-DCM] What is a strong covariate in CBC/HB?
+In-Reply-To: <AANLkTi=9MybCGyatRpUWA2XaJQf7a1hnFxYuiOWXETcN@mail.gmail.com>
+References: <AANLkTi=6+_FbMcTwNHf+_xMpzgYx3Zyn4mFU+31__zXC@mail.gmail.com><C59CC56FB0448245A59147448F0C0FCB01C498CD54@NUEW-EXMBCRA1.gfk.com><AANLkTinjs7ebraf_ZL7iQ7BeHbTK_-p6G4LtQvUW6N=q@mail.gmail.com><COL115-DS928D1E80DF1B88E622A00B0C00@phx.gbl><C59CC56FB0448245A59147448F0C0FCB01C498CF5F@NUEW-EXMBCRA1.gfk.com><AANLkTin53r1QvrouYq=9Z1-Zwdm19FyV94Oa8zdCMDYr@mail.gmail.com><61B85879F91E9441B96743BD9D42AA5D01CD81@WDCCPMAIL01.markettools.com><C59CC56FB0448245A59147448F0C0FCB01C498D723@NUEW-EXMBCRA1.gfk.com><AANLkTikSVhf+Xj4-UoPQ7a=kM88hBGG_VDuKJprsJ5_7@mail.gmail.com><COL115-DS104FB2D346D46B417776CAB0C30@phx.gbl>
+	<AANLkTi=9MybCGyatRpUWA2XaJQf7a1hnFxYuiOWXETcN@mail.gmail.com>
+Message-ID: <91279D4F5D2FD04E8BC8D6B2E70725610688CF87@uk-magnum.harris.harrisinteractive.com>
+
+Hello Dimitri
+
+This is a very interesting discussion, and one which has given me a lot of pause for thought.  I have two points that may be helpful to your thinking.
+
+The first is to restate what Chris has said, in that a "strong covariate" will be a good predictor of choice homogeneity for each categorical group or numerical level of that covariate.  
+
+The second is to suggest that one way of thinking about a covariate is via latent class segmentation, with the covariate acting as an observed variable that closely matches the latent groups.  
+
+In this way, we assume that certain factors influence how people make their choice, and therefore we have latent groups of preference within our dataset.  And a strong covariate is an observed variable that reflects these latent groupings.
+
+Does this help?  
+
+Best regards
+Tim
+
+
+-----Original Message-----
+From: Dimitri Liakhovitski [mailto:dimitri.dcm at gmail.com] 
+Sent: 03 March 2011 17:39
+To: Chris Chapman
+Cc: R DCM List
+Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+
+It does help a lot, Chris!
+
+I think the challenge is: there does not seem to be a consensus about the
+meaning of the statement "Covariate impacts preferences."
+Because it IS a simulation and parameter recovery study, we ARE god because
+we create individual level utilities (betas). So, we have to create
+different betas for our study.
+We thought there should exist a clear a-priori definition of what a
+"stronger" / "weaker" covariate is - just for the purposes of beta creation.
+We want to create interesting/relevant data, for example, we want to create
+extreme cases. One extreme case is easy to define: if we have 2 groups, both
+groups have identical beta means on all levels of all attributes, and also
+the same variances. Another extreme case seems elusive.
+
+Again, if we look at just 2 groups and assume identical variances of the
+betas in both groups on all attribute levels, what is a situation when the
+betas of 2 groups (i.e., preferences) can be considered different? Very
+different? Extremely different?
+
+That was the reason for my question and for my example. Is the covariate
+stronger for that attribute if Group1 centers are -2, -1, +1, and +2 and
+Group2 centers are 2, 1, -1, and -2 OR if Group1 centers are -4,-2,+2,+4 and
+Group2 centers are 4, 2, -2, and -4?
+(I am assuming here already that if if Group1 centers are -2, -1, +1, and +2
+and Group2 centers are 2, 1, -1, and -2, then the impact of the covariate is
+stronger than in the situation in which Group1 centers are -2, -1, +1, +2
+and Group2 centers are -1, -2, +2, and +1 - because I am using this
+definition of "strength" - the further away from each other are 2 groups'
+means on a given level of a given attribute, the stronger is the impact of
+the covariate "Group").
+
+And how about a situation with 3+ groups?
+
+Dimitri
+
+
+
+On Thu, Mar 3, 2011 at 12:25 PM, Chris Chapman <cnchapman at msn.com> wrote:
+
+> If a covariate is "important" in an MNL model, then it affects utilities.
+>  I think we're agreed on that.  And if affects the utilities (other than
+> simply rescaling them), then it affects share estimates because those are a
+> function of the utilities.  If that seems circular, it's by definition.  Of
+> course we don't have to *talk* about share estimates and often wouldn't in
+> an academic piece.  (I mentioned them because you asked for opinion about
+> how people view significance, and I think share is a straightforward place
+> to look, as Michael pointed out.)
+>
+> As for the research plan, I don't follow Step 2.  Knowing that a covariate
+> is "weak" (or whatever) only makes sense in terms of a model -- there is no
+> "weak" covariate in the absence of a specific model.  But if we know the
+> answer with regards to a specific model (i.e., that it's "a situation where
+> the impact is strong"), then what is to be learned by running the model
+> again?
+>
+> I guess I'm not sure of the underlying goal.  If the question is whether
+> various real-world factors affect data generation [YES], and whether MNL/HB
+> can recover those factors as meaningful "covariates" [MAYBE], then one might
+> approach this as a simulation and parameter recovery study.  In that case,
+> I'd suggest to make the data generation process as realistic and interesting
+> as possible, e.g., to have a reason why the modeled covariates are the kinds
+> one would expect to see in real data.
+>
+> I think it's an interesting problem, but it seems like there are many
+> thickets here :-)  Among the pieces that need definition, I think, are the
+> data generation process; how "covariates" relate to that -- in some way that
+> is not simply a restatement of their impact on an MNL model; and then
+> exactly what is to be learned from the results when they are included in an
+> MNL model.  For instance, "covariates were used to generate the data, but
+> after HB estimation there was only minor impact on the utilities" ... and
+> *then* what? How would we know whether such a result is interesting or not?
+>
+> I don't know whether that helps or not, but that would make it clearer to
+> me, at least.  Good luck!
+>
+> -- chris
+>
+>
+>
+> --------------------------------------------------
+> From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+> Sent: Thursday, March 03, 2011 8:15 AM
+> To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+> Cc: "R DCM List" <r-sig-dcm at r-project.org>
+> Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>
+>  Yes, agree with Ralph (but also agree with Mike). We are talking about 2
+>> steps in research:
+>>
+>> 1. Figure out if using covariates in HB estimation help estimate utilities
+>> (i.e., specific individual part worths and hit rate). Assume I tried doing
+>> it and found - no, it does not help my estimation much. Next question will
+>> be: Well, what was your covariate like? Maybe in the scenario you analyzed
+>> the covariate was very weak (i.e., its impact on utilities was weak). Why
+>> don't you consider a situation where the impact of the covariate is
+>> strong?
+>> This is where my question is coming out from. I am struggling with finding
+>> a
+>> situation where covariates are strong. Hence, my example with 2 scenarios.
+>> Here, I cannot define covariate strength in terms of shares because it'd
+>> be
+>> circular.
+>> 2. Once I found the situations where the covariate is weak, medium strong,
+>> strong, very strong - then I could run HB estimation with and without
+>> covariates and compare my hit rate, my internal consistence (correlations)
+>> and say: using the covariate helped/did not help much. Now, it'd be nice
+>> to
+>> use share to illustrate the strengh of the impact on shares - to
+>> illustrate
+>> the practical significance of the whole thing.
+>>
+>> No?
+>> Thanks for references, Ralph!
+>> Dimitri
+>>
+>>
+>> On Thu, Mar 3, 2011 at 11:00 AM, Wirth, Ralph (GfK SE)
+>> <ralph.wirth at gfk.com>wrote:
+>>
+>>  I couldn't agree more, Michael! Significance does not mean relevance....
+>>>
+>>> But I think if you want to study the effect of strong/weak covariates
+>>> regarding HB-estimation- like Dimitri, you should define the strength
+>>> according to the underlying model (i.e. strong covariate = strong
+>>> differences in the utilities).
+>>>
+>>>
+>>>
+>>> -----Urspr?ngliche Nachricht-----
+>>> Von: Michael Conklin [mailto:michael.conklin at markettools.com]
+>>> Gesendet: Donnerstag, 3. M?rz 2011 16:56
+>>> An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+>>> Cc: R DCM List
+>>> Betreff: RE: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>>
+>>> Chris's point is that even though the covariate has a strong effect on
+>>> utilities (which makes it a strong covariate), it matters not if it won't
+>>> change any business decisions because it has no impact on share.  It is
+>>> the
+>>> difference between technical importance and practical importance. It's
+>>> like
+>>> statistical significance....given enough sample size two means can be
+>>> statistically different but the difference can be of no practical
+>>> importance
+>>> (except for implying that you grossly overpaid for sample).
+>>>
+>>> W. Michael Conklin
+>>> Chief Methodologist
+>>> Google Voice: (612) 56STATS
+>>>
+>>> MarketTools, Inc. | www.markettools.com
+>>> 6465 Wayzata Blvd | Suite 170 |  St. Louis Park, MN 55426.  PHONE:
+>>> 952.417.4719 | CELL: 612.201.8978
+>>> This email and attachment(s) may contain confidential and/or proprietary
+>>> information and is intended only for the intended addressee(s) or its
+>>> authorized agent(s). Any disclosure, printing, copying or use of such
+>>> information is strictly prohibited. If this email and/or attachment(s)
+>>> were
+>>> received in error, please immediately notify the sender and delete all
+>>> copies
+>>>
+>>> -----Original Message-----
+>>> From: r-sig-dcm-bounces at r-project.org [mailto:
+>>> r-sig-dcm-bounces at r-project.org] On Behalf Of Dimitri Liakhovitski
+>>> Sent: Thursday, March 03, 2011 9:15 AM
+>>> To: Wirth, Ralph (GfK SE)
+>>> Cc: R DCM List
+>>> Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>>
+>>> That's funny - I was thinking about it and was about to address the same
+>>> point (about shares), but Ralph was beat me to it.
+>>> Upon reflexion, my problem with using shares is this: if one tries to
+>>> study
+>>> covariates, defining the strengh of covariates in terms of changes in
+>>> shares
+>>> seems circular. It's like saying "Look, the shares for 2 groups are
+>>> pretty
+>>> different, so it's a strong covariate". Or: "Look, the shares for 2
+>>> groups
+>>> are not very different, so it's not a strong covariate." Ralph is
+>>> probably
+>>> right that very different utilities might result in the same shares. In
+>>> fact: what if even very strong covariates produce a negligible difference
+>>> in shares between groups? It would be a finding by itself, and that's
+>>> what
+>>> we are trying to find out. Hence, we need a definition of covariate
+>>> strength
+>>> that is pure and not outcome (share) related. Makes sense?
+>>> Until now I have not been able to define the relative strength/weakness
+>>> of
+>>> a covariate other than by referring to the spread of the means (like in
+>>> Scenario 2). Probably, variance is also an important consideration, as
+>>> Ralph
+>>> mentioned. Not sure what else...
+>>>
+>>> Ralph, do you happen to have the titles of these references?
+>>> Thanks!
+>>>
+>>> Dimitri
+>>>
+>>>
+>>> On Thu, Mar 3, 2011 at 3:57 AM, Wirth, Ralph (GfK SE)
+>>> <ralph.wirth at gfk.com>wrote:
+>>>
+>>> > I'm not sure if you can evaluate the strength of covariates based on
+>>> > preference shares. Completely different utility values can result in
+>>> > the same preference shares, but still: the groups are different with
+>>> > regard to their utilities, and this difference in utilities is what
+>>> > covariates should explain. Based on this reasoning, I'd say group 2's
+>>> covariate is "stronger".
+>>> > It's basically an ANOVA/t-test logic: the higher the value of the test
+>>> > statistic, the stronger is the covariate that defines the investigated
+>>> > groups.
+>>> >
+>>> > This issue reminds me a lot of the issue of how to simulate preference
+>>> > segments. You can find a lot information about how to simulate them
+>>> > (and about which segments are distinctive, which are not) in the papers
+>>> of e.g.
+>>> > Vriens, Wedel, Wilms (I think 1997) and Andrews et al. (2002 or 2003).
+>>> >
+>>> >
+>>> >
+>>> >
+>>> >
+>>> >
+>>> >
+>>> > -----Urspr?ngliche Nachricht-----
+>>> > Von: Chris Chapman [mailto:cnchapman at msn.com]
+>>> > Gesendet: Donnerstag, 3. M?rz 2011 00:14
+>>> > An: Dimitri Liakhovitski; Wirth, Ralph (GfK SE)
+>>> > Cc: R DCM List
+>>> > Betreff: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>> >
+>>> > I think I'm missing something here ... but seems that it depends on
+>>> > the use.
+>>> > If you're using those to estimate share of preference (as I would
+>>> > assume), then Scenario 2 would be "stronger" because the predicted
+>>> > preference share differences are larger: (excuse the formatting)
+>>> >
+>>> > Scenario 1                Raw utilities
+>>> >        A=Features 1+3  B=Features 2+4  exp(A)              exp(B)
+>>> >  sumPref
+>>> > A       Pref B
+>>> > Group 1     -1                  1                   0.367879441
+>>> > 2.7182818283.08616127   12%     88%Group 2          1
+>>> -1
+>>> >            2.718281828
+>>> > 0.367879441     3.08616127      88%     12%
+>>> >
+>>> > Scenario 2                Raw utilities
+>>> >        A=Features 1+3  B=Features 2+4  exp(A)          exp(B)  sumPref
+>>> > A       Pref B
+>>> > Group 1     -2                  2               0.135335283
+>>> > 7.3890560997.524391382      2%      98%Group 2           2
+>>> >  -2              7.389056099
+>>> > 0.135335283     7.524391382     98%     2%
+>>> >
+>>> > OTOH, if the use is to predict something else from the utilities
+>>> > (questionable, since they probably should be zero-centered diffs
+>>> > instead), then the utilities shown are just linear transforms of one
+>>> > another (assuming the utilities have the same property as their
+>>> > means).
+>>> > cor(mean.scenario1,mean.scenario2) = 1.0.   In that case, the >
+>>> predictions
+>>> > would be the same either way, in which case they're equally "strong".
+>>> >
+>>> > And of course, as you noted WRT Ralph's comment, it depends on >
+>>> variance.
+>>> >  If
+>>> > the variance is equal in both cases (e.g., 1) then Scenario 2 could be
+>>> > regarded as "stronger" because the mean difference has a larger effect
+>>> > size.
+>>> >
+>>> > But I'm not sure if that's what you're asking ... :-)
+>>> >
+>>> > --------------------------------------------------
+>>> > From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+>>> > Sent: Wednesday, March 02, 2011 10:26 AM
+>>> > To: "Wirth, Ralph (GfK SE)" <ralph.wirth at gfk.com>
+>>> > Cc: "R DCM List" <r-sig-dcm at r-project.org>
+>>> > Subject: Re: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>> >
+>>> > > I totally agree with everything you've written, Chris. But let me
+>>> > > stick for a second to actual values of utilities. I am not asking:
+>>> > > is this
+>>> > covariate
+>>> > > strong/weak for practical reasons, but rather: which of the 2 is
+>>> > > stronger/weaker.
+>>> > >
+>>> > > Now to what Ralph's written: So, the variance is small (within
+>>> > > group) would imply a stronger covariate. Agreed. How about the
+>>> > > means? For example, let's discuss only 1 attribute with 4 levels.
+>>> > >
+>>> > > Covariate Scenario 1:
+>>> > > Group 1's beta means are -2, -1, +1, and +2.
+>>> > > Group 2's beta means are +2, +1, -1, and -2.
+>>> > >
+>>> > > Covariate Scenario 2:
+>>> > > Group 1's beta means are -4, -2, +2, and +4.
+>>> > > Group 2's beta means are +4, +2, -2, and -4.
+>>> > >
+>>> > > Which covariate is stronger?
+>>> > > Dimitri
+>>> > >
+>>> > >
+>>> > > On Wed, Mar 2, 2011 at 1:07 PM, Wirth, Ralph (GfK SE)
+>>> > > <ralph.wirth at gfk.com>wrote:
+>>> > >
+>>> > >> I'd say if the groups that are defined by the covariate are very
+>>> > >> different with regard to their preferences (i.e. utility
+>>> > >> parameters) and at the same time the members of each group are very
+>>> > >> homogeneous, then the covariate is a "strong" covariate.
+>>> > >>
+>>> > >>
+>>> > >>
+>>> > >>
+>>> > >>
+>>> > >>
+>>> > >>
+>>> > >> -----Urspr?ngliche Nachricht-----
+>>> > >> Von: r-sig-dcm-bounces at r-project.org [mailto:
+>>> > >> r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri
+>>> > >> Liakhovitski
+>>> > >> Gesendet: Mittwoch, 2. M?rz 2011 19:04
+>>> > >> An: R DCM List
+>>> > >> Betreff: [R-sig-DCM] What is a strong covariate in CBC/HB?
+>>> > >>
+>>> > >> Guys, I could ask some of you individually but it's always better
+>>> > >> to
+>>> > talk
+>>> > >> to
+>>> > >> several smart guys at a time.
+>>> > >> Some of you know I am working on a project for an ART-Forum which
+>>> > >> explores the issue of covariates in CBC/HB estimation: Is
+>>> > >> estimation with covariates useful?
+>>> > >>
+>>> > >> I have a question: what do YOU THINK is a "strong" covariate? (and
+>>> > >> let's assume we know what the true utilities and their dependence
+>>> > >> on the covariate
+>>> > >> are)
+>>> > >> I am looking less for a mathematical answer (although it's OK if it
+>>> > >> is) and more for a conceptual answer, maybe even with examples.
+>>> > >> Like: assume we have a covariate with only 2 levels (i.e.,
+>>> > >> respondents belong to 2 groups):
+>>> > >> what
+>>> > >> should their preferences be like in order for us to be able to say:
+>>> > group
+>>> > >> membership a strong covariate / weak covariate? And if we have 3
+>>> groups?
+>>> > >> Also, I am looking less for a "correct" answer and more for your
+>>> > >> opinions.
+>>> > >>
+>>> > >> Looking forward to your replies!
+>>> > >>
+>>> > >> Dimitri Liakhovitski
+>>> > >> ninah.com
+>>> > >>
+>>> > >>         [[alternative HTML version deleted]]
+>>> > >>
+>>> > >> _______________________________________________
+>>> > >> R-SIG-DCM mailing list
+>>> > >> R-SIG-DCM at r-project.org
+>>> > >> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>> > >>
+>>> > >>
+>>> > >> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB
+>>> > >> 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO),
+>>> > >> Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein,
+>>> > >> Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory
+>>> > >> Board: Dr. Arno Mahlert This email and any attachments may contain
+>>> > >> confidentia...{{dropped:8}}
+>>> > >
+>>> > >
+>>> >
+>>> >
+>>> >
+>>> > > _______________________________________________
+>>> > > R-SIG-DCM mailing list
+>>> > > R-SIG-DCM at r-project.org
+>>> > > https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>> > >
+>>> >
+>>> >
+>>> > GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+>>> > Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela
+>>> > Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A.
+>>> > Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr.
+>>> > Arno Mahlert This email and any attachments may contain
+>>> > confidentia...{{dropped:8}}
+>>>
+>>>
+>>>
+>>> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+>>> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp
+>>> (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent,
+>>> Wilhelm
+>>> R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+>>> This email and any attachments may contain confidentia...{{dropped:8}}
+>>>
+>>
+>>
+>>
+>
+>
+>  _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+>>
+
+	[[alternative HTML version deleted]]
+
+

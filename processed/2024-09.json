@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2024-09",
+  "messages": [
+    {
+      "id": "msg-09be5c6bffac",
+      "message_id": "<J_CAph1tSfGd7mq1RmUxbA@geopod-ismtpd-14>",
+      "from_name": "mzyphur m@iii@g oii i@st@ts@org",
+      "from_email_hash": "252b54e096b1cc2b7cae76e00ed703f3596525227cfc47687b655cf5c7e64f69",
+      "date": "2024-09-16T21:20:00Z",
+      "subject": "[R-sig-DCM] Online Course: Statistics and Data Science using Tidyverse in R",
+      "subject_clean": "Online Course: Statistics and Data Science using Tidyverse in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An HTML attachment was scrubbed...\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20240916/c1cb5e08/attachment.html>",
+      "body_snippet": "An HTML attachment was scrubbed...\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20240916/c1cb5e08/attachment.html>",
+      "thread_id": "thread-09be5c6bffac",
+      "thread_depth": 0,
+      "month": "2024-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-09be5c6bffac",
+      "subject": "Online Course: Statistics and Data Science using Tidyverse in R",
+      "message_count": 1,
+      "participants": [
+        "mzyphur m@iii@g oii i@st@ts@org"
+      ],
+      "started": "2024-09-16T21:20:00+00:00",
+      "last_reply": "2024-09-16T21:20:00+00:00",
+      "root_message_id": "msg-09be5c6bffac"
+    }
+  ]
+}

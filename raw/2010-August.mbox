@@ -1,0 +1,74 @@
+From john.williams at otago.ac.nz  Wed Aug 11 23:22:25 2010
+From: john.williams at otago.ac.nz (John Williams)
+Date: Thu, 12 Aug 2010 09:22:25 +1200
+Subject: [R-sig-DCM] Fwd: [R] Choice Design -- partial profile
+Message-ID: <4C631491.9060408@otago.ac.nz>
+
+
+
+-------- Original Message --------
+Subject: [R] Choice Design -- partial profile
+Date: Wed, 11 Aug 2010 23:22:07 +1200
+From: Marcel Gerds <Marcel.Gerds at gmx.de>
+To: r-help at r-project.org <r-help at r-project.org>
+
+Dear R community,
+
+I have a question concerning the generation of an experimental design 
+for discrete choice experiments (=choice based conjoint analysis, CBC). 
+I understand that there is an article "Design and Analysis of Choice 
+Experiments Using R" by Aizaki and Nishimura (available at 
+http://www.jstage.jst.go.jp/article/air/17/2/86/_pdf). The authors use 
+gen.factorial-function of the AlgDesign package.
+My problem is that I want to generate a partial profile design that is 
+that only a subset of attributes are shown in each choice set (say 4 of 
+13). However this cannot be done with the R packages I checked so far.
+Does any of you know about a package which provide such a functionality 
+or can give some hints about programming it?
+
+Thanks in adavance.
+
+Regards
+Marcel
+
+--
+
+______________________________________________
+R-help at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-help
+PLEASE do read the posting guide http://www.R-project.org/posting-guide.html
+and provide commented, minimal, self-contained, reproducible code.
+
+-- 
+Department of Marketing
+University of Otago
+
++64 03 479 5040
+http://marketing.otago.ac.nz/staff/williamsj.asp
+
+
+From dimitri.dcm at gmail.com  Fri Aug 13 15:31:52 2010
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Fri, 13 Aug 2010 09:31:52 -0400
+Subject: [R-sig-DCM] Fwd: [R] Choice Design -- partial profile
+In-Reply-To: <4C631491.9060408@otago.ac.nz>
+References: <4C631491.9060408@otago.ac.nz>
+Message-ID: <AANLkTimXG-_RTVjXWzha8GAY2YV-qtJ+KV_o9QWG4mc8@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0d432c34/attachment.pl>
+
+From dimitri.dcm at gmail.com  Fri Aug 13 15:34:49 2010
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Fri, 13 Aug 2010 09:34:49 -0400
+Subject: [R-sig-DCM] Fwd: [R] Choice Design -- partial profile
+In-Reply-To: <AANLkTimXG-_RTVjXWzha8GAY2YV-qtJ+KV_o9QWG4mc8@mail.gmail.com>
+References: <4C631491.9060408@otago.ac.nz>
+	<AANLkTimXG-_RTVjXWzha8GAY2YV-qtJ+KV_o9QWG4mc8@mail.gmail.com>
+Message-ID: <AANLkTikROC1nMSoJDQj20k26NAq57uttpz7qF6z+1KH=@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0b8c7d90/attachment.pl>
+

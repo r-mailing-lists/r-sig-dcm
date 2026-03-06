@@ -1,0 +1,1261 @@
+From TJohnson at harrisinteractive.com  Tue Feb  1 12:38:05 2011
+From: TJohnson at harrisinteractive.com (Johnson, Timothy)
+Date: Tue, 1 Feb 2011 11:38:05 -0000
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+In-Reply-To: <4D471336.2090009@dataanalyticscorp.com>
+References: <4D471336.2090009@dataanalyticscorp.com>
+Message-ID: <91279D4F5D2FD04E8BC8D6B2E7072561064D9DA6@uk-magnum.harris.harrisinteractive.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110201/69fa08fd/attachment.pl>
+
+From Ming.Shan at gfk.com  Tue Feb  1 14:09:05 2011
+From: Ming.Shan at gfk.com (Shan, Ming (GfK Kynetec US))
+Date: Tue, 1 Feb 2011 14:09:05 +0100
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+In-Reply-To: <mailman.13.1296558004.12605.r-sig-dcm@r-project.org>
+References: <mailman.13.1296558004.12605.r-sig-dcm@r-project.org>
+Message-ID: <C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>
+
+Dear Walt,
+
+   Nowadays, it is not uncommon at all for people to conduct segmentation analysis after DCM.  But one has to run individual respondent level estimation (e.g. Hierarchical Bayes mdel) or group level estimation (e.g. Latent Class Analysis).  HB is a form of random effect model allowing each individual respondent to have varying coefficients but still "pool" the information from the others.  You would then run cluster analysis on your utilities to group respondents.  In the case of LCA, the segmentation is done while estimation is made.
+
+  Hope this makes sense and helps somewhat.
+
+Kindly,
+Ming Shan
+
+Direct:  +1 (314) 200 4499
+Mobile: +1 (314) 680 2525
+
+www.gfk-kynetec.com
+
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of r-sig-dcm-request at r-project.org
+Sent: Tuesday, February 01, 2011 5:00 AM
+To: r-sig-dcm at r-project.org
+Subject: R-SIG-DCM Digest, Vol 4, Issue 1
+
+Send R-SIG-DCM mailing list submissions to
+        r-sig-dcm at r-project.org
+
+To subscribe or unsubscribe via the World Wide Web, visit
+        https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+or, via email, send a message with subject or body 'help' to
+        r-sig-dcm-request at r-project.org
+
+You can reach the person managing the list at
+        r-sig-dcm-owner at r-project.org
+
+When replying, please edit your Subject line so it is more specific
+than "Re: Contents of R-SIG-DCM digest..."
+
+
+Today's Topics:
+
+   1. segmenting consumers after a dcm (Data Analytics Corp.)
+
+
+----------------------------------------------------------------------
+
+Message: 1
+Date: Mon, 31 Jan 2011 14:53:26 -0500
+From: "Data Analytics Corp." <walt at dataanalyticscorp.com>
+To: r-sig-dcm at r-project.org
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+Message-ID: <4D471336.2090009 at dataanalyticscorp.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+
+Hi,
+
+I just completed a dcm (not a conjoint) for a client.  Now they would
+like to segment the consumers based on utilities from the model,
+claiming that they had this done for them before although they don't
+know what or how it was done.  My model had coefficients estimated
+across all consumers, not for each one separately.  I don't even think
+that makes sense to do for each individual.  Has anyone ever done
+segmentation after a dcm?
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+
+
+
+------------------------------
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+End of R-SIG-DCM Digest, Vol 4, Issue 1
+***************************************
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential ...{{dropped:4}}
+
+
+From walt at dataanalyticscorp.com  Tue Feb  1 14:16:07 2011
+From: walt at dataanalyticscorp.com (Data Analytics Corp.)
+Date: Tue, 01 Feb 2011 08:16:07 -0500
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+In-Reply-To: <C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>
+References: <mailman.13.1296558004.12605.r-sig-dcm@r-project.org>
+	<C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <4D480797.4040808@dataanalyticscorp.com>
+
+Good morning,
+
+I've gotten a lot of great responses to my query about the 
+segmentation.  I understand the latent class application; I do that for 
+other problems.  The question now is how do I estimate a choice model in 
+R using HB?  Bayesm was recommended.  I haven't looked at this yet, but 
+will this estimate a logit model?  Any examples or applications someone 
+can share?
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+_____________________________________________________
+On 2/1/2011 8:09 AM, Shan, Ming (GfK Kynetec US) wrote:
+> Dear Walt,
+>
+>     Nowadays, it is not uncommon at all for people to conduct segmentation analysis after DCM.  But one has to run individual respondent level estimation (e.g. Hierarchical Bayes mdel) or group level estimation (e.g. Latent Class Analysis).  HB is a form of random effect model allowing each individual respondent to have varying coefficients but still "pool" the information from the others.  You would then run cluster analysis on your utilities to group respondents.  In the case of LCA, the segmentation is done while estimation is made.
+>
+>    Hope this makes sense and helps somewhat.
+>
+> Kindly,
+> Ming Shan
+>
+> Direct:  +1 (314) 200 4499
+> Mobile: +1 (314) 680 2525
+>
+> www.gfk-kynetec.com
+>
+>
+> -----Original Message-----
+> From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of r-sig-dcm-request at r-project.org
+> Sent: Tuesday, February 01, 2011 5:00 AM
+> To: r-sig-dcm at r-project.org
+> Subject: R-SIG-DCM Digest, Vol 4, Issue 1
+>
+> Send R-SIG-DCM mailing list submissions to
+>          r-sig-dcm at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>          https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> or, via email, send a message with subject or body 'help' to
+>          r-sig-dcm-request at r-project.org
+>
+> You can reach the person managing the list at
+>          r-sig-dcm-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-SIG-DCM digest..."
+>
+>
+> Today's Topics:
+>
+>     1. segmenting consumers after a dcm (Data Analytics Corp.)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Mon, 31 Jan 2011 14:53:26 -0500
+> From: "Data Analytics Corp."<walt at dataanalyticscorp.com>
+> To: r-sig-dcm at r-project.org
+> Subject: [R-sig-DCM] segmenting consumers after a dcm
+> Message-ID:<4D471336.2090009 at dataanalyticscorp.com>
+> Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+>
+> Hi,
+>
+> I just completed a dcm (not a conjoint) for a client.  Now they would
+> like to segment the consumers based on utilities from the model,
+> claiming that they had this done for them before although they don't
+> know what or how it was done.  My model had coefficients estimated
+> across all consumers, not for each one separately.  I don't even think
+> that makes sense to do for each individual.  Has anyone ever done
+> segmentation after a dcm?
+>
+> Thanks,
+>
+> Walt
+>
+> ________________________
+>
+> Walter R. Paczkowski, Ph.D.
+> Data Analytics Corp.
+> 44 Hamilton Lane
+> Plainsboro, NJ 08536
+> ________________________
+> (V) 609-936-8999
+> (F) 609-936-3733
+> walt at dataanalyticscorp.com
+> www.dataanalyticscorp.com
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+>
+> End of R-SIG-DCM Digest, Vol 4, Issue 1
+> ***************************************
+>
+>
+> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+> This email and any attachments may contain confidential ...{{dropped:4}}
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From Chris.Chapman at microsoft.com  Tue Feb  1 16:30:44 2011
+From: Chris.Chapman at microsoft.com (Chris Chapman)
+Date: Tue, 1 Feb 2011 15:30:44 +0000
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+In-Reply-To: <4D480797.4040808@dataanalyticscorp.com>
+References: <mailman.13.1296558004.12605.r-sig-dcm@r-project.org>
+	<C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>
+	<4D480797.4040808@dataanalyticscorp.com>
+Message-ID: <D30F729B3BC6D94D94562FEC1BCBFFB53DE83D8F@TK5EX14MBXC115.redmond.corp.microsoft.com>
+
+Yes, segmentation on HB estimated utilities is a common thing to do. There are some theoretical issues (for instance, HB assumes that a distribution applies across the population from which respondents are sampled, and this assumption at least partially conflicts with some ways in which segments may be conceived), and practical issues (they may be difficult to find).  In principle, however, HB utilities are probably as good as many other basis variables.
+
+As for R, yes, the bayesm package can estimate an HB model in R for many kinds of choice models. However, it has very specific requirements for how data must be formatted (as lists of difference-coded vectors). In my experience, translating data into its format and verifying that it is correctly in that format has been a non-trivial exercise for one-off projects. (I've started work on code to help do that automatically but it is incomplete and probably won't be done for quite a while.)
+
+If you want to make bayesm work, best bet is to check out its documentation in the package vignette, and also the appendices to the book by Rossi, Allenby, & McCulloch: Bayesian statistics and marketing (2005). If you're lucky enough to have data in a format close to theirs, it's not difficult to do a first pass.  (And for more learning, Greg Allenby usually teaches a tutorial on Bayesian methods including the bayesm package at the AMA's ART Forum in June.)
+
+Good luck,
+
+-- Chris
+
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of Data Analytics Corp.
+Sent: Tuesday, February 01, 2011 5:16 AM
+To: r-sig-dcm at r-project.org
+Subject: Re: [R-sig-DCM] segmenting consumers after a dcm
+
+Good morning,
+
+I've gotten a lot of great responses to my query about the segmentation.  I understand the latent class application; I do that for other problems.  The question now is how do I estimate a choice model in R using HB?  Bayesm was recommended.  I haven't looked at this yet, but will this estimate a logit model?  Any examples or applications someone can share?
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+_____________________________________________________
+On 2/1/2011 8:09 AM, Shan, Ming (GfK Kynetec US) wrote:
+> Dear Walt,
+>
+>     Nowadays, it is not uncommon at all for people to conduct segmentation analysis after DCM.  But one has to run individual respondent level estimation (e.g. Hierarchical Bayes mdel) or group level estimation (e.g. Latent Class Analysis).  HB is a form of random effect model allowing each individual respondent to have varying coefficients but still "pool" the information from the others.  You would then run cluster analysis on your utilities to group respondents.  In the case of LCA, the segmentation is done while estimation is made.
+>
+>    Hope this makes sense and helps somewhat.
+>
+> Kindly,
+> Ming Shan
+>
+> Direct:  +1 (314) 200 4499
+> Mobile: +1 (314) 680 2525
+>
+> www.gfk-kynetec.com
+>
+>
+> -----Original Message-----
+> From: r-sig-dcm-bounces at r-project.org 
+> [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of 
+> r-sig-dcm-request at r-project.org
+> Sent: Tuesday, February 01, 2011 5:00 AM
+> To: r-sig-dcm at r-project.org
+> Subject: R-SIG-DCM Digest, Vol 4, Issue 1
+>
+> Send R-SIG-DCM mailing list submissions to
+>          r-sig-dcm at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>          https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> or, via email, send a message with subject or body 'help' to
+>          r-sig-dcm-request at r-project.org
+>
+> You can reach the person managing the list at
+>          r-sig-dcm-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific 
+> than "Re: Contents of R-SIG-DCM digest..."
+>
+>
+> Today's Topics:
+>
+>     1. segmenting consumers after a dcm (Data Analytics Corp.)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Mon, 31 Jan 2011 14:53:26 -0500
+> From: "Data Analytics Corp."<walt at dataanalyticscorp.com>
+> To: r-sig-dcm at r-project.org
+> Subject: [R-sig-DCM] segmenting consumers after a dcm 
+> Message-ID:<4D471336.2090009 at dataanalyticscorp.com>
+> Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+>
+> Hi,
+>
+> I just completed a dcm (not a conjoint) for a client.  Now they would 
+> like to segment the consumers based on utilities from the model, 
+> claiming that they had this done for them before although they don't 
+> know what or how it was done.  My model had coefficients estimated 
+> across all consumers, not for each one separately.  I don't even think 
+> that makes sense to do for each individual.  Has anyone ever done 
+> segmentation after a dcm?
+>
+> Thanks,
+>
+> Walt
+>
+> ________________________
+>
+> Walter R. Paczkowski, Ph.D.
+> Data Analytics Corp.
+> 44 Hamilton Lane
+> Plainsboro, NJ 08536
+> ________________________
+> (V) 609-936-8999
+> (F) 609-936-3733
+> walt at dataanalyticscorp.com
+> www.dataanalyticscorp.com
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+>
+> End of R-SIG-DCM Digest, Vol 4, Issue 1
+> ***************************************
+>
+>
+> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; 
+> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela 
+> Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. 
+> Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. 
+> Arno Mahlert This email and any attachments may contain confidential 
+> ...{{dropped:4}}
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+From ralph.wirth at gfk.com  Wed Feb  2 16:36:37 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Wed, 2 Feb 2011 16:36:37 +0100
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+In-Reply-To: <D30F729B3BC6D94D94562FEC1BCBFFB53DE83D8F@TK5EX14MBXC115.redmond.corp.microsoft.com>
+References: <mailman.13.1296558004.12605.r-sig-dcm@r-project.org>
+	<C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>
+	<4D480797.4040808@dataanalyticscorp.com>
+	<D30F729B3BC6D94D94562FEC1BCBFFB53DE83D8F@TK5EX14MBXC115.redmond.corp.microsoft.com>
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C33E48EB@NUEW-EXMBCRA1.gfk.com>
+
+When segmenting based on utility parameters derived from a choice model, you should probably rescale these utilities before clustering based on them, in order to account for differences in error variance. For example, you could use Sawtooth Software's zero-centered diffs transformation.
+
+As to HB-logit in bayesm: The function "rhierMnlRwMixture" is a very flexible function for estimating individual MNL parameters. However, as Chris pointed out, data preparation can be cumbersome and requires solid R programming skills. Also, the transformation and interpretation of the output is not that straightforward.
+>From my point of view, you could also modify rhierBinLogit (replace the binary logit likelihood function by an MNL Likelihood function). The code of rhierBinLogit is a bit easier to understand in my eyes, but of course you need both R programming and HB knowledge for using/modifying this function, too.
+
+
+
+
+-----Urspr?ngliche Nachricht-----
+Von: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] Im Auftrag von Chris Chapman
+Gesendet: Dienstag, 1. Februar 2011 16:31
+An: walt at dataanalyticscorp.com; r-sig-dcm at r-project.org
+Betreff: Re: [R-sig-DCM] segmenting consumers after a dcm
+
+Yes, segmentation on HB estimated utilities is a common thing to do. There are some theoretical issues (for instance, HB assumes that a distribution applies across the population from which respondents are sampled, and this assumption at least partially conflicts with some ways in which segments may be conceived), and practical issues (they may be difficult to find).  In principle, however, HB utilities are probably as good as many other basis variables.
+
+As for R, yes, the bayesm package can estimate an HB model in R for many kinds of choice models. However, it has very specific requirements for how data must be formatted (as lists of difference-coded vectors). In my experience, translating data into its format and verifying that it is correctly in that format has been a non-trivial exercise for one-off projects. (I've started work on code to help do that automatically but it is incomplete and probably won't be done for quite a while.)
+
+If you want to make bayesm work, best bet is to check out its documentation in the package vignette, and also the appendices to the book by Rossi, Allenby, & McCulloch: Bayesian statistics and marketing (2005). If you're lucky enough to have data in a format close to theirs, it's not difficult to do a first pass.  (And for more learning, Greg Allenby usually teaches a tutorial on Bayesian methods including the bayesm package at the AMA's ART Forum in June.)
+
+Good luck,
+
+-- Chris
+
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of Data Analytics Corp.
+Sent: Tuesday, February 01, 2011 5:16 AM
+To: r-sig-dcm at r-project.org
+Subject: Re: [R-sig-DCM] segmenting consumers after a dcm
+
+Good morning,
+
+I've gotten a lot of great responses to my query about the segmentation.  I understand the latent class application; I do that for other problems.  The question now is how do I estimate a choice model in R using HB?  Bayesm was recommended.  I haven't looked at this yet, but will this estimate a logit model?  Any examples or applications someone can share?
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+_____________________________________________________
+On 2/1/2011 8:09 AM, Shan, Ming (GfK Kynetec US) wrote:
+> Dear Walt,
+>
+>     Nowadays, it is not uncommon at all for people to conduct segmentation analysis after DCM.  But one has to run individual respondent level estimation (e.g. Hierarchical Bayes mdel) or group level estimation (e.g. Latent Class Analysis).  HB is a form of random effect model allowing each individual respondent to have varying coefficients but still "pool" the information from the others.  You would then run cluster analysis on your utilities to group respondents.  In the case of LCA, the segmentation is done while estimation is made.
+>
+>    Hope this makes sense and helps somewhat.
+>
+> Kindly,
+> Ming Shan
+>
+> Direct:  +1 (314) 200 4499
+> Mobile: +1 (314) 680 2525
+>
+> www.gfk-kynetec.com
+>
+>
+> -----Original Message-----
+> From: r-sig-dcm-bounces at r-project.org
+> [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of
+> r-sig-dcm-request at r-project.org
+> Sent: Tuesday, February 01, 2011 5:00 AM
+> To: r-sig-dcm at r-project.org
+> Subject: R-SIG-DCM Digest, Vol 4, Issue 1
+>
+> Send R-SIG-DCM mailing list submissions to
+>          r-sig-dcm at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>          https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+> or, via email, send a message with subject or body 'help' to
+>          r-sig-dcm-request at r-project.org
+>
+> You can reach the person managing the list at
+>          r-sig-dcm-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-SIG-DCM digest..."
+>
+>
+> Today's Topics:
+>
+>     1. segmenting consumers after a dcm (Data Analytics Corp.)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Mon, 31 Jan 2011 14:53:26 -0500
+> From: "Data Analytics Corp."<walt at dataanalyticscorp.com>
+> To: r-sig-dcm at r-project.org
+> Subject: [R-sig-DCM] segmenting consumers after a dcm
+> Message-ID:<4D471336.2090009 at dataanalyticscorp.com>
+> Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+>
+> Hi,
+>
+> I just completed a dcm (not a conjoint) for a client.  Now they would
+> like to segment the consumers based on utilities from the model,
+> claiming that they had this done for them before although they don't
+> know what or how it was done.  My model had coefficients estimated
+> across all consumers, not for each one separately.  I don't even think
+> that makes sense to do for each individual.  Has anyone ever done
+> segmentation after a dcm?
+>
+> Thanks,
+>
+> Walt
+>
+> ________________________
+>
+> Walter R. Paczkowski, Ph.D.
+> Data Analytics Corp.
+> 44 Hamilton Lane
+> Plainsboro, NJ 08536
+> ________________________
+> (V) 609-936-8999
+> (F) 609-936-3733
+> walt at dataanalyticscorp.com
+> www.dataanalyticscorp.com
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+>
+> End of R-SIG-DCM Digest, Vol 4, Issue 1
+> ***************************************
+>
+>
+> GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014;
+> Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela
+> Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A.
+> Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr.
+> Arno Mahlert This email and any attachments may contain confidential
+> ...{{dropped:4}}
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential ...{{dropped:4}}
+
+
+From marcel.gerds at berkeley.edu  Wed Feb  2 18:48:49 2011
+From: marcel.gerds at berkeley.edu (Marcel Gerds)
+Date: Wed, 02 Feb 2011 09:48:49 -0800
+Subject: [R-sig-DCM] Inclusion of interaction without its main effect
+Message-ID: <4D499900.8060003@berkeley.edu>
+
+Dear fellow DC modellers,
+
+I want to include an interaction term as an explanatory variable without 
+having its main effect in the model. For example, I run
+
+mlogit.model <- mlogit ( choice ~ cost_a / income + cost_b , data = data 
+_ ml )
+
+where two kind of cost are used as explanatory variables for choosing an 
+alternative. Income is a subject-specific variable. However, if I run 
+this, R not only includes cost_b and cost_a:income in the model, but 
+also cost_a.
+Is there a way to suppress the inclusion of a main effect when one wants 
+to add only its interaction?
+Thanks for any help.
+
+Best regards,
+Marcel
+
+-- 
+Marcel Gerds, M.Sc.
+University of California
+Department of Agricultural and Resource Economics
+233 Giannini Hall
+Berkeley, CA 94720
+
+Tel.:  +1 510-643-2202
+Mobil: +49 176 21302825
+
+E-Mail: marcel.gerds at berkeley.edu
+web:    www.marcel-gerds.de
+
+
+From marcel.gerds at berkeley.edu  Wed Feb  2 22:17:31 2011
+From: marcel.gerds at berkeley.edu (Marcel Gerds)
+Date: Wed, 02 Feb 2011 13:17:31 -0800
+Subject: [R-sig-DCM] Inclusion of interaction without its main effect
+Message-ID: <4D49C9EB.9090902@berkeley.edu>
+
+I withdraw the question. I have just figured it out myself.
+One has only to create a variable which includes the interaction:
+
+interact <- cost_a / income
+
+This new variable can then be included in the model without having the 
+respective main effect in the model.
+
+mlogit.model <- mlogit ( choice ~ interact + cost_b , data = data _ ml )
+
+Best regards,
+Marcel
+
+> Dear fellow DC modellers,
+>
+> I want to include an interaction term as an explanatory variable 
+> without having its main effect in the model. For example, I run
+>
+> mlogit.model <- mlogit ( choice ~ cost_a / income + cost_b , data = 
+> data _ ml )
+>
+> where two kind of cost are used as explanatory variables for choosing 
+> an alternative. Income is a subject-specific variable. However, if I 
+> run this, R not only includes cost_b and cost_a:income in the model, 
+> but also cost_a.
+> Is there a way to suppress the inclusion of a main effect when one 
+> wants to add only its interaction?
+> Thanks for any help.
+>
+> Best regards,
+> Marcel 
+
+-- 
+Marcel Gerds, M.Sc.
+University of California
+Department of Agricultural and Resource Economics
+233 Giannini Hall
+Berkeley, CA 94720
+
+Tel.:  +1 510-643-2202
+Mobil: +49 176 21302825
+
+E-Mail: marcel.gerds at berkeley.edu
+web:    www.marcel-gerds.de
+
+
+From dimitri.dcm at gmail.com  Wed Feb 23 16:22:50 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 23 Feb 2011 10:22:50 -0500
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+In-Reply-To: <C59CC56FB0448245A59147448F0C0FCB01C33E48EB@NUEW-EXMBCRA1.gfk.com>
+References: <mailman.13.1296558004.12605.r-sig-dcm@r-project.org>
+	<C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>
+	<4D480797.4040808@dataanalyticscorp.com>
+	<D30F729B3BC6D94D94562FEC1BCBFFB53DE83D8F@TK5EX14MBXC115.redmond.corp.microsoft.com>
+	<C59CC56FB0448245A59147448F0C0FCB01C33E48EB@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <AANLkTi=XGcODyys_4ME+nyr7jFEGOE2r7q8wmSCgM7hP@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110223/bdfd070c/attachment.pl>
+
+From dimitri.dcm at gmail.com  Wed Feb 23 16:24:54 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 23 Feb 2011 10:24:54 -0500
+Subject: [R-sig-DCM] Inclusion of interaction without its main effect
+In-Reply-To: <4D49C9EB.9090902@berkeley.edu>
+References: <4D49C9EB.9090902@berkeley.edu>
+Message-ID: <AANLkTi=Ep6m_fuBZ2BqZKffKYT-zMDD4VVZp=reV1hB1@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110223/f05db659/attachment.pl>
+
+From dimitri.dcm at gmail.com  Wed Feb 23 16:37:13 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 23 Feb 2011 10:37:13 -0500
+Subject: [R-sig-DCM] number of iterations
+Message-ID: <AANLkTi=k1dtDacTG-jBOhXfL4A88qrFncLDdFgjvHHpY@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110223/7843c2cc/attachment.pl>
+
+From cnchapman at msn.com  Wed Feb 23 16:53:14 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Wed, 23 Feb 2011 15:53:14 -0000
+Subject: [R-sig-DCM] Inclusion of interaction without its main effect
+In-Reply-To: <AANLkTi=Ep6m_fuBZ2BqZKffKYT-zMDD4VVZp=reV1hB1@mail.gmail.com>
+References: <4D49C9EB.9090902@berkeley.edu>
+	<AANLkTi=Ep6m_fuBZ2BqZKffKYT-zMDD4VVZp=reV1hB1@mail.gmail.com>
+Message-ID: <COL115-DS14850882DA1F66F69674B8B0DB0@phx.gbl>
+
+Of course it depends on the model ... but in general I'd say, "yes, if it 
+makes sense for your problem."  As Marcel showed below, an interaction term 
+could be considered to be simply a different variable.  It happens to be 
+highly collinear with some other variables, but that does not change its 
+status as a variable that is perfectly reasonable if used sensibly (which 
+means -- if it's constructed -- taking account of scaling issues, 
+heterogeneity of measurement error, etc.)
+
+OTOH, *interpreting* an interaction term can be a problem.  There are cases 
+like Marcel's where it may be clearer than the (so-called) main effects, but 
+for my 0.02, interaction terms in DCM models  are often quite difficult to 
+conceptualize, explain, or act upon. So in practice I tend to avoid them 
+unless there is a good reason to think they're needed ("price:brand" is 
+perhaps a common one to consider).
+
+-- chris
+
+--------------------------------------------------
+From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+Sent: Wednesday, February 23, 2011 3:24 PM
+To: "Marcel Gerds" <marcel.gerds at berkeley.edu>
+Cc: <r-sig-dcm at r-project.org>
+Subject: Re: [R-sig-DCM] Inclusion of interaction without its main effect
+
+> I have a general follow-up question to everyone.
+> Is this "legal" to include interaction terms while excluding the main
+> effects?
+>
+> Dimitri
+>
+> On Wed, Feb 2, 2011 at 4:17 PM, Marcel Gerds 
+> <marcel.gerds at berkeley.edu>wrote:
+>
+>> I withdraw the question. I have just figured it out myself.
+>> One has only to create a variable which includes the interaction:
+>>
+>> interact <- cost_a / income
+>>
+>> This new variable can then be included in the model without having the
+>> respective main effect in the model.
+>>
+>> mlogit.model <- mlogit ( choice ~ interact + cost_b , data = data _ ml )
+>>
+>> Best regards,
+>> Marcel
+>>
+>>
+>>  Dear fellow DC modellers,
+>>>
+>>> I want to include an interaction term as an explanatory variable without
+>>> having its main effect in the model. For example, I run
+>>>
+>>> mlogit.model <- mlogit ( choice ~ cost_a / income + cost_b , data = data 
+>>> _
+>>> ml )
+>>>
+>>> where two kind of cost are used as explanatory variables for choosing an
+>>> alternative. Income is a subject-specific variable. However, if I run 
+>>> this,
+>>> R not only includes cost_b and cost_a:income in the model, but also 
+>>> cost_a.
+>>> Is there a way to suppress the inclusion of a main effect when one wants
+>>> to add only its interaction?
+>>> Thanks for any help.
+>>>
+>>> Best regards,
+>>> Marcel
+>>>
+>>
+>> --
+>> Marcel Gerds, M.Sc.
+>> University of California
+>> Department of Agricultural and Resource Economics
+>> 233 Giannini Hall
+>> Berkeley, CA 94720
+>>
+>> Tel.:  +1 510-643-2202
+>> Mobil: +49 176 21302825
+>>
+>> E-Mail: marcel.gerds at berkeley.edu
+>> web:    www.marcel-gerds.de
+>>
+>> _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From cnchapman at msn.com  Wed Feb 23 17:05:43 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Wed, 23 Feb 2011 16:05:43 -0000
+Subject: [R-sig-DCM] number of iterations
+In-Reply-To: <AANLkTi=k1dtDacTG-jBOhXfL4A88qrFncLDdFgjvHHpY@mail.gmail.com>
+References: <AANLkTi=k1dtDacTG-jBOhXfL4A88qrFncLDdFgjvHHpY@mail.gmail.com>
+Message-ID: <COL115-DS136D8CBBB12605B1E8403EB0DB0@phx.gbl>
+
+Hi Dimitri --
+
+For my part, yes, I think it all depends :-)  The usual recommendation is to 
+run it "quite a while" (50k+ iterations) and inspect the convergence of the 
+estimates (i.e., plot the draws and see if there are approximately 
+horizontal lines after a certain number of iterations, with no "blow ups" of 
+individual lines or major crossovers among them).
+
+Personally, I tend to start with 100k iterations (only because I like round 
+numbers) and take beta draws every 10 of the final 20k.  If it doesn't 
+converge but looks plausible (not all over the place), then I try 200k.  If 
+it still doesn't converge, I'll decide what to do based on how bad the 
+convergence plots look.  That's assuming something like 6-8 attributes and 
+30-40 total levels in a CBC model.
+
+(BTW, for a better answer ... Greg Allenby [one of the authors of bayesm] 
+offers tutorials at ART Forum most years that go into the general bayesm 
+approach in substantial depth.  I'd bet you've taken that already, though 
+:-)
+
+-- Chris
+
+--------------------------------------------------
+From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+Sent: Wednesday, February 23, 2011 3:37 PM
+To: "R DCM List" <r-sig-dcm at r-project.org>
+Subject: [R-sig-DCM] number of iterations
+
+> Question for those who have done HB to assess DCM utilities in bayesm:
+>
+> I know, this question is too general and it all depends on the nature of 
+> the
+> DCM at hand, # of attributes, # of levels, etc.
+> But in general: when you run HB in bayesm, how many iterations do you run 
+> in
+> total and how many do you use to grab your beta draws from?
+>
+> Thank you!
+> Dimitri
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From dimitri.dcm at gmail.com  Wed Feb 23 17:17:43 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 23 Feb 2011 11:17:43 -0500
+Subject: [R-sig-DCM] number of iterations
+In-Reply-To: <COL115-DS136D8CBBB12605B1E8403EB0DB0@phx.gbl>
+References: <AANLkTi=k1dtDacTG-jBOhXfL4A88qrFncLDdFgjvHHpY@mail.gmail.com>
+	<COL115-DS136D8CBBB12605B1E8403EB0DB0@phx.gbl>
+Message-ID: <AANLkTimwYE5sygB3ynvJrW+kL72TEohY43DVeCnDHYcd@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110223/5caa00e0/attachment.pl>
+
+From cnchapman at msn.com  Wed Feb 23 18:47:03 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Wed, 23 Feb 2011 17:47:03 -0000
+Subject: [R-sig-DCM] number of iterations
+In-Reply-To: <AANLkTimwYE5sygB3ynvJrW+kL72TEohY43DVeCnDHYcd@mail.gmail.com>
+References: <AANLkTi=k1dtDacTG-jBOhXfL4A88qrFncLDdFgjvHHpY@mail.gmail.com><COL115-DS136D8CBBB12605B1E8403EB0DB0@phx.gbl>
+	<AANLkTimwYE5sygB3ynvJrW+kL72TEohY43DVeCnDHYcd@mail.gmail.com>
+Message-ID: <COL115-DS14991A59612B7D9918EC6AB0DB0@phx.gbl>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110223/6662574a/attachment.pl>
+
+From ralph.wirth at gfk.com  Wed Feb 23 18:56:24 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Wed, 23 Feb 2011 18:56:24 +0100
+Subject: [R-sig-DCM] number of iterations
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C41447C1@NUEW-EXMBCRA1.gfk.com>
+
+I think Dimitris problem is due to the huge amount of the respondents. Their draws are generated in the inner (i.e. the second) loop. Loops are slow in R, and apply doesn't help much. I tried to vetorize the inner loop one day, but then I got problems with RAM.
+
+If you know the C programming language, then you could write the loops in C and use this C code within R. This should speed up your calculations A LOT (peope told me that estimations can easily become 10 times faster).
+
+As to iterations: I usually let my R function do more than 100000 iterations, then look at the matplots and either use the draws after convergence for calculating the point estimates or (if convergence hasn't occured yet) continue the MCMC algorithm.
+
+Regards,
+Ralph
+
+
+
+----- Originalnachricht -----
+Von: r-sig-dcm-bounces at r-project.org <r-sig-dcm-bounces at r-project.org>
+An: Dimitri Liakhovitski <dimitri.dcm at gmail.com>
+Cc: R DCM List <r-sig-dcm at r-project.org>
+Gesendet: Wed Feb 23 18:47:03 2011
+Betreff: Re: [R-sig-DCM] number of iterations
+
+Wow -- your problem is large.  I should have noted that my runs were with binary logit and much smaller samples (usually only a dozen or so choices for N~200).  Still, I run on a 64-bit Xeon machine with 16GB RAM.  Runs of many hours are usual -- I think the max was about 60 hours (but I didn't time it and it was over a weekend).  I haven't done direct comparison, but would *guess* that bayesm is 25-100x slower than Sawtooth's CBC/HB.  I know some academics who say that they code real problems in Fortran ...
+
+One thing I wonder about bayesm is whether there are obvious optimizations that would be easy to do.  (For instance, in some of my own MNL code, I got a speedup of 7x (!!) simply by replacing two calls of "apply(x,1,sum)" with "rowSums(x)")  Might be worth a quick look ...
+
+
+
+From: Dimitri Liakhovitski
+Sent: Wednesday, February 23, 2011 4:17 PM
+To: Chris Chapman
+Cc: R DCM List
+Subject: Re: [R-sig-DCM] number of iterations
+
+
+Yes, I've taken Greg's tutorial - but I would not say it was of much use to practitioners, and especially it had nothing to do with DCM...
+
+Wow, 50k! 100k!
+I've just done a DCM in bayesm (rhierMnlRwMixture) - 4 attributes, total # of levels 17, 7 tasks but a very large sample size (~4,200). I also had a categorical covariate with 8 levels, i.e., I had 7 dummy-coded centered covariates. It refused to run on my laptop (ran out of memory), but it did run on my powerful 64-bit Windows 7 PC (R 12.2 - for 64 bits). It did not run out of memory, but I've done 21K iterations in total and it took me 9.5 hours (!).
+
+Dimitri
+
+
+
+On Wed, Feb 23, 2011 at 11:05 AM, Chris Chapman <cnchapman at msn.com> wrote:
+
+  Hi Dimitri --
+
+  For my part, yes, I think it all depends :-)  The usual recommendation is to run it "quite a while" (50k+ iterations) and inspect the convergence of the estimates (i.e., plot the draws and see if there are approximately horizontal lines after a certain number of iterations, with no "blow ups" of individual lines or major crossovers among them).
+
+  Personally, I tend to start with 100k iterations (only because I like round numbers) and take beta draws every 10 of the final 20k.  If it doesn't converge but looks plausible (not all over the place), then I try 200k.  If it still doesn't converge, I'll decide what to do based on how bad the convergence plots look.  That's assuming something like 6-8 attributes and 30-40 total levels in a CBC model.
+
+  (BTW, for a better answer ... Greg Allenby [one of the authors of bayesm] offers tutorials at ART Forum most years that go into the general bayesm approach in substantial depth.  I'd bet you've taken that already, though :-)
+
+  -- Chris
+
+  --------------------------------------------------
+  From: "Dimitri Liakhovitski" <dimitri.dcm at gmail.com>
+  Sent: Wednesday, February 23, 2011 3:37 PM
+  To: "R DCM List" <r-sig-dcm at r-project.org>
+  Subject: [R-sig-DCM] number of iterations
+
+
+    Question for those who have done HB to assess DCM utilities in bayesm:
+
+    I know, this question is too general and it all depends on the nature of the
+    DCM at hand, # of attributes, # of levels, etc.
+    But in general: when you run HB in bayesm, how many iterations do you run in
+    total and how many do you use to grab your beta draws from?
+
+    Thank you!
+    Dimitri
+
+
+    [[alternative HTML version deleted]]
+
+    _______________________________________________
+    R-SIG-DCM mailing list
+    R-SIG-DCM at r-project.org
+    https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+
+        [[alternative HTML version deleted]]
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential or privileged information. Please note that unauthorized copying, disclosure or distribution of the material in this email is not permitted.
+
+From dimitri.dcm at gmail.com  Wed Feb 23 19:58:20 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Wed, 23 Feb 2011 13:58:20 -0500
+Subject: [R-sig-DCM] number of iterations
+In-Reply-To: <C59CC56FB0448245A59147448F0C0FCB01C41447C1@NUEW-EXMBCRA1.gfk.com>
+References: <C59CC56FB0448245A59147448F0C0FCB01C41447C1@NUEW-EXMBCRA1.gfk.com>
+Message-ID: <AANLkTikeQhBr4wvUZ34bPSyoQQdrFYJD4Q6h5YgFSWqf@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110223/e579af9e/attachment.pl>
+
+From dimitri.dcm at gmail.com  Thu Feb 24 18:31:36 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Thu, 24 Feb 2011 12:31:36 -0500
+Subject: [R-sig-DCM] Weighting in DCMs
+Message-ID: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110224/9353fbb7/attachment.pl>
+
+From walt at dataanalyticscorp.com  Thu Feb 24 18:46:18 2011
+From: walt at dataanalyticscorp.com (Data Analytics Corp.)
+Date: Thu, 24 Feb 2011 12:46:18 -0500
+Subject: [R-sig-DCM] Weighting in DCMs
+In-Reply-To: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+References: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+Message-ID: <4D66996A.8090701@dataanalyticscorp.com>
+
+Hi,
+
+I don't have an answer to this, but I would like to hear arguments pro 
+and con on the weighting.
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+_____________________________________________________
+
+On 2/24/2011 12:31 PM, Dimitri Liakhovitski wrote:
+> Everyone, hi!
+>
+> it's not an R-related question - but it'd be great to hear your arguments.
+> Sometimes we run a DCM (HB) for a sample and then the clients say: Would you
+> please weight the results - our sample has too many women.
+>
+> I know there is a number of arguments against doing this. Which ones did you
+> find working best with your clients?
+>
+> Thank you!
+> Dimitri
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From cnchapman at msn.com  Thu Feb 24 19:22:49 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Thu, 24 Feb 2011 18:22:49 -0000
+Subject: [R-sig-DCM] Weighting in DCMs
+In-Reply-To: <4D66996A.8090701@dataanalyticscorp.com>
+References: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+	<4D66996A.8090701@dataanalyticscorp.com>
+Message-ID: <COL115-DS135E66A5A8E98527E9A519B0DA0@phx.gbl>
+
+Good question.  I think weighting post-hoc is perhaps better than nothing 
+when a difference is expected -- but is almost certainly problematic since 
+the assumption in the (prior) model fitting stage would have been that the 
+overall sample was a "random" sample of the population.  So I'd only 
+consider that if there is no other option, e.g., if all I had was summary 
+statistics.
+
+Instead, I'd suggest one (or both) of these options: (1) if you believe 
+apriori that gender is so important, then fit it as a covariate or (if 
+really important or highly differently distributed) as a separate sample, in 
+which case you'll have estimates that could be used separately or (arguably) 
+combined according to general mixture models; (2) sample the respondents 
+prior to fitting to match the population prevalence (and ideally, bootstrap 
+that sampling and model the "empirical" credible distribution).
+
+Personally, barring other information and with the open issues around 
+covariates, I'd probably assume that the goal is to get a good population 
+estimate and not so much to focus on gender differences or covariates, in 
+which case #2 would be my default, and which is similar to handling it with 
+sample quotas but perhaps even better.
+
+As for explaining to the client, with #1, I'd probably say "we specifically 
+modeled the contribution of gender using all the information so weighting is 
+not necessary."  For #2, the client might complain at "overpaying" or 
+"throwing away" sample, so I'd likely say something like "resampling to 
+ensure population match is part of good data cleaning, and -- if I 
+bootstrapped -- no one was actually lost because we resampled [or 
+bootstrapped] to see the effect across the whole sample".  However, since 
+I'm my own client and analyst, that might be a harder sell to someone else 
+:-)
+
+If the client can handle it (or you're curious) it would be interesting to 
+compare this to the weighting approach.  I'd be interested to hear other 
+thoughts,
+
+-- chris
+
+--------------------------------------------------
+From: "Data Analytics Corp." <walt at dataanalyticscorp.com>
+Sent: Thursday, February 24, 2011 5:46 PM
+To: <r-sig-dcm at r-project.org>
+Subject: Re: [R-sig-DCM] Weighting in DCMs
+
+> Hi,
+>
+> I don't have an answer to this, but I would like to hear arguments pro and 
+> con on the weighting.
+>
+> Thanks,
+>
+> Walt
+>
+> ________________________
+>
+> Walter R. Paczkowski, Ph.D.
+> Data Analytics Corp.
+> 44 Hamilton Lane
+> Plainsboro, NJ 08536
+> ________________________
+> (V) 609-936-8999
+> (F) 609-936-3733
+> walt at dataanalyticscorp.com
+> www.dataanalyticscorp.com
+> _____________________________________________________
+>
+> On 2/24/2011 12:31 PM, Dimitri Liakhovitski wrote:
+>> Everyone, hi!
+>>
+>> it's not an R-related question - but it'd be great to hear your 
+>> arguments.
+>> Sometimes we run a DCM (HB) for a sample and then the clients say: Would 
+>> you
+>> please weight the results - our sample has too many women.
+>>
+>> I know there is a number of arguments against doing this. Which ones did 
+>> you
+>> find working best with your clients?
+>>
+>> Thank you!
+>> Dimitri
+>>
+>> [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From dimitri.dcm at gmail.com  Thu Feb 24 19:33:44 2011
+From: dimitri.dcm at gmail.com (Dimitri Liakhovitski)
+Date: Thu, 24 Feb 2011 13:33:44 -0500
+Subject: [R-sig-DCM] Weighting in DCMs
+In-Reply-To: <COL115-DS135E66A5A8E98527E9A519B0DA0@phx.gbl>
+References: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+	<4D66996A.8090701@dataanalyticscorp.com>
+	<COL115-DS135E66A5A8E98527E9A519B0DA0@phx.gbl>
+Message-ID: <AANLkTinYKKPStEa+gVP1yvBgbP0ix-sGvg1r9K++O4AX@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110224/25956713/attachment.pl>
+
+From cnchapman at msn.com  Thu Feb 24 22:28:34 2011
+From: cnchapman at msn.com (Chris Chapman)
+Date: Thu, 24 Feb 2011 21:28:34 -0000
+Subject: [R-sig-DCM] Weighting in DCMs
+In-Reply-To: <AANLkTinYKKPStEa+gVP1yvBgbP0ix-sGvg1r9K++O4AX@mail.gmail.com>
+References: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com><4D66996A.8090701@dataanalyticscorp.com><COL115-DS135E66A5A8E98527E9A519B0DA0@phx.gbl>
+	<AANLkTinYKKPStEa+gVP1yvBgbP0ix-sGvg1r9K++O4AX@mail.gmail.com>
+Message-ID: <COL115-DS22DB260A8989D7C5296E5FB0DA0@phx.gbl>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110224/11f8293b/attachment.pl>
+
+From ralph.wirth at gfk.com  Fri Feb 25 14:10:15 2011
+From: ralph.wirth at gfk.com (Wirth, Ralph (GfK SE))
+Date: Fri, 25 Feb 2011 14:10:15 +0100
+Subject: [R-sig-DCM] Weighting in DCMs
+In-Reply-To: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+References: <AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>
+Message-ID: <C59CC56FB0448245A59147448F0C0FCB01C48669BF@NUEW-EXMBCRA1.gfk.com>
+
+Hmm, maybe I am not critical enough, but I don't see a big problem in weighting respondents' utilities in order to simulate realistic preference shares (of course given that it's a proper weighting, i.e. that the effective sample size, which always decreases though weighting is still large enough)?!
+
+I think that theoretically, the weights should already be taken into account during the HB-estimation (i.e. use weighted means and the respective covariance matrices as moments for the first stage prior), but as far as I remember, John Howell (ex Sawtooth) has found out that this doesn't make a big difference in the end. I think this has been published in one of the last Sawtooth Conference proceedings.
+
+
+
+
+
+-----Urspr?ngliche Nachricht-----
+Von: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] Im Auftrag von Dimitri Liakhovitski
+Gesendet: Donnerstag, 24. Februar 2011 18:32
+An: R DCM List
+Betreff: [R-sig-DCM] Weighting in DCMs
+
+Everyone, hi!
+
+it's not an R-related question - but it'd be great to hear your arguments.
+Sometimes we run a DCM (HB) for a sample and then the clients say: Would you
+please weight the results - our sample has too many women.
+
+I know there is a number of arguments against doing this. Which ones did you
+find working best with your clients?
+
+Thank you!
+Dimitri
+
+        [[alternative HTML version deleted]]
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+
+GfK SE, Nuremberg, Germany, commercial register Nuremberg HRB 25014; Management Board: Professor Dr. Klaus L. W?bbenhorst (CEO), Pamela Knapp (CFO), Dr. Gerhard Hausruckinger, Petra Heinlein, Debra A. Pruent, Wilhelm R. Wessels; Chairman of the Supervisory Board: Dr. Arno Mahlert
+This email and any attachments may contain confidential ...{{dropped:4}}
+
+

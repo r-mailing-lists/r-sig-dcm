@@ -1,0 +1,63 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2011-01",
+  "messages": [
+    {
+      "id": "msg-ade43d4502b4",
+      "message_id": "<4D4417D1.1090602@dataanalyticscorp.com>",
+      "from_name": "Data Analytics Corp.",
+      "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
+      "date": "2011-01-29T08:36:17-05:00",
+      "subject": "[R-sig-DCM] Incorporating a \"None\" or constant alternative in a stated choice experiment",
+      "subject_clean": "Incorporating a \"None\" or constant alternative in a stated choice experiment",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Good morning,\n\nDoes anyone have any experience incorporating a None alternative in a \nstated choice experiment.  I'm particularly interested in how it's \nhandled in the estimation.  Since the design matrix can't include a None \n(there's nothing to design), how do people add it at estimation.  I \nmerely add a constant row to each alternative list with the word \"None\" \nas the level and, if it's part of the experiment, 0 for price.  The SAS \nonline manuals by Warren Kuhfeld show it being handled this way.  Any \nopinions/experience other ways to deal with it?\n\nThanks,\n\nWalt\n\n________________________\n\nWalter R. Paczkowski, Ph.D.\nData Analytics Corp.\n44 Hamilton Lane\nPlainsboro, NJ 08536\n________________________\n(V) 609-936-8999\n(F) 609-936-3733\nwalt at dataanalyticscorp.com\nwww.dataanalyticscorp.com",
+      "body_snippet": "Good morning,\n\nDoes anyone have any experience incorporating a None alternative in a \nstated choice experiment.  I'm particularly interested in how it's \nhandled in the estimation.  Since the design m",
+      "thread_id": "thread-ade43d4502b4",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-cc7bb5127f62",
+      "message_id": "<4D471336.2090009@dataanalyticscorp.com>",
+      "from_name": "Data Analytics Corp.",
+      "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
+      "date": "2011-01-31T14:53:26-05:00",
+      "subject": "[R-sig-DCM] segmenting consumers after a dcm",
+      "subject_clean": "segmenting consumers after a dcm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI just completed a dcm (not a conjoint) for a client.  Now they would \nlike to segment the consumers based on utilities from the model, \nclaiming that they had this done for them before although they don't \nknow what or how it was done.  My model had coefficients estimated \nacross all consumers, not for each one separately.  I don't even think \nthat makes sense to do for each individual.  Has anyone ever done \nsegmentation after a dcm?\n\nThanks,\n\nWalt\n\n________________________\n\nWalter R. Paczkowski, Ph.D.\nData Analytics Corp.\n44 Hamilton Lane\nPlainsboro, NJ 08536\n________________________\n(V) 609-936-8999\n(F) 609-936-3733\nwalt at dataanalyticscorp.com\nwww.dataanalyticscorp.com",
+      "body_snippet": "Hi,\n\nI just completed a dcm (not a conjoint) for a client.  Now they would \nlike to segment the consumers based on utilities from the model, \nclaiming that they had this done for them before although ",
+      "thread_id": "thread-cc7bb5127f62",
+      "thread_depth": 0,
+      "month": "2011-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ade43d4502b4",
+      "subject": "Incorporating a \"None\" or constant alternative in a stated choice experiment",
+      "message_count": 1,
+      "participants": [
+        "Data Analytics Corp."
+      ],
+      "started": "2011-01-29T08:36:17-05:00",
+      "last_reply": "2011-01-29T08:36:17-05:00",
+      "root_message_id": "msg-ade43d4502b4"
+    },
+    {
+      "id": "thread-cc7bb5127f62",
+      "subject": "segmenting consumers after a dcm",
+      "message_count": 1,
+      "participants": [
+        "Data Analytics Corp."
+      ],
+      "started": "2011-01-31T14:53:26-05:00",
+      "last_reply": "2011-01-31T14:53:26-05:00",
+      "root_message_id": "msg-cc7bb5127f62"
+    }
+  ]
+}

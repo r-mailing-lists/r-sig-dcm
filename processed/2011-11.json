@@ -1,0 +1,38 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2011-11",
+  "messages": [
+    {
+      "id": "msg-d1e26169a719",
+      "message_id": "<7ADD720CA6C5634FA7ADE02B53C990C407B93716@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "e5489deb319b72c86de8f8981728913014c894c51d7b498896218a0a0d719526",
+      "date": "2011-11-29T18:19:25Z",
+      "subject": "[R-sig-DCM] FW: CFP: 2012 Advanced Research Techniques Forum (ART Forum), Seattle WA",
+      "subject_clean": "CFP: 2012 Advanced Research Techniques Forum (ART Forum), Seattle WA",
+      "in_reply_to": "<7ADD720CA6C5634FA7ADE02B53C990C43439DA@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+      "references": [
+        "<7ADD720CA6C5634FA7ADE02B53C990C43439DA@TK5EX14MBXC293.redmond.corp.microsoft.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111129/04b34c76/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111129/04b34c76/attachment.pl>",
+      "thread_id": "thread-d1e26169a719",
+      "thread_depth": 0,
+      "month": "2011-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d1e26169a719",
+      "subject": "CFP: 2012 Advanced Research Techniques Forum (ART Forum), Seattle WA",
+      "message_count": 1,
+      "participants": [
+        "Chris Chapman"
+      ],
+      "started": "2011-11-29T18:19:25+00:00",
+      "last_reply": "2011-11-29T18:19:25+00:00",
+      "root_message_id": "msg-d1e26169a719"
+    }
+  ]
+}

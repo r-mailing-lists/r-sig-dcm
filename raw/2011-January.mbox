@@ -1,0 +1,68 @@
+From walt at dataanalyticscorp.com  Sat Jan 29 14:36:17 2011
+From: walt at dataanalyticscorp.com (Data Analytics Corp.)
+Date: Sat, 29 Jan 2011 08:36:17 -0500
+Subject: [R-sig-DCM] Incorporating a "None" or constant alternative in a
+ stated choice experiment
+Message-ID: <4D4417D1.1090602@dataanalyticscorp.com>
+
+Good morning,
+
+Does anyone have any experience incorporating a None alternative in a 
+stated choice experiment.  I'm particularly interested in how it's 
+handled in the estimation.  Since the design matrix can't include a None 
+(there's nothing to design), how do people add it at estimation.  I 
+merely add a constant row to each alternative list with the word "None" 
+as the level and, if it's part of the experiment, 0 for price.  The SAS 
+online manuals by Warren Kuhfeld show it being handled this way.  Any 
+opinions/experience other ways to deal with it?
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+
+
+From walt at dataanalyticscorp.com  Mon Jan 31 20:53:26 2011
+From: walt at dataanalyticscorp.com (Data Analytics Corp.)
+Date: Mon, 31 Jan 2011 14:53:26 -0500
+Subject: [R-sig-DCM] segmenting consumers after a dcm
+Message-ID: <4D471336.2090009@dataanalyticscorp.com>
+
+Hi,
+
+I just completed a dcm (not a conjoint) for a client.  Now they would 
+like to segment the consumers based on utilities from the model, 
+claiming that they had this done for them before although they don't 
+know what or how it was done.  My model had coefficients estimated 
+across all consumers, not for each one separately.  I don't even think 
+that makes sense to do for each individual.  Has anyone ever done 
+segmentation after a dcm?
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+
+

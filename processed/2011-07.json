@@ -1,0 +1,108 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2011-07",
+  "messages": [
+    {
+      "id": "msg-b478379844e3",
+      "message_id": "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
+      "from_name": "Aline Deschamps",
+      "from_email_hash": "caa320216e001d888e544446c5779494ddcc334e03251d122ed5629a1f8abfc4",
+      "date": "2011-07-25T10:12:24+01:00",
+      "subject": "[R-sig-DCM] Balanced design of experiments for CBC",
+      "subject_clean": "Balanced design of experiments for CBC",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/73ad04dc/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/73ad04dc/attachment.pl>",
+      "thread_id": "thread-b478379844e3",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-7f75d64d9b16",
+      "message_id": "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
+      "from_name": "Aline Deschamps",
+      "from_email_hash": "caa320216e001d888e544446c5779494ddcc334e03251d122ed5629a1f8abfc4",
+      "date": "2011-07-25T15:33:04+01:00",
+      "subject": "[R-sig-DCM] Re :  Balanced design of experiments for CBC",
+      "subject_clean": "Re :  Balanced design of experiments for CBC",
+      "in_reply_to": "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>",
+      "references": [
+        "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
+        "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/e2e3c066/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/e2e3c066/attachment.pl>",
+      "thread_id": "thread-7f75d64d9b16",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-dd668b36489f",
+      "message_id": "<0F0E7CF0FE3B433AA615403C1328F3FF@Sawtooth.local>",
+      "from_name": "Bryan Orme",
+      "from_email_hash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
+      "date": "2011-07-25T08:42:55-06:00",
+      "subject": "[R-sig-DCM] Re :  Balanced design of experiments for CBC",
+      "subject_clean": "Re :  Balanced design of experiments for CBC",
+      "in_reply_to": "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
+      "references": [
+        "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
+        "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>",
+        "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/4108f06c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/4108f06c/attachment.pl>",
+      "thread_id": "thread-7f75d64d9b16",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-d01f98da1b2c",
+      "message_id": "<7ADD720CA6C5634FA7ADE02B53C990C41F0017@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "e5489deb319b72c86de8f8981728913014c894c51d7b498896218a0a0d719526",
+      "date": "2011-07-25T14:49:31Z",
+      "subject": "[R-sig-DCM] Re :  Balanced design of experiments for CBC",
+      "subject_clean": "Re :  Balanced design of experiments for CBC",
+      "in_reply_to": "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
+      "references": [
+        "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
+        "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>",
+        "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>"
+      ],
+      "body_plain": "Hi Aline --\n\nIf I understand the question properly (you want to ensure that every respondent sees all the combinations), then I'd suggest to do this:\n\n1. generate all the combinations (\"expand.grid\")\n2. create a design matrix of those repeated N times (\"for ... rbind\")\n3. randomize the order of each block within respondent (\"for ... sample\")\n4. then just add those columns to whatever design you have or need for the other factors\n\nHere's some R code to do that part (warning, not debugged :-)\n\n# generate all pairs of two factors\nf1 <- 1:3; f2 <- 1:5\nf1f2 <- expand.grid(f1,f2)\n\n# build respondents\nresp <- NULL; for (i in 1:10) { resp <- rbind(resp,f1f2) }    # now have N=10 respondent designs, but all in the same order\n\n# randomize their orders: first pull 10 samples of 1:15 to get individual ordering\nsamp <- NULL; for (i in 1:10) { samp <- c(samp,sample(1:15)) }\n# and then offset those into the rows of the full matrix\noffset <- rep(0:9, each=15)\nsamp.ind <- offset*15 + samp;\nfinal <- resp[samp,]    # now randomized within respondent\n\nAs Bryan notes, if you have too many combinations per person and just need 9 or 12 or whatever, then you could put that number into the \"sample()\"  function inline above to either over- or under-sample accordingly (but in a balanced way).  Thanks to how expand.grid and sample work, there will be no repetitions (of the 2 factors above) unless you oversample them.\n\n[And yes, there are ways to do this besides using \"for\" loops, but they have the virtue of being easy to read :-)]\n\nIs that what you had in mind?  Best,\n\n-- Chris\n\n\n-----Original Message-----\nFrom: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of Aline Deschamps\nSent: Monday, July 25, 2011 7:33 AM\nTo: Bryan Orme\nCc: r-sig-dcm at r-project.org\nSubject: [R-sig-DCM] Re : Balanced design of experiments for CBC\n\nThank you for your answer.\nI realise that my example was poorly chosen, what I'm looking for is a way to program a balanced design of experiments where each respondent sees approximately the same number of times each combination of levels of two variables. I don't know if I'm really clear, but someone showed me a software (\"Design Expert\") which seems to do it well, unfortunately I haven't any clue of how, except that it's based on the Fedorov algorithm apparently.\n\nSo, if anyone has a clue, I'm still looking for :)\n\nAline Deschamps\nNantes, France\n\n\n\n\n\n________________________________\nDe : Bryan Orme <bryan at sawtoothsoftware.com>\n\nEnvoy? le : Lun 25 juillet 2011, 16h 27min 46s Objet : Re: [R-sig-DCM] Balanced design of experiments for CBC\n\nMathematically not possible.  For each respondent, you have 3 tasks x 4 products = 12 products.  Then, your two 3-level factors crossed together make 9 possible combinations of those two factors.  So, it's impossible to evenly fill that 2-way counts matrix of 9 cells using 12 product concepts. So, perfect 2-way level balance within each respondent questionnaire is impossible.\n\n--Bryan Orme, Sawtooth Software\n\n--------------------------------------------------\n\nSent: Monday, July 25, 2011 3:12 AM\nTo: <r-sig-dcm at r-project.org>\nSubject: [R-sig-DCM] Balanced design of experiments for CBC\n\n> Hi all,\n> \n> I'm working on CBC (Choice-Based Conjoint) studies and my problem \n> today (in fact, it's a problem I have since so many days ;) is how to \n> generate a\nbalanced\n> design of experiments for that kind of study.\n> \n> Here is the background of my study (based on an example) :\n> \n> I have 3 variables X, Y and Z. Each could take respectively 2, 3 and 3 levels. \n>I\n> have 500 respondents.\n> All of them see 3 tasks of 4 products (I remind you that a product is \n>a  combination of levels of each variable).\n> Then, I want to program the generation of the design of experiments \n>for such a  case.\n> \n> \n> The design of experiments should verify two conditions :\n> \n> 1/ Each task should not have two identical products, and each \n> respondent\nshould\n> not see two identical tasks (and all respondents don't see the same tasks).\n> \n> 2/ Each respondent should see the same number of times each possible \n>combination  of levels of two variables.\n> \n> My major issue is how to have this second condition.\n> \n> In fact, I've seen that the Fedorov algorithm is often used in order \n>to generate  design of experiments for CBC but with the \"optFederov\" \n>function (of the  \"AlgDesign\" package), I haven't be able to obtain \n>such a balanced design of  experiments...\n> So, I thought to program it myself (in R or may be in an other \n>language, I don't  know yet) but I'm afraid it would be complicated and \n>mostly not very effective  to check all the possible combinations of \n>levels of two variables.\n> \n> \n> I hope my message is not too confused, and if you have any clue of how \n> to program the generation of design of experiments in such a case, I \n> would be\nvery\n> grateful.\n> \n> Thanks :)\n> \n> \n> Aline Deschamps\n> Nantes, France\n> \n> [[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-SIG-DCM mailing list\n> R-SIG-DCM at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Aline --\n\nIf I understand the question properly (you want to ensure that every respondent sees all the combinations), then I'd suggest to do this:\n\n1. generate all the combinations (\"expand.grid\")\n",
+      "thread_id": "thread-7f75d64d9b16",
+      "thread_depth": 1,
+      "month": "2011-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b478379844e3",
+      "subject": "Balanced design of experiments for CBC",
+      "message_count": 1,
+      "participants": [
+        "Aline Deschamps"
+      ],
+      "started": "2011-07-25T10:12:24+01:00",
+      "last_reply": "2011-07-25T10:12:24+01:00",
+      "root_message_id": "msg-b478379844e3"
+    },
+    {
+      "id": "thread-7f75d64d9b16",
+      "subject": "Re :  Balanced design of experiments for CBC",
+      "message_count": 3,
+      "participants": [
+        "Aline Deschamps",
+        "Bryan Orme",
+        "Chris Chapman"
+      ],
+      "started": "2011-07-25T15:33:04+01:00",
+      "last_reply": "2011-07-25T14:49:31+00:00",
+      "root_message_id": "msg-7f75d64d9b16"
+    }
+  ]
+}

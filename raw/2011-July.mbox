@@ -1,0 +1,177 @@
+From deschamps.aline at yahoo.fr  Mon Jul 25 11:12:24 2011
+From: deschamps.aline at yahoo.fr (Aline Deschamps)
+Date: Mon, 25 Jul 2011 10:12:24 +0100 (BST)
+Subject: [R-sig-DCM] Balanced design of experiments for CBC
+Message-ID: <1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/73ad04dc/attachment.pl>
+
+From deschamps.aline at yahoo.fr  Mon Jul 25 16:33:04 2011
+From: deschamps.aline at yahoo.fr (Aline Deschamps)
+Date: Mon, 25 Jul 2011 15:33:04 +0100 (BST)
+Subject: [R-sig-DCM] Re :  Balanced design of experiments for CBC
+In-Reply-To: <773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>
+References: <1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>
+	<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>
+Message-ID: <1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/e2e3c066/attachment.pl>
+
+From bryan at sawtoothsoftware.com  Mon Jul 25 16:42:55 2011
+From: bryan at sawtoothsoftware.com (Bryan Orme)
+Date: Mon, 25 Jul 2011 08:42:55 -0600
+Subject: [R-sig-DCM] Re :  Balanced design of experiments for CBC
+In-Reply-To: <1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>
+References: <1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>
+	<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>
+	<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>
+Message-ID: <0F0E7CF0FE3B433AA615403C1328F3FF@Sawtooth.local>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/4108f06c/attachment.pl>
+
+From Chris.Chapman at microsoft.com  Mon Jul 25 16:49:31 2011
+From: Chris.Chapman at microsoft.com (Chris Chapman)
+Date: Mon, 25 Jul 2011 14:49:31 +0000
+Subject: [R-sig-DCM] Re :  Balanced design of experiments for CBC
+In-Reply-To: <1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>
+References: <1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>
+	<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>
+	<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>
+Message-ID: <7ADD720CA6C5634FA7ADE02B53C990C41F0017@TK5EX14MBXC293.redmond.corp.microsoft.com>
+
+Hi Aline --
+
+If I understand the question properly (you want to ensure that every respondent sees all the combinations), then I'd suggest to do this:
+
+1. generate all the combinations ("expand.grid")
+2. create a design matrix of those repeated N times ("for ... rbind")
+3. randomize the order of each block within respondent ("for ... sample")
+4. then just add those columns to whatever design you have or need for the other factors
+
+Here's some R code to do that part (warning, not debugged :-)
+
+# generate all pairs of two factors
+f1 <- 1:3; f2 <- 1:5
+f1f2 <- expand.grid(f1,f2)
+
+# build respondents
+resp <- NULL; for (i in 1:10) { resp <- rbind(resp,f1f2) }    # now have N=10 respondent designs, but all in the same order
+
+# randomize their orders: first pull 10 samples of 1:15 to get individual ordering
+samp <- NULL; for (i in 1:10) { samp <- c(samp,sample(1:15)) }
+# and then offset those into the rows of the full matrix
+offset <- rep(0:9, each=15)
+samp.ind <- offset*15 + samp;
+final <- resp[samp,]    # now randomized within respondent
+
+As Bryan notes, if you have too many combinations per person and just need 9 or 12 or whatever, then you could put that number into the "sample()"  function inline above to either over- or under-sample accordingly (but in a balanced way).  Thanks to how expand.grid and sample work, there will be no repetitions (of the 2 factors above) unless you oversample them.
+
+[And yes, there are ways to do this besides using "for" loops, but they have the virtue of being easy to read :-)]
+
+Is that what you had in mind?  Best,
+
+-- Chris
+
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of Aline Deschamps
+Sent: Monday, July 25, 2011 7:33 AM
+To: Bryan Orme
+Cc: r-sig-dcm at r-project.org
+Subject: [R-sig-DCM] Re : Balanced design of experiments for CBC
+
+Thank you for your answer.
+I realise that my example was poorly chosen, what I'm looking for is a way to program a balanced design of experiments where each respondent sees approximately the same number of times each combination of levels of two variables. I don't know if I'm really clear, but someone showed me a software ("Design Expert") which seems to do it well, unfortunately I haven't any clue of how, except that it's based on the Fedorov algorithm apparently.
+
+So, if anyone has a clue, I'm still looking for :)
+
+Aline Deschamps
+Nantes, France
+
+
+
+
+
+________________________________
+De : Bryan Orme <bryan at sawtoothsoftware.com>
+
+Envoy? le : Lun 25 juillet 2011, 16h 27min 46s Objet : Re: [R-sig-DCM] Balanced design of experiments for CBC
+
+Mathematically not possible.  For each respondent, you have 3 tasks x 4 products = 12 products.  Then, your two 3-level factors crossed together make 9 possible combinations of those two factors.  So, it's impossible to evenly fill that 2-way counts matrix of 9 cells using 12 product concepts. So, perfect 2-way level balance within each respondent questionnaire is impossible.
+
+--Bryan Orme, Sawtooth Software
+
+--------------------------------------------------
+
+Sent: Monday, July 25, 2011 3:12 AM
+To: <r-sig-dcm at r-project.org>
+Subject: [R-sig-DCM] Balanced design of experiments for CBC
+
+> Hi all,
+> 
+> I'm working on CBC (Choice-Based Conjoint) studies and my problem 
+> today (in fact, it's a problem I have since so many days ;) is how to 
+> generate a
+balanced
+> design of experiments for that kind of study.
+> 
+> Here is the background of my study (based on an example) :
+> 
+> I have 3 variables X, Y and Z. Each could take respectively 2, 3 and 3 levels. 
+>I
+> have 500 respondents.
+> All of them see 3 tasks of 4 products (I remind you that a product is 
+>a  combination of levels of each variable).
+> Then, I want to program the generation of the design of experiments 
+>for such a  case.
+> 
+> 
+> The design of experiments should verify two conditions :
+> 
+> 1/ Each task should not have two identical products, and each 
+> respondent
+should
+> not see two identical tasks (and all respondents don't see the same tasks).
+> 
+> 2/ Each respondent should see the same number of times each possible 
+>combination  of levels of two variables.
+> 
+> My major issue is how to have this second condition.
+> 
+> In fact, I've seen that the Fedorov algorithm is often used in order 
+>to generate  design of experiments for CBC but with the "optFederov" 
+>function (of the  "AlgDesign" package), I haven't be able to obtain 
+>such a balanced design of  experiments...
+> So, I thought to program it myself (in R or may be in an other 
+>language, I don't  know yet) but I'm afraid it would be complicated and 
+>mostly not very effective  to check all the possible combinations of 
+>levels of two variables.
+> 
+> 
+> I hope my message is not too confused, and if you have any clue of how 
+> to program the generation of design of experiments in such a case, I 
+> would be
+very
+> grateful.
+> 
+> Thanks :)
+> 
+> 
+> Aline Deschamps
+> Nantes, France
+> 
+> [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+	[[alternative HTML version deleted]]
+
+

@@ -1,0 +1,149 @@
+From Chris.Chapman at microsoft.com  Tue Jul 13 14:21:01 2010
+From: Chris.Chapman at microsoft.com (Chris Chapman)
+Date: Tue, 13 Jul 2010 12:21:01 +0000
+Subject: [R-sig-DCM] Testing the DCM list
+Message-ID: <D30F729B3BC6D94D94562FEC1BCBFFB52CE8AEDF@TK5EX14MBXC115.redmond.corp.microsoft.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl>
+
+From john.williams at otago.ac.nz  Tue Jul 13 22:30:37 2010
+From: john.williams at otago.ac.nz (John Williams)
+Date: Wed, 14 Jul 2010 08:30:37 +1200
+Subject: [R-sig-DCM] Welcome!
+Message-ID: <4C3CCCED.6040901@otago.ac.nz>
+
+Welcome to the R-SIG-DCM list.  This is just a short message to say hi, 
+and to test that the system is actually working.  (After having existed 
+for about 24 hours and having less than a dozen members, already a 
+possible problem has emerged.)
+
+None of the list owners have had experience with Mailman management, so 
+please bear with us if things seem a bit flakey.  I am keen to help if 
+you do experience problems, so don't be shy in letting me know.
+
+Cheers,
+
+John
+
+
+-- 
+Department of Marketing
+University of Otago
+
+http://marketing.otago.ac.nz/staff/williamsj.asp
+
+
+From Michelle.Gosse at foodstandards.gov.au  Tue Jul 13 22:56:46 2010
+From: Michelle.Gosse at foodstandards.gov.au (Gosse, Michelle)
+Date: Wed, 14 Jul 2010 06:56:46 +1000
+Subject: [R-sig-DCM] Welcome! [Sec: UNOFFICIAL]
+In-Reply-To: <4C3CCCED.6040901@otago.ac.nz>
+References: <4C3CCCED.6040901@otago.ac.nz>
+Message-ID: <12E932690323AB4EBEEB21BAA28D90DE2E27C3254A@EXCHANGE07.foodstandards.gov.au>
+
+I found the process to join this group to be as quick as the process to join the R mail list.
+
+I'm looking forward to seeing the discussions develop in this list. :)
+
+Cheers
+Michelle
+
+-----Original Message-----
+From: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of John Williams
+Sent: Wednesday, 14 July 2010 8:31 AM
+To: r-sig-dcm at r-project.org
+Subject: [R-sig-DCM] Welcome!
+
+Welcome to the R-SIG-DCM list.  This is just a short message to say hi, 
+and to test that the system is actually working.  (After having existed 
+for about 24 hours and having less than a dozen members, already a 
+possible problem has emerged.)
+
+None of the list owners have had experience with Mailman management, so 
+please bear with us if things seem a bit flakey.  I am keen to help if 
+you do experience problems, so don't be shy in letting me know.
+
+Cheers,
+
+John
+
+
+-- 
+Department of Marketing
+University of Otago
+
+http://marketing.otago.ac.nz/staff/williamsj.asp
+
+_______________________________________________
+R-SIG-DCM mailing list
+R-SIG-DCM at r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+
+**********************************************************************
+This email and any files transmitted with it are confidential and
+intended solely for the use of the individual or entity to whom they
+are addressed. If you have received this email in error please notify
+the system manager.
+
+This footnote also confirms that this email message has been swept by
+MIMEsweeper for the presence of computer viruses.
+
+www.clearswift.com
+**********************************************************************
+
+
+
+
+
+From heyskywalker at yahoo.com  Mon Jul 26 17:24:21 2010
+From: heyskywalker at yahoo.com (Hey Sky)
+Date: Mon, 26 Jul 2010 08:24:21 -0700 (PDT)
+Subject: [R-sig-DCM] a  discrete choice dynamic model with panel data
+Message-ID: <742055.87020.qm@web113906.mail.gq1.yahoo.com>
+
+Hey, all
+
+I just visited this forum but it seems few people here. I am totally new to R 
+and 
+
+some kind new to the dynamic mode. any suggestion are appreciated.
+
+I am modeling the labour market choices, such as un/employment, schooling? etc. 
+people choose one of them in each period to maximize their present value of life 
+time utility.
+
+here is my model:
+Vijt = X_ij*beta + ipsilon_ijt
+ipsilon_ijt = mu_j + sigma_t
+
+where?i means individual, j the decision/choice and t the period.
+thus Vijt?is the utility individual i can get from choice j at time t.
+X are know vector of variables with parameter vector beta
+
+ipsilon is the residual which consist of a well behaved sigma and 
+unkonw hetrogeneity among individuals mu, which have the form
+mu_j = alpa_j + gama_j*eta
+
+eta is individual types. that is, the intercept and slope of the laten 
+variable mu both depend on the his/er choice. the model will be
+Vijt = X_ij*beta + alpa_j + gama_j*eta + sigma_t
+
+alpa, beta, gama, plus eta,?are parameters that need to be estimated.
+
+the model will be estimated with simulated maximum likelihood method
+with probability for individual i and choice j at peroid t. 
+
+PRijt?= exp(Vijt)/(exp(Vi1t)+ exp(Vi2t)+ ....+ exp(ViJt))
+
+if I write?a function to represent the upper maximu likelihood for all i at each 
+t and every choice j,?can the command optim be used to get the estimates? any 
+suggestions are apprecited
+
+
+Nan
+
+
+
+

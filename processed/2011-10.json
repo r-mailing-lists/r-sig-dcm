@@ -1,0 +1,63 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2011-10",
+  "messages": [
+    {
+      "id": "msg-ca96ca37fd38",
+      "message_id": "<CAFDUNpT+bee-aQsTY=vn7WBVkoVCRM0TX4-GQ1FNpRMnq573Hg@mail.gmail.com>",
+      "from_name": "John Tapper",
+      "from_email_hash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
+      "date": "2011-10-21T11:31:05-05:00",
+      "subject": "[R-sig-DCM] PPCE In R",
+      "subject_clean": "PPCE In R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/50690daa/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/50690daa/attachment.pl>",
+      "thread_id": "thread-ca96ca37fd38",
+      "thread_depth": 0,
+      "month": "2011-10"
+    },
+    {
+      "id": "msg-f68c56f58716",
+      "message_id": "<CAFDUNpQLPs-yWpvYghx_Q-_dOrsRiz9gMmv4uZZdMT+_wd7kzw@mail.gmail.com>",
+      "from_name": "John Tapper",
+      "from_email_hash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
+      "date": "2011-10-21T11:31:08-05:00",
+      "subject": "[R-sig-DCM] PPCE In R",
+      "subject_clean": "PPCE In R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/934de0a4/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/934de0a4/attachment.pl>",
+      "thread_id": "thread-f68c56f58716",
+      "thread_depth": 0,
+      "month": "2011-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ca96ca37fd38",
+      "subject": "PPCE In R",
+      "message_count": 1,
+      "participants": [
+        "John Tapper"
+      ],
+      "started": "2011-10-21T11:31:05-05:00",
+      "last_reply": "2011-10-21T11:31:05-05:00",
+      "root_message_id": "msg-ca96ca37fd38"
+    },
+    {
+      "id": "thread-f68c56f58716",
+      "subject": "PPCE In R",
+      "message_count": 1,
+      "participants": [
+        "John Tapper"
+      ],
+      "started": "2011-10-21T11:31:08-05:00",
+      "last_reply": "2011-10-21T11:31:08-05:00",
+      "root_message_id": "msg-f68c56f58716"
+    }
+  ]
+}

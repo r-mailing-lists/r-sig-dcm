@@ -1,0 +1,95 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2013-07",
+  "messages": [
+    {
+      "id": "msg-3b3ce7ac1b3b",
+      "message_id": "<CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>",
+      "from_name": "Jonathan Frye",
+      "from_email_hash": "092208f3e2929108184a0c8c016b22c8b75aa9560f3561a41acadd49bafb4afb",
+      "date": "2013-07-24T14:41:36-04:00",
+      "subject": "[R-sig-DCM] Utility scores from mlogit/clogit for CBC",
+      "subject_clean": "Utility scores from mlogit/clogit for CBC",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl>",
+      "thread_id": "thread-3b3ce7ac1b3b",
+      "thread_depth": 0,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-d19306ca2dea",
+      "message_id": "<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "7289e5ee8bb84f2cc65b36841b0e5c1a1b88d6d7ce168b7898e99f2d187af774",
+      "date": "2013-07-25T10:46:32+09:00",
+      "subject": "[R-sig-DCM] Utility scores from mlogit/clogit for CBC",
+      "subject_clean": "Utility scores from mlogit/clogit for CBC",
+      "in_reply_to": "<CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>",
+      "references": [
+        "<CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl>",
+      "thread_id": "thread-3b3ce7ac1b3b",
+      "thread_depth": 1,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-15af7cb944c2",
+      "message_id": "<51F08461.20604@otago.ac.nz>",
+      "from_name": "John Williams",
+      "from_email_hash": "3723dc481a15bcd52358d13b3f53676a1cb81dc7cea3a1a5f958b0b0968c1ba5",
+      "date": "2013-07-25T12:50:25+11:00",
+      "subject": "[R-sig-DCM] Utility scores from mlogit/clogit for CBC",
+      "subject_clean": "Utility scores from mlogit/clogit for CBC",
+      "in_reply_to": "<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>",
+      "references": [
+        "<CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>",
+        "<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Jonathan and Chris,\n\nCould you both please join this list?  Every time a non-member posts to \nit I have to manually approve it (which is why your messages are slow to \nappear).\n\nThanks,\n\nJohn\n\nOn 25/07/13 12:46, Chris Chapman wrote:\n> Hi Jonathan --\n>\n> Yes, in order to estimate the model, it's necessary to use one of the\n> levels as the reference attribute. In classic regression terms, it is the\n> \"intercept\" and then the other levels are in reference to that. However,\n> when the utilities are reported, they are reported for all levels because\n> the utilities are zero-sum.\n>\n> For instance, suppose that we do regression gives utilities of Brand B =\n> 0.5 and Brand C = -0.7 (with Brand A as the reference). Sawtooth, etc.,\n> will then report Brand A = 0.2 in order to have sum(utility)==0.  Why?\n> Because it is a forced choice, any preference must pick one of the brands,\n> and thus p(A | B | C) == 1.0.  To get p(choice)==1.0, it requires\n> exp(utilities)==1.0, which requires sum(utilities) = 0 because exp(0)==1.\n>   Does that make sense?\n>\n> As for using R, there are several options and it depends partly on the\n> complexity of your analysis and how it was fielded. The package\n> \"ChoiceModelR\" is a fairly easy-to-use package that has much of the\n> functionality from bayesm but a simpler interface. There are even easier\n> options (such as my own Rcbc code) if you do not require the None option.\n> If you need None, then I'd suggest looking first at ChoiceModelR.\n>\n> I hope that helps,\n>\n> -- Chris\n>\n>\n> On Thu, Jul 25, 2013 at 3:41 AM, Jonathan Frye <jonathanmfrye at gmail.com>wrote:\n>\n>> Hello Everyone,\n>>\n>> I am a graduate student working on a CBC study. I want to give participants\n>> 3 choices per task with a None option, so I have been looking at doing a\n>> multinomial or conditional logit model. My issue is that in my experience,\n>> logistic regressions involve dummy coding or having levels of a factor\n>> compare with a base level. So if you have a factor with 3 attributes, the\n>> analysis yields 2 coeefficents which give their relation to the third\n>> attribute.\n>>\n>> I thought that the utility scores were equal to the coeeficients, but when\n>> I look at other analysis software such as XLstat or Sawtooth, they have a\n>> utility score for each attribute.\n>>\n>> Can anyone explain where I am going wrong? I would greatly appreciate it.\n>>\n>> I have also considered using the\n>> rhierMnlRwMixture<\n>> http://127.0.0.1:13720/help/library/bayesm/html/rhierMnlRwMixture.html>\n>> command\n>> in the bayesm package, but can not figure out if I am setting up the data\n>> correctly.\n>>\n>> Thanks for your time,\n>>\n>> Jonathan Frye\n>> New York University\n>>\n>>          [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-SIG-DCM mailing list\n>> R-SIG-DCM at r-project.org\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-SIG-DCM mailing list\n> R-SIG-DCM at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>",
+      "body_snippet": "Hi Jonathan and Chris,\n\nCould you both please join this list?  Every time a non-member posts to \nit I have to manually approve it (which is why your messages are slow to \nappear).\n\nThanks,\n\nJohn\n\nOn 2",
+      "thread_id": "thread-3b3ce7ac1b3b",
+      "thread_depth": 2,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-4118e541b0ec",
+      "message_id": "<51F0A340.9080608@dataanalyticscorp.com>",
+      "from_name": "Data Analytics Corp.",
+      "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
+      "date": "2013-07-25T00:02:08-04:00",
+      "subject": "[R-sig-DCM] Utility scores from mlogit/clogit for CBC",
+      "subject_clean": "Utility scores from mlogit/clogit for CBC",
+      "in_reply_to": "<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>",
+      "references": [
+        "<CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>",
+        "<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nAs a comment, the \"sum to zero\" is called effects coding, in contrast to \ndummy coding.  Dummy coding just uses 1 and 0 while effects coding uses \n1, 0, and -1.  For dummy coding, the estimates show the effects relative \nto the reference level, the one that's dropped.  The intercept is that \nreference level.  In effects coding, the estimates show the deviation of \nthe group means from the grand mean (in an unweighted situation).  The \nintercept is the grand mean of all the data across all groups so that \nthe estimates are the deviations from the intercept: estimate = group \nmean - grand mean = group mean - intercept.  Most choice models use \neffects coding.\n\nThanks,\n\nWalt\n\n________________________\n\nWalter R. Paczkowski, Ph.D.\nData Analytics Corp.\n44 Hamilton Lane\nPlainsboro, NJ 08536\n________________________\n(V) 609-936-8999\n(F) 609-936-3733\nwalt at dataanalyticscorp.com\nwww.dataanalyticscorp.com\n_____________________________________________________\n\n\nOn 7/24/2013 9:46 PM, Chris Chapman wrote:\n> Hi Jonathan --\n>\n> Yes, in order to estimate the model, it's necessary to use one of the\n> levels as the reference attribute. In classic regression terms, it is the\n> \"intercept\" and then the other levels are in reference to that. However,\n> when the utilities are reported, they are reported for all levels because\n> the utilities are zero-sum.\n>\n> For instance, suppose that we do regression gives utilities of Brand B =\n> 0.5 and Brand C = -0.7 (with Brand A as the reference). Sawtooth, etc.,\n> will then report Brand A = 0.2 in order to have sum(utility)==0.  Why?\n> Because it is a forced choice, any preference must pick one of the brands,\n> and thus p(A | B | C) == 1.0.  To get p(choice)==1.0, it requires\n> exp(utilities)==1.0, which requires sum(utilities) = 0 because exp(0)==1.\n>   Does that make sense?\n>\n> As for using R, there are several options and it depends partly on the\n> complexity of your analysis and how it was fielded. The package\n> \"ChoiceModelR\" is a fairly easy-to-use package that has much of the\n> functionality from bayesm but a simpler interface. There are even easier\n> options (such as my own Rcbc code) if you do not require the None option.\n> If you need None, then I'd suggest looking first at ChoiceModelR.\n>\n> I hope that helps,\n>\n> -- Chris\n>\n>\n> On Thu, Jul 25, 2013 at 3:41 AM, Jonathan Frye <jonathanmfrye at gmail.com>wrote:\n>\n>> Hello Everyone,\n>>\n>> I am a graduate student working on a CBC study. I want to give participants\n>> 3 choices per task with a None option, so I have been looking at doing a\n>> multinomial or conditional logit model. My issue is that in my experience,\n>> logistic regressions involve dummy coding or having levels of a factor\n>> compare with a base level. So if you have a factor with 3 attributes, the\n>> analysis yields 2 coeefficents which give their relation to the third\n>> attribute.\n>>\n>> I thought that the utility scores were equal to the coeeficients, but when\n>> I look at other analysis software such as XLstat or Sawtooth, they have a\n>> utility score for each attribute.\n>>\n>> Can anyone explain where I am going wrong? I would greatly appreciate it.\n>>\n>> I have also considered using the\n>> rhierMnlRwMixture<\n>> http://127.0.0.1:13720/help/library/bayesm/html/rhierMnlRwMixture.html>\n>> command\n>> in the bayesm package, but can not figure out if I am setting up the data\n>> correctly.\n>>\n>> Thanks for your time,\n>>\n>> Jonathan Frye\n>> New York University\n>>\n>>          [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-SIG-DCM mailing list\n>> R-SIG-DCM at r-project.org\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-SIG-DCM mailing list\n> R-SIG-DCM at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>\n>",
+      "body_snippet": "Hi,\n\nAs a comment, the \"sum to zero\" is called effects coding, in contrast to \ndummy coding.  Dummy coding just uses 1 and 0 while effects coding uses \n1, 0, and -1.  For dummy coding, the estimates s",
+      "thread_id": "thread-3b3ce7ac1b3b",
+      "thread_depth": 2,
+      "month": "2013-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3b3ce7ac1b3b",
+      "subject": "Utility scores from mlogit/clogit for CBC",
+      "message_count": 4,
+      "participants": [
+        "Chris Chapman",
+        "Data Analytics Corp.",
+        "John Williams",
+        "Jonathan Frye"
+      ],
+      "started": "2013-07-24T14:41:36-04:00",
+      "last_reply": "2013-07-25T00:02:08-04:00",
+      "root_message_id": "msg-3b3ce7ac1b3b"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+From jonathanmfrye at gmail.com  Wed Jul 24 20:41:36 2013
+From: jonathanmfrye at gmail.com (Jonathan Frye)
+Date: Wed, 24 Jul 2013 14:41:36 -0400
+Subject: [R-sig-DCM] Utility scores from mlogit/clogit for CBC
+Message-ID: <CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl>
+
+From cnchapman at gmail.com  Thu Jul 25 03:46:32 2013
+From: cnchapman at gmail.com (Chris Chapman)
+Date: Thu, 25 Jul 2013 10:46:32 +0900
+Subject: [R-sig-DCM] Utility scores from mlogit/clogit for CBC
+In-Reply-To: <CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>
+References: <CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>
+Message-ID: <CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl>
+
+From john.williams at otago.ac.nz  Thu Jul 25 03:50:25 2013
+From: john.williams at otago.ac.nz (John Williams)
+Date: Thu, 25 Jul 2013 12:50:25 +1100
+Subject: [R-sig-DCM] Utility scores from mlogit/clogit for CBC
+In-Reply-To: <CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>
+References: <CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>
+	<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>
+Message-ID: <51F08461.20604@otago.ac.nz>
+
+Hi Jonathan and Chris,
+
+Could you both please join this list?  Every time a non-member posts to 
+it I have to manually approve it (which is why your messages are slow to 
+appear).
+
+Thanks,
+
+John
+
+On 25/07/13 12:46, Chris Chapman wrote:
+> Hi Jonathan --
+>
+> Yes, in order to estimate the model, it's necessary to use one of the
+> levels as the reference attribute. In classic regression terms, it is the
+> "intercept" and then the other levels are in reference to that. However,
+> when the utilities are reported, they are reported for all levels because
+> the utilities are zero-sum.
+>
+> For instance, suppose that we do regression gives utilities of Brand B =
+> 0.5 and Brand C = -0.7 (with Brand A as the reference). Sawtooth, etc.,
+> will then report Brand A = 0.2 in order to have sum(utility)==0.  Why?
+> Because it is a forced choice, any preference must pick one of the brands,
+> and thus p(A | B | C) == 1.0.  To get p(choice)==1.0, it requires
+> exp(utilities)==1.0, which requires sum(utilities) = 0 because exp(0)==1.
+>   Does that make sense?
+>
+> As for using R, there are several options and it depends partly on the
+> complexity of your analysis and how it was fielded. The package
+> "ChoiceModelR" is a fairly easy-to-use package that has much of the
+> functionality from bayesm but a simpler interface. There are even easier
+> options (such as my own Rcbc code) if you do not require the None option.
+> If you need None, then I'd suggest looking first at ChoiceModelR.
+>
+> I hope that helps,
+>
+> -- Chris
+>
+>
+> On Thu, Jul 25, 2013 at 3:41 AM, Jonathan Frye <jonathanmfrye at gmail.com>wrote:
+>
+>> Hello Everyone,
+>>
+>> I am a graduate student working on a CBC study. I want to give participants
+>> 3 choices per task with a None option, so I have been looking at doing a
+>> multinomial or conditional logit model. My issue is that in my experience,
+>> logistic regressions involve dummy coding or having levels of a factor
+>> compare with a base level. So if you have a factor with 3 attributes, the
+>> analysis yields 2 coeefficents which give their relation to the third
+>> attribute.
+>>
+>> I thought that the utility scores were equal to the coeeficients, but when
+>> I look at other analysis software such as XLstat or Sawtooth, they have a
+>> utility score for each attribute.
+>>
+>> Can anyone explain where I am going wrong? I would greatly appreciate it.
+>>
+>> I have also considered using the
+>> rhierMnlRwMixture<
+>> http://127.0.0.1:13720/help/library/bayesm/html/rhierMnlRwMixture.html>
+>> command
+>> in the bayesm package, but can not figure out if I am setting up the data
+>> correctly.
+>>
+>> Thanks for your time,
+>>
+>> Jonathan Frye
+>> New York University
+>>
+>>          [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+
+
+From walt at dataanalyticscorp.com  Thu Jul 25 06:02:08 2013
+From: walt at dataanalyticscorp.com (Data Analytics Corp.)
+Date: Thu, 25 Jul 2013 00:02:08 -0400
+Subject: [R-sig-DCM] Utility scores from mlogit/clogit for CBC
+In-Reply-To: <CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>
+References: <CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>
+	<CAAHqzZj6Zd5yV+9XM8vyPNPy0hY2eBGugQWDZo5cveg7jqDAew@mail.gmail.com>
+Message-ID: <51F0A340.9080608@dataanalyticscorp.com>
+
+Hi,
+
+As a comment, the "sum to zero" is called effects coding, in contrast to 
+dummy coding.  Dummy coding just uses 1 and 0 while effects coding uses 
+1, 0, and -1.  For dummy coding, the estimates show the effects relative 
+to the reference level, the one that's dropped.  The intercept is that 
+reference level.  In effects coding, the estimates show the deviation of 
+the group means from the grand mean (in an unweighted situation).  The 
+intercept is the grand mean of all the data across all groups so that 
+the estimates are the deviations from the intercept: estimate = group 
+mean - grand mean = group mean - intercept.  Most choice models use 
+effects coding.
+
+Thanks,
+
+Walt
+
+________________________
+
+Walter R. Paczkowski, Ph.D.
+Data Analytics Corp.
+44 Hamilton Lane
+Plainsboro, NJ 08536
+________________________
+(V) 609-936-8999
+(F) 609-936-3733
+walt at dataanalyticscorp.com
+www.dataanalyticscorp.com
+_____________________________________________________
+
+
+On 7/24/2013 9:46 PM, Chris Chapman wrote:
+> Hi Jonathan --
+>
+> Yes, in order to estimate the model, it's necessary to use one of the
+> levels as the reference attribute. In classic regression terms, it is the
+> "intercept" and then the other levels are in reference to that. However,
+> when the utilities are reported, they are reported for all levels because
+> the utilities are zero-sum.
+>
+> For instance, suppose that we do regression gives utilities of Brand B =
+> 0.5 and Brand C = -0.7 (with Brand A as the reference). Sawtooth, etc.,
+> will then report Brand A = 0.2 in order to have sum(utility)==0.  Why?
+> Because it is a forced choice, any preference must pick one of the brands,
+> and thus p(A | B | C) == 1.0.  To get p(choice)==1.0, it requires
+> exp(utilities)==1.0, which requires sum(utilities) = 0 because exp(0)==1.
+>   Does that make sense?
+>
+> As for using R, there are several options and it depends partly on the
+> complexity of your analysis and how it was fielded. The package
+> "ChoiceModelR" is a fairly easy-to-use package that has much of the
+> functionality from bayesm but a simpler interface. There are even easier
+> options (such as my own Rcbc code) if you do not require the None option.
+> If you need None, then I'd suggest looking first at ChoiceModelR.
+>
+> I hope that helps,
+>
+> -- Chris
+>
+>
+> On Thu, Jul 25, 2013 at 3:41 AM, Jonathan Frye <jonathanmfrye at gmail.com>wrote:
+>
+>> Hello Everyone,
+>>
+>> I am a graduate student working on a CBC study. I want to give participants
+>> 3 choices per task with a None option, so I have been looking at doing a
+>> multinomial or conditional logit model. My issue is that in my experience,
+>> logistic regressions involve dummy coding or having levels of a factor
+>> compare with a base level. So if you have a factor with 3 attributes, the
+>> analysis yields 2 coeefficents which give their relation to the third
+>> attribute.
+>>
+>> I thought that the utility scores were equal to the coeeficients, but when
+>> I look at other analysis software such as XLstat or Sawtooth, they have a
+>> utility score for each attribute.
+>>
+>> Can anyone explain where I am going wrong? I would greatly appreciate it.
+>>
+>> I have also considered using the
+>> rhierMnlRwMixture<
+>> http://127.0.0.1:13720/help/library/bayesm/html/rhierMnlRwMixture.html>
+>> command
+>> in the bayesm package, but can not figure out if I am setting up the data
+>> correctly.
+>>
+>> Thanks for your time,
+>>
+>> Jonathan Frye
+>> New York University
+>>
+>>          [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-SIG-DCM mailing list
+>> R-SIG-DCM at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-SIG-DCM mailing list
+> R-SIG-DCM at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm
+>
+>
+
+

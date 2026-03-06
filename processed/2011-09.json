@@ -1,0 +1,68 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2011-09",
+  "messages": [
+    {
+      "id": "msg-6a443a964e2f",
+      "message_id": "<1314868072.82791.YahooMailRC@web29710.mail.ird.yahoo.com>",
+      "from_name": "Aline Deschamps",
+      "from_email_hash": "caa320216e001d888e544446c5779494ddcc334e03251d122ed5629a1f8abfc4",
+      "date": "2011-09-01T10:07:52+01:00",
+      "subject": "[R-sig-DCM] Re : Re : Re : Balanced design of experiments for CBC",
+      "subject_clean": "Re : Re : Re : Balanced design of experiments for CBC",
+      "in_reply_to": "<7ADD720CA6C5634FA7ADE02B53C990C423FCE2@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+      "references": [
+        "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
+        "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>",
+        "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
+        "<7ADD720CA6C5634FA7ADE02B53C990C41F0017@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+        "<1314799546.85755.YahooMailRC@web29714.mail.ird.yahoo.com>",
+        "<7ADD720CA6C5634FA7ADE02B53C990C423FCE2@TK5EX14MBXC293.redmond.corp.microsoft.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110901/9101cfd3/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110901/9101cfd3/attachment.pl>",
+      "thread_id": "thread-6a443a964e2f",
+      "thread_depth": 0,
+      "month": "2011-09"
+    },
+    {
+      "id": "msg-faa80983ee3b",
+      "message_id": "<7ADD720CA6C5634FA7ADE02B53C990C4240A63@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "e5489deb319b72c86de8f8981728913014c894c51d7b498896218a0a0d719526",
+      "date": "2011-09-01T14:43:39Z",
+      "subject": "[R-sig-DCM] Re : Re : Re : Balanced design of experiments for CBC",
+      "subject_clean": "Re : Re : Re : Balanced design of experiments for CBC",
+      "in_reply_to": "<1314868072.82791.YahooMailRC@web29710.mail.ird.yahoo.com>",
+      "references": [
+        "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
+        "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>",
+        "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
+        "<7ADD720CA6C5634FA7ADE02B53C990C41F0017@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+        "<1314799546.85755.YahooMailRC@web29714.mail.ird.yahoo.com>",
+        "<7ADD720CA6C5634FA7ADE02B53C990C423FCE2@TK5EX14MBXC293.redmond.corp.microsoft.com>",
+        "<1314868072.82791.YahooMailRC@web29710.mail.ird.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110901/48502434/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110901/48502434/attachment.pl>",
+      "thread_id": "thread-6a443a964e2f",
+      "thread_depth": 1,
+      "month": "2011-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6a443a964e2f",
+      "subject": "Re : Re : Re : Balanced design of experiments for CBC",
+      "message_count": 2,
+      "participants": [
+        "Aline Deschamps",
+        "Chris Chapman"
+      ],
+      "started": "2011-09-01T10:07:52+01:00",
+      "last_reply": "2011-09-01T14:43:39+00:00",
+      "root_message_id": "msg-6a443a964e2f"
+    }
+  ]
+}

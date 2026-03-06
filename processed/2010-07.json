@@ -1,0 +1,109 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2010-07",
+  "messages": [
+    {
+      "id": "msg-a3ddb3fe1007",
+      "message_id": "<D30F729B3BC6D94D94562FEC1BCBFFB52CE8AEDF@TK5EX14MBXC115.redmond.corp.microsoft.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "e5489deb319b72c86de8f8981728913014c894c51d7b498896218a0a0d719526",
+      "date": "2010-07-13T12:21:01Z",
+      "subject": "[R-sig-DCM] Testing the DCM list",
+      "subject_clean": "Testing the DCM list",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl>",
+      "thread_id": "thread-a3ddb3fe1007",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-12d64d3e50e6",
+      "message_id": "<4C3CCCED.6040901@otago.ac.nz>",
+      "from_name": "John Williams",
+      "from_email_hash": "3723dc481a15bcd52358d13b3f53676a1cb81dc7cea3a1a5f958b0b0968c1ba5",
+      "date": "2010-07-14T08:30:37+12:00",
+      "subject": "[R-sig-DCM] Welcome!",
+      "subject_clean": "Welcome!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Welcome to the R-SIG-DCM list.  This is just a short message to say hi, \nand to test that the system is actually working.  (After having existed \nfor about 24 hours and having less than a dozen members, already a \npossible problem has emerged.)\n\nNone of the list owners have had experience with Mailman management, so \nplease bear with us if things seem a bit flakey.  I am keen to help if \nyou do experience problems, so don't be shy in letting me know.\n\nCheers,\n\nJohn\n\n\n-- \nDepartment of Marketing\nUniversity of Otago\n\nhttp://marketing.otago.ac.nz/staff/williamsj.asp",
+      "body_snippet": "Welcome to the R-SIG-DCM list.  This is just a short message to say hi, \nand to test that the system is actually working.  (After having existed \nfor about 24 hours and having less than a dozen member",
+      "thread_id": "thread-12d64d3e50e6",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-97c8e25c92b8",
+      "message_id": "<12E932690323AB4EBEEB21BAA28D90DE2E27C3254A@EXCHANGE07.foodstandards.gov.au>",
+      "from_name": "Gosse, Michelle",
+      "from_email_hash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
+      "date": "2010-07-14T06:56:46+10:00",
+      "subject": "[R-sig-DCM] Welcome! [Sec: UNOFFICIAL]",
+      "subject_clean": "Welcome! [Sec: UNOFFICIAL]",
+      "in_reply_to": "<4C3CCCED.6040901@otago.ac.nz>",
+      "references": [
+        "<4C3CCCED.6040901@otago.ac.nz>"
+      ],
+      "body_plain": "I found the process to join this group to be as quick as the process to join the R mail list.\n\nI'm looking forward to seeing the discussions develop in this list. :)\n\nCheers\nMichelle\n\n-----Original Message-----\nFrom: r-sig-dcm-bounces at r-project.org [mailto:r-sig-dcm-bounces at r-project.org] On Behalf Of John Williams\nSent: Wednesday, 14 July 2010 8:31 AM\nTo: r-sig-dcm at r-project.org\nSubject: [R-sig-DCM] Welcome!\n\nWelcome to the R-SIG-DCM list.  This is just a short message to say hi, \nand to test that the system is actually working.  (After having existed \nfor about 24 hours and having less than a dozen members, already a \npossible problem has emerged.)\n\nNone of the list owners have had experience with Mailman management, so \nplease bear with us if things seem a bit flakey.  I am keen to help if \nyou do experience problems, so don't be shy in letting me know.\n\nCheers,\n\nJohn\n\n\n-- \nDepartment of Marketing\nUniversity of Otago\n\nhttp://marketing.otago.ac.nz/staff/williamsj.asp\n\n_______________________________________________\nR-SIG-DCM mailing list\nR-SIG-DCM at r-project.org\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n\n**********************************************************************\nThis email and any files transmitted with it are confidential and\nintended solely for the use of the individual or entity to whom they\nare addressed. If you have received this email in error please notify\nthe system manager.\n\nThis footnote also confirms that this email message has been swept by\nMIMEsweeper for the presence of computer viruses.\n\nwww.clearswift.com\n**********************************************************************",
+      "body_snippet": "I found the process to join this group to be as quick as the process to join the R mail list.\n\nI'm looking forward to seeing the discussions develop in this list. :)\n\nCheers\nMichelle\n\n-----Original Me",
+      "thread_id": "thread-12d64d3e50e6",
+      "thread_depth": 1,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-4904a4655854",
+      "message_id": "<742055.87020.qm@web113906.mail.gq1.yahoo.com>",
+      "from_name": "Hey Sky",
+      "from_email_hash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
+      "date": "2010-07-26T08:24:21-07:00",
+      "subject": "[R-sig-DCM] a  discrete choice dynamic model with panel data",
+      "subject_clean": "a  discrete choice dynamic model with panel data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hey, all\n\nI just visited this forum but it seems few people here. I am totally new to R \nand \n\nsome kind new to the dynamic mode. any suggestion are appreciated.\n\nI am modeling the labour market choices, such as un/employment, schooling? etc. \npeople choose one of them in each period to maximize their present value of life \ntime utility.\n\nhere is my model:\nVijt = X_ij*beta + ipsilon_ijt\nipsilon_ijt = mu_j + sigma_t\n\nwhere?i means individual, j the decision/choice and t the period.\nthus Vijt?is the utility individual i can get from choice j at time t.\nX are know vector of variables with parameter vector beta\n\nipsilon is the residual which consist of a well behaved sigma and \nunkonw hetrogeneity among individuals mu, which have the form\nmu_j = alpa_j + gama_j*eta\n\neta is individual types. that is, the intercept and slope of the laten \nvariable mu both depend on the his/er choice. the model will be\nVijt = X_ij*beta + alpa_j + gama_j*eta + sigma_t\n\nalpa, beta, gama, plus eta,?are parameters that need to be estimated.\n\nthe model will be estimated with simulated maximum likelihood method\nwith probability for individual i and choice j at peroid t. \n\nPRijt?= exp(Vijt)/(exp(Vi1t)+ exp(Vi2t)+ ....+ exp(ViJt))\n\nif I write?a function to represent the upper maximu likelihood for all i at each \nt and every choice j,?can the command optim be used to get the estimates? any \nsuggestions are apprecited\n\n\nNan",
+      "body_snippet": "Hey, all\n\nI just visited this forum but it seems few people here. I am totally new to R \nand \n\nsome kind new to the dynamic mode. any suggestion are appreciated.\n\nI am modeling the labour market choic",
+      "thread_id": "thread-4904a4655854",
+      "thread_depth": 0,
+      "month": "2010-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a3ddb3fe1007",
+      "subject": "Testing the DCM list",
+      "message_count": 1,
+      "participants": [
+        "Chris Chapman"
+      ],
+      "started": "2010-07-13T12:21:01+00:00",
+      "last_reply": "2010-07-13T12:21:01+00:00",
+      "root_message_id": "msg-a3ddb3fe1007"
+    },
+    {
+      "id": "thread-12d64d3e50e6",
+      "subject": "Welcome!",
+      "message_count": 2,
+      "participants": [
+        "Gosse, Michelle",
+        "John Williams"
+      ],
+      "started": "2010-07-14T08:30:37+12:00",
+      "last_reply": "2010-07-14T06:56:46+10:00",
+      "root_message_id": "msg-12d64d3e50e6"
+    },
+    {
+      "id": "thread-4904a4655854",
+      "subject": "a  discrete choice dynamic model with panel data",
+      "message_count": 1,
+      "participants": [
+        "Hey Sky"
+      ],
+      "started": "2010-07-26T08:24:21-07:00",
+      "last_reply": "2010-07-26T08:24:21-07:00",
+      "root_message_id": "msg-4904a4655854"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "list": "r-sig-dcm",
+  "description": "",
+  "month": "2017-05",
+  "messages": [
+    {
+      "id": "msg-0e8bbeed1358",
+      "message_id": "<CAJ+=fQnbjwi0cARzTsQkyFiGY=NV51xF214WLb9=2rCWprzrBQ@mail.gmail.com>",
+      "from_name": "ravibabu manchala",
+      "from_email_hash": "670661c30d42307702aac25a0e5e7b1906fc9cf1064dc1fc663a98f6b22bb642",
+      "date": "2017-05-01T22:18:37+05:30",
+      "subject": "[R-sig-DCM] Any package which can handle choice based sampling",
+      "subject_clean": "Any package which can handle choice based sampling",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nI am new to the group. I am looking for a choice based sampling estimator\nin R. Is there any package in R which handles this?\n\nAny leads would be most welcome. Thanks a lot in advance.\n\nregards\nRavibabu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\n\nI am new to the group. I am looking for a choice based sampling estimator\nin R. Is there any package in R which handles this?\n\nAny leads would be most welcome. Thanks a lot in advance.\n\nre",
+      "thread_id": "thread-0e8bbeed1358",
+      "thread_depth": 0,
+      "month": "2017-05"
+    },
+    {
+      "id": "msg-8cf8cbd798f7",
+      "message_id": "<CAAHqzZg+208qAOjk-kXQ0Re_2bvEu+56g+ksqeYCOxrXq6m-zw@mail.gmail.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "7289e5ee8bb84f2cc65b36841b0e5c1a1b88d6d7ce168b7898e99f2d187af774",
+      "date": "2017-05-01T12:02:51-05:00",
+      "subject": "[R-sig-DCM] Any package which can handle choice based sampling",
+      "subject_clean": "Any package which can handle choice based sampling",
+      "in_reply_to": "<CAJ+=fQnbjwi0cARzTsQkyFiGY=NV51xF214WLb9=2rCWprzrBQ@mail.gmail.com>",
+      "references": [
+        "<CAJ+=fQnbjwi0cARzTsQkyFiGY=NV51xF214WLb9=2rCWprzrBQ@mail.gmail.com>"
+      ],
+      "body_plain": "What exactly are you trying to do?\n\nAmong the R packages that can handle estimation of choice models are\nmlogit, bayesm, RSGHB, and ChoiceModelR. Choice-based conjoint models can\nbe fit by any of those. (For example, see Chapter 13 here:\nhttp://r-marketing.r-forge.r-project.org/Instructor/slides-index.html)\n\n\nOn Mon, May 1, 2017 at 11:48 AM, ravibabu manchala <\nravibabumanchala at gmail.com> wrote:\n\n> Hello all,\n>\n> I am new to the group. I am looking for a choice based sampling estimator\n> in R. Is there any package in R which handles this?\n>\n> Any leads would be most welcome. Thanks a lot in advance.\n>\n> regards\n> Ravibabu\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-SIG-DCM mailing list\n> R-SIG-DCM at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "What exactly are you trying to do?\n\nAmong the R packages that can handle estimation of choice models are\nmlogit, bayesm, RSGHB, and ChoiceModelR. Choice-based conjoint models can\nbe fit by any of thos",
+      "thread_id": "thread-0e8bbeed1358",
+      "thread_depth": 1,
+      "month": "2017-05"
+    },
+    {
+      "id": "msg-ea41a0edc17a",
+      "message_id": "<CAJ+=fQ=a-gTBNtdQJ6_bq6OSfcqgRcUzBE+Yj5tXG3sduc53hQ@mail.gmail.com>",
+      "from_name": "ravibabu manchala",
+      "from_email_hash": "670661c30d42307702aac25a0e5e7b1906fc9cf1064dc1fc663a98f6b22bb642",
+      "date": "2017-05-02T07:04:00+05:30",
+      "subject": "[R-sig-DCM] Any package which can handle choice based sampling",
+      "subject_clean": "Any package which can handle choice based sampling",
+      "in_reply_to": "<CAAHqzZg+208qAOjk-kXQ0Re_2bvEu+56g+ksqeYCOxrXq6m-zw@mail.gmail.com>",
+      "references": [
+        "<CAJ+=fQnbjwi0cARzTsQkyFiGY=NV51xF214WLb9=2rCWprzrBQ@mail.gmail.com>",
+        "<CAAHqzZg+208qAOjk-kXQ0Re_2bvEu+56g+ksqeYCOxrXq6m-zw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Cris\n\nThanks for the response and thanks for the link. For a newcomer to R it has\nsome very good material.\n\n\nI am aware of some of the models and that they can perform for Choice based\nconjoint (CBC) but I am not looking for CBC. I am looking at a case where\nsampling is not random but samples are decided as per the choices.\n\nI will clarify with an example. Suppose A, B and C are three choices in a\nuniversal set with shares of 75%,  24% and 1% respectively. As it is\ndifficult to get the samples for C if you go for random sample you\nconcentrate and get more samples for C. Say our sample proportions are 60%,\n30% and 10% for A, B and C respectively. There are estimators designed for\nsuch samples (pl. see https://eml.berkeley.edu/~mcfadden/discrete/ch2.pdf\nfor a review).\n\nTo the extent I have reviewed none the packages are designed to estimate\nwith choice based samples.\n\nMay be I am missing something.\n\nwith warm regards\nRavibabu\n\nOn 1 May 2017 at 22:32, Chris Chapman <cnchapman at gmail.com> wrote:\n\n> What exactly are you trying to do?\n>\n> Among the R packages that can handle estimation of choice models are\n> mlogit, bayesm, RSGHB, and ChoiceModelR. Choice-based conjoint models can\n> be fit by any of those. (For example, see Chapter 13 here:\n> http://r-marketing.r-forge.r-project.org/Instructor/slides-index.html)\n>\n>\n> On Mon, May 1, 2017 at 11:48 AM, ravibabu manchala <\n> ravibabumanchala at gmail.com> wrote:\n>\n>> Hello all,\n>>\n>> I am new to the group. I am looking for a choice based sampling estimator\n>> in R. Is there any package in R which handles this?\n>>\n>> Any leads would be most welcome. Thanks a lot in advance.\n>>\n>> regards\n>> Ravibabu\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-SIG-DCM mailing list\n>> R-SIG-DCM at r-project.org\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>>\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Cris\n\nThanks for the response and thanks for the link. For a newcomer to R it has\nsome very good material.\n\n\nI am aware of some of the models and that they can perform for Choice based\nconjoint (",
+      "thread_id": "thread-0e8bbeed1358",
+      "thread_depth": 2,
+      "month": "2017-05"
+    },
+    {
+      "id": "msg-42939da4e7d4",
+      "message_id": "<CAAHqzZgHCwoQtbFMomLwvxbjzpOpQ0JSo8a1hmNaDrdwCrREOA@mail.gmail.com>",
+      "from_name": "Chris Chapman",
+      "from_email_hash": "7289e5ee8bb84f2cc65b36841b0e5c1a1b88d6d7ce168b7898e99f2d187af774",
+      "date": "2017-05-02T09:12:42-05:00",
+      "subject": "[R-sig-DCM] Any package which can handle choice based sampling",
+      "subject_clean": "Any package which can handle choice based sampling",
+      "in_reply_to": "<CAJ+=fQ=a-gTBNtdQJ6_bq6OSfcqgRcUzBE+Yj5tXG3sduc53hQ@mail.gmail.com>",
+      "references": [
+        "<CAJ+=fQnbjwi0cARzTsQkyFiGY=NV51xF214WLb9=2rCWprzrBQ@mail.gmail.com>",
+        "<CAAHqzZg+208qAOjk-kXQ0Re_2bvEu+56g+ksqeYCOxrXq6m-zw@mail.gmail.com>",
+        "<CAJ+=fQ=a-gTBNtdQJ6_bq6OSfcqgRcUzBE+Yj5tXG3sduc53hQ@mail.gmail.com>"
+      ],
+      "body_plain": "Not sure -- personally don't know of an existing function for such models,\nbut you could write your own likelihood function. That should work with\nbayesm (see the reference book), and is documented for RSGHB:\nhttps://www.rdocumentation.org/packages/RSGHB/versions/1.1.2/topics/doHB\n\nThe main question would be confidence about correctness of both the custom\nlikelihood function and in assumptions of the estimator itself (e.g.,\nwhether it's robust for an arbitrary likelihood landscape).\n\nOn Mon, May 1, 2017 at 8:34 PM, ravibabu manchala <\nravibabumanchala at gmail.com> wrote:\n\n> Dear Cris\n>\n> Thanks for the response and thanks for the link. For a newcomer to R it\n> has some very good material.\n>\n>\n> I am aware of some of the models and that they can perform for Choice\n> based conjoint (CBC) but I am not looking for CBC. I am looking at a case\n> where sampling is not random but samples are decided as per the choices.\n>\n> I will clarify with an example. Suppose A, B and C are three choices in a\n> universal set with shares of 75%,  24% and 1% respectively. As it is\n> difficult to get the samples for C if you go for random sample you\n> concentrate and get more samples for C. Say our sample proportions are 60%,\n> 30% and 10% for A, B and C respectively. There are estimators designed for\n> such samples (pl. see https://eml.berkeley.edu/~mcfadden/discrete/ch2.pdf\n> for a review).\n>\n> To the extent I have reviewed none the packages are designed to estimate\n> with choice based samples.\n>\n> May be I am missing something.\n>\n> with warm regards\n> Ravibabu\n>\n>\n> On 1 May 2017 at 22:32, Chris Chapman <cnchapman at gmail.com> wrote:\n>\n>> What exactly are you trying to do?\n>>\n>> Among the R packages that can handle estimation of choice models are\n>> mlogit, bayesm, RSGHB, and ChoiceModelR. Choice-based conjoint models can\n>> be fit by any of those. (For example, see Chapter 13 here:\n>> http://r-marketing.r-forge.r-project.org/Instructor/slides-index.html)\n>>\n>>\n>> On Mon, May 1, 2017 at 11:48 AM, ravibabu manchala <\n>> ravibabumanchala at gmail.com> wrote:\n>>\n>>> Hello all,\n>>>\n>>> I am new to the group. I am looking for a choice based sampling estimator\n>>> in R. Is there any package in R which handles this?\n>>>\n>>> Any leads would be most welcome. Thanks a lot in advance.\n>>>\n>>> regards\n>>> Ravibabu\n>>>\n>>>         [[alternative HTML version deleted]]\n>>>\n>>> _______________________________________________\n>>> R-SIG-DCM mailing list\n>>> R-SIG-DCM at r-project.org\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>>>\n>>\n>>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Not sure -- personally don't know of an existing function for such models,\nbut you could write your own likelihood function. That should work with\nbayesm (see the reference book), and is documented fo",
+      "thread_id": "thread-0e8bbeed1358",
+      "thread_depth": 3,
+      "month": "2017-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0e8bbeed1358",
+      "subject": "Any package which can handle choice based sampling",
+      "message_count": 4,
+      "participants": [
+        "Chris Chapman",
+        "ravibabu manchala"
+      ],
+      "started": "2017-05-01T22:18:37+05:30",
+      "last_reply": "2017-05-02T09:12:42-05:00",
+      "root_message_id": "msg-0e8bbeed1358"
+    }
+  ]
+}
