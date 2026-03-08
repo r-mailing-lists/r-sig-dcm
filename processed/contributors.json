@@ -1,0 +1,179 @@
+[
+  {
+    "name": "Chris Chapman",
+    "slug": "chris-chapman",
+    "messageCount": 18,
+    "firstDate": "2010-07-13T12:21:01+00:00",
+    "lastDate": "2017-05-02T09:12:42-05:00",
+    "yearlyActivity": {
+      "2010": 1,
+      "2011": 14,
+      "2013": 1,
+      "2017": 2
+    }
+  },
+  {
+    "name": "Dimitri Liakhovitski",
+    "slug": "dimitri-liakhovitski",
+    "messageCount": 14,
+    "firstDate": "2010-08-13T09:31:52-04:00",
+    "lastDate": "2011-03-03T12:39:09-05:00",
+    "yearlyActivity": {
+      "2010": 2,
+      "2011": 12
+    }
+  },
+  {
+    "name": "Wirth, Ralph (GfK SE)",
+    "slug": "wirth-ralph-gfk-se",
+    "messageCount": 7,
+    "firstDate": "2011-02-02T16:36:37+01:00",
+    "lastDate": "2011-03-03T17:00:30+01:00",
+    "yearlyActivity": {
+      "2011": 7
+    }
+  },
+  {
+    "name": "Data Analytics Corp.",
+    "slug": "data-analytics-corp",
+    "messageCount": 5,
+    "firstDate": "2011-01-29T08:36:17-05:00",
+    "lastDate": "2013-07-25T00:02:08-04:00",
+    "yearlyActivity": {
+      "2011": 4,
+      "2013": 1
+    }
+  },
+  {
+    "name": "Aline Deschamps",
+    "slug": "aline-deschamps",
+    "messageCount": 4,
+    "firstDate": "2011-07-25T10:12:24+01:00",
+    "lastDate": "2011-09-01T10:07:52+01:00",
+    "yearlyActivity": {
+      "2011": 4
+    }
+  },
+  {
+    "name": "John Williams",
+    "slug": "john-williams",
+    "messageCount": 3,
+    "firstDate": "2010-07-14T08:30:37+12:00",
+    "lastDate": "2013-07-25T12:50:25+11:00",
+    "yearlyActivity": {
+      "2010": 2,
+      "2013": 1
+    }
+  },
+  {
+    "name": "Johnson, Timothy",
+    "slug": "johnson-timothy",
+    "messageCount": 2,
+    "firstDate": "2011-02-01T11:38:05+00:00",
+    "lastDate": "2011-03-04T12:49:33+00:00",
+    "yearlyActivity": {
+      "2011": 2
+    }
+  },
+  {
+    "name": "Hey Sky",
+    "slug": "hey-sky",
+    "messageCount": 2,
+    "firstDate": "2010-07-26T08:24:21-07:00",
+    "lastDate": "2013-04-08T08:12:31-07:00",
+    "yearlyActivity": {
+      "2010": 1,
+      "2013": 1
+    }
+  },
+  {
+    "name": "John Tapper",
+    "slug": "john-tapper",
+    "messageCount": 2,
+    "firstDate": "2011-10-21T11:31:05-05:00",
+    "lastDate": "2011-10-21T11:31:08-05:00",
+    "yearlyActivity": {
+      "2011": 2
+    }
+  },
+  {
+    "name": "ravibabu manchala",
+    "slug": "ravibabu-manchala",
+    "messageCount": 2,
+    "firstDate": "2017-05-01T22:18:37+05:30",
+    "lastDate": "2017-05-02T07:04:00+05:30",
+    "yearlyActivity": {
+      "2017": 2
+    }
+  },
+  {
+    "name": "Marcel Gerds",
+    "slug": "marcel-gerds",
+    "messageCount": 2,
+    "firstDate": "2011-02-02T09:48:49-08:00",
+    "lastDate": "2011-02-02T13:17:31-08:00",
+    "yearlyActivity": {
+      "2011": 2
+    }
+  },
+  {
+    "name": "Bryan Orme",
+    "slug": "bryan-orme",
+    "messageCount": 1,
+    "firstDate": "2011-07-25T08:42:55-06:00",
+    "lastDate": "2011-07-25T08:42:55-06:00",
+    "yearlyActivity": {
+      "2011": 1
+    }
+  },
+  {
+    "name": "Shan, Ming (GfK Kynetec US)",
+    "slug": "shan-ming-gfk-kynetec-us",
+    "messageCount": 1,
+    "firstDate": "2011-02-01T14:09:05+01:00",
+    "lastDate": "2011-02-01T14:09:05+01:00",
+    "yearlyActivity": {
+      "2011": 1
+    }
+  },
+  {
+    "name": "Michael Conklin",
+    "slug": "michael-conklin",
+    "messageCount": 1,
+    "firstDate": "2011-03-03T15:56:01+00:00",
+    "lastDate": "2011-03-03T15:56:01+00:00",
+    "yearlyActivity": {
+      "2011": 1
+    }
+  },
+  {
+    "name": "mzyphur m@iii@g oii i@st@ts@org",
+    "slug": "mzyphur-m-iii-g-oii-i-st-ts-org",
+    "messageCount": 1,
+    "firstDate": "2024-09-16T21:20:00+00:00",
+    "lastDate": "2024-09-16T21:20:00+00:00",
+    "yearlyActivity": {
+      "2024": 1
+    }
+  },
+  {
+    "name": "Gosse, Michelle",
+    "slug": "gosse-michelle",
+    "messageCount": 1,
+    "firstDate": "2010-07-14T06:56:46+10:00",
+    "lastDate": "2010-07-14T06:56:46+10:00",
+    "yearlyActivity": {
+      "2010": 1
+    }
+  },
+  {
+    "name": "Jonathan Frye",
+    "slug": "jonathan-frye",
+    "messageCount": 1,
+    "firstDate": "2013-07-24T14:41:36-04:00",
+    "lastDate": "2013-07-24T14:41:36-04:00",
+    "yearlyActivity": {
+      "2013": 1
+    }
+  }
+]
