@@ -87,16 +87,6 @@
     }
   },
   {
-    "name": "Johnson, Timothy",
-    "slug": "johnson-timothy",
-    "messageCount": 2,
-    "firstDate": "2011-02-01T11:38:05+00:00",
-    "lastDate": "2011-03-04T12:49:33+00:00",
-    "yearlyActivity": {
-      "2011": 2
-    }
-  },
-  {
     "name": "ravibabu manchala",
     "slug": "ravibabu-manchala",
     "messageCount": 2,
@@ -117,13 +107,13 @@
     }
   },
   {
-    "name": "mzyphur m@iii@g oii i@st@ts@org",
-    "slug": "mzyphur-m-iii-g-oii-i-st-ts-org",
-    "messageCount": 1,
-    "firstDate": "2024-09-16T21:20:00+00:00",
-    "lastDate": "2024-09-16T21:20:00+00:00",
+    "name": "Johnson, Timothy",
+    "slug": "johnson-timothy",
+    "messageCount": 2,
+    "firstDate": "2011-02-01T11:38:05+00:00",
+    "lastDate": "2011-03-04T12:49:33+00:00",
     "yearlyActivity": {
-      "2024": 1
+      "2011": 2
     }
   },
   {
@@ -137,13 +127,13 @@
     }
   },
   {
-    "name": "Gosse, Michelle",
-    "slug": "gosse-michelle",
+    "name": "Jonathan Frye",
+    "slug": "jonathan-frye",
     "messageCount": 1,
-    "firstDate": "2010-07-14T06:56:46+10:00",
-    "lastDate": "2010-07-14T06:56:46+10:00",
+    "firstDate": "2013-07-24T14:41:36-04:00",
+    "lastDate": "2013-07-24T14:41:36-04:00",
     "yearlyActivity": {
-      "2010": 1
+      "2013": 1
     }
   },
   {
@@ -167,13 +157,23 @@
     }
   },
   {
-    "name": "Jonathan Frye",
-    "slug": "jonathan-frye",
+    "name": "mzyphur m@iii@g oii i@st@ts@org",
+    "slug": "mzyphur-m-iii-g-oii-i-st-ts-org",
     "messageCount": 1,
-    "firstDate": "2013-07-24T14:41:36-04:00",
-    "lastDate": "2013-07-24T14:41:36-04:00",
+    "firstDate": "2024-09-16T21:20:00+00:00",
+    "lastDate": "2024-09-16T21:20:00+00:00",
     "yearlyActivity": {
-      "2013": 1
+      "2024": 1
+    }
+  },
+  {
+    "name": "Gosse, Michelle",
+    "slug": "gosse-michelle",
+    "messageCount": 1,
+    "firstDate": "2010-07-14T06:56:46+10:00",
+    "lastDate": "2010-07-14T06:56:46+10:00",
+    "yearlyActivity": {
+      "2010": 1
     }
   }
 ]
