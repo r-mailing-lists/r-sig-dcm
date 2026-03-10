@@ -69,18 +69,6 @@
     }
   },
   {
-    "name": "John Williams",
-    "slug": "john-williams",
-    "emailHash": "3723dc481a15bcd52358d13b3f53676a1cb81dc7cea3a1a5f958b0b0968c1ba5",
-    "messageCount": 3,
-    "firstDate": "2010-07-14T08:30:37+12:00",
-    "lastDate": "2013-07-25T12:50:25+11:00",
-    "yearlyActivity": {
-      "2010": 2,
-      "2013": 1
-    }
-  },
-  {
     "name": "Chris Chapman",
     "slug": "chris-chapman",
     "emailHash": "7289e5ee8bb84f2cc65b36841b0e5c1a1b88d6d7ce168b7898e99f2d187af774",
@@ -93,12 +81,24 @@
     }
   },
   {
-    "name": "Marcel Gerds",
-    "slug": "marcel-gerds",
-    "emailHash": "d18e23d997d564e81d465cecf985480766ed601772cbd47cbf4445f4f8c23a42",
+    "name": "John Williams",
+    "slug": "john-williams",
+    "emailHash": "3723dc481a15bcd52358d13b3f53676a1cb81dc7cea3a1a5f958b0b0968c1ba5",
+    "messageCount": 3,
+    "firstDate": "2010-07-14T08:30:37+12:00",
+    "lastDate": "2013-07-25T12:50:25+11:00",
+    "yearlyActivity": {
+      "2010": 2,
+      "2013": 1
+    }
+  },
+  {
+    "name": "John Tapper",
+    "slug": "john-tapper",
+    "emailHash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
     "messageCount": 2,
-    "firstDate": "2011-02-02T09:48:49-08:00",
-    "lastDate": "2011-02-02T13:17:31-08:00",
+    "firstDate": "2011-10-21T11:31:05-05:00",
+    "lastDate": "2011-10-21T11:31:08-05:00",
     "yearlyActivity": {
       "2011": 2
     }
@@ -115,14 +115,15 @@
     }
   },
   {
-    "name": "John Tapper",
-    "slug": "john-tapper",
-    "emailHash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
+    "name": "Hey Sky",
+    "slug": "hey-sky",
+    "emailHash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
     "messageCount": 2,
-    "firstDate": "2011-10-21T11:31:05-05:00",
-    "lastDate": "2011-10-21T11:31:08-05:00",
+    "firstDate": "2010-07-26T08:24:21-07:00",
+    "lastDate": "2013-04-08T08:12:31-07:00",
     "yearlyActivity": {
-      "2011": 2
+      "2010": 1,
+      "2013": 1
     }
   },
   {
@@ -137,37 +138,25 @@
     }
   },
   {
-    "name": "Hey Sky",
-    "slug": "hey-sky",
-    "emailHash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
+    "name": "Marcel Gerds",
+    "slug": "marcel-gerds",
+    "emailHash": "d18e23d997d564e81d465cecf985480766ed601772cbd47cbf4445f4f8c23a42",
     "messageCount": 2,
-    "firstDate": "2010-07-26T08:24:21-07:00",
-    "lastDate": "2013-04-08T08:12:31-07:00",
+    "firstDate": "2011-02-02T09:48:49-08:00",
+    "lastDate": "2011-02-02T13:17:31-08:00",
     "yearlyActivity": {
-      "2010": 1,
-      "2013": 1
+      "2011": 2
     }
   },
   {
-    "name": "Bryan Orme",
-    "slug": "bryan-orme",
-    "emailHash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
+    "name": "Gosse, Michelle",
+    "slug": "gosse-michelle",
+    "emailHash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
     "messageCount": 1,
-    "firstDate": "2011-07-25T08:42:55-06:00",
-    "lastDate": "2011-07-25T08:42:55-06:00",
+    "firstDate": "2010-07-14T06:56:46+10:00",
+    "lastDate": "2010-07-14T06:56:46+10:00",
     "yearlyActivity": {
-      "2011": 1
-    }
-  },
-  {
-    "name": "Jonathan Frye",
-    "slug": "jonathan-frye",
-    "emailHash": "092208f3e2929108184a0c8c016b22c8b75aa9560f3561a41acadd49bafb4afb",
-    "messageCount": 1,
-    "firstDate": "2013-07-24T14:41:36-04:00",
-    "lastDate": "2013-07-24T14:41:36-04:00",
-    "yearlyActivity": {
-      "2013": 1
+      "2010": 1
     }
   },
   {
@@ -182,14 +171,14 @@
     }
   },
   {
-    "name": "Michael Conklin",
-    "slug": "michael-conklin",
-    "emailHash": "43b24181149e03f6b10d24573ea985f44753c0bff267319f3de6366fcc0daae4",
+    "name": "Jonathan Frye",
+    "slug": "jonathan-frye",
+    "emailHash": "092208f3e2929108184a0c8c016b22c8b75aa9560f3561a41acadd49bafb4afb",
     "messageCount": 1,
-    "firstDate": "2011-03-03T15:56:01+00:00",
-    "lastDate": "2011-03-03T15:56:01+00:00",
+    "firstDate": "2013-07-24T14:41:36-04:00",
+    "lastDate": "2013-07-24T14:41:36-04:00",
     "yearlyActivity": {
-      "2011": 1
+      "2013": 1
     }
   },
   {
@@ -204,14 +193,25 @@
     }
   },
   {
-    "name": "Gosse, Michelle",
-    "slug": "gosse-michelle",
-    "emailHash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
+    "name": "Michael Conklin",
+    "slug": "michael-conklin",
+    "emailHash": "43b24181149e03f6b10d24573ea985f44753c0bff267319f3de6366fcc0daae4",
     "messageCount": 1,
-    "firstDate": "2010-07-14T06:56:46+10:00",
-    "lastDate": "2010-07-14T06:56:46+10:00",
+    "firstDate": "2011-03-03T15:56:01+00:00",
+    "lastDate": "2011-03-03T15:56:01+00:00",
     "yearlyActivity": {
-      "2010": 1
+      "2011": 1
+    }
+  },
+  {
+    "name": "Bryan Orme",
+    "slug": "bryan-orme",
+    "emailHash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
+    "messageCount": 1,
+    "firstDate": "2011-07-25T08:42:55-06:00",
+    "lastDate": "2011-07-25T08:42:55-06:00",
+    "yearlyActivity": {
+      "2011": 1
     }
   }
 ]
