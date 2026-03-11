@@ -8,7 +8,7 @@
       "message_id": "<1314799546.85755.YahooMailRC@web29714.mail.ird.yahoo.com>",
       "from_name": "Aline Deschamps",
       "from_email_hash": "caa320216e001d888e544446c5779494ddcc334e03251d122ed5629a1f8abfc4",
-      "date": "2011-08-31T15:05:46+01:00",
+      "date": "2011-08-31T14:05:46Z",
       "subject": "[R-sig-DCM] Re :  Re :  Balanced design of experiments for CBC",
       "subject_clean": "Re :  Re :  Balanced design of experiments for CBC",
       "in_reply_to": "<7ADD720CA6C5634FA7ADE02B53C990C41F0017@TK5EX14MBXC293.redmond.corp.microsoft.com>",
@@ -56,8 +56,8 @@
         "Aline Deschamps",
         "Chris Chapman"
       ],
-      "started": "2011-08-31T15:05:46+01:00",
-      "last_reply": "2011-08-31T15:17:04+00:00",
+      "started": "2011-08-31T14:05:46Z",
+      "last_reply": "2011-08-31T15:17:04Z",
       "root_message_id": "msg-c7d255265b7a"
     }
   ]

@@ -24,7 +24,7 @@
       "message_id": "<4C3CCCED.6040901@otago.ac.nz>",
       "from_name": "John Williams",
       "from_email_hash": "3723dc481a15bcd52358d13b3f53676a1cb81dc7cea3a1a5f958b0b0968c1ba5",
-      "date": "2010-07-14T08:30:37+12:00",
+      "date": "2010-07-13T20:30:37Z",
       "subject": "[R-sig-DCM] Welcome!",
       "subject_clean": "Welcome!",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<12E932690323AB4EBEEB21BAA28D90DE2E27C3254A@EXCHANGE07.foodstandards.gov.au>",
       "from_name": "Gosse, Michelle",
       "from_email_hash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
-      "date": "2010-07-14T06:56:46+10:00",
+      "date": "2010-07-13T20:56:46Z",
       "subject": "[R-sig-DCM] Welcome! [Sec: UNOFFICIAL]",
       "subject_clean": "Welcome! [Sec: UNOFFICIAL]",
       "in_reply_to": "<4C3CCCED.6040901@otago.ac.nz>",
@@ -58,7 +58,7 @@
       "message_id": "<742055.87020.qm@web113906.mail.gq1.yahoo.com>",
       "from_name": "Hey Sky",
       "from_email_hash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
-      "date": "2010-07-26T08:24:21-07:00",
+      "date": "2010-07-26T15:24:21Z",
       "subject": "[R-sig-DCM] a  discrete choice dynamic model with panel data",
       "subject_clean": "a  discrete choice dynamic model with panel data",
       "in_reply_to": null,
@@ -78,8 +78,8 @@
       "participants": [
         "Chris Chapman"
       ],
-      "started": "2010-07-13T12:21:01+00:00",
-      "last_reply": "2010-07-13T12:21:01+00:00",
+      "started": "2010-07-13T12:21:01Z",
+      "last_reply": "2010-07-13T12:21:01Z",
       "root_message_id": "msg-a3ddb3fe1007"
     },
     {
@@ -90,8 +90,8 @@
         "Gosse, Michelle",
         "John Williams"
       ],
-      "started": "2010-07-14T08:30:37+12:00",
-      "last_reply": "2010-07-14T06:56:46+10:00",
+      "started": "2010-07-13T20:30:37Z",
+      "last_reply": "2010-07-13T20:56:46Z",
       "root_message_id": "msg-12d64d3e50e6"
     },
     {
@@ -101,8 +101,8 @@
       "participants": [
         "Hey Sky"
       ],
-      "started": "2010-07-26T08:24:21-07:00",
-      "last_reply": "2010-07-26T08:24:21-07:00",
+      "started": "2010-07-26T15:24:21Z",
+      "last_reply": "2010-07-26T15:24:21Z",
       "root_message_id": "msg-4904a4655854"
     }
   ]

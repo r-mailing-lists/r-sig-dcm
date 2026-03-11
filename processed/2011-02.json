@@ -26,7 +26,7 @@
       "message_id": "<C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>",
       "from_name": "Shan, Ming (GfK Kynetec US)",
       "from_email_hash": "074abe43b0c43cd2520e104826780c5b3cb70049dd5a1b64caba515f25897258",
-      "date": "2011-02-01T14:09:05+01:00",
+      "date": "2011-02-01T13:09:05Z",
       "subject": "[R-sig-DCM] segmenting consumers after a dcm",
       "subject_clean": "segmenting consumers after a dcm",
       "in_reply_to": "<mailman.13.1296558004.12605.r-sig-dcm@r-project.org>",
@@ -44,7 +44,7 @@
       "message_id": "<4D480797.4040808@dataanalyticscorp.com>",
       "from_name": "Data Analytics Corp.",
       "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
-      "date": "2011-02-01T08:16:07-05:00",
+      "date": "2011-02-01T13:16:07Z",
       "subject": "[R-sig-DCM] segmenting consumers after a dcm",
       "subject_clean": "segmenting consumers after a dcm",
       "in_reply_to": "<C446AF2D3829D845AD62F267317B12B0F7EF2D1B@NUEW-EXMBCRA1.gfk.com>",
@@ -83,7 +83,7 @@
       "message_id": "<C59CC56FB0448245A59147448F0C0FCB01C33E48EB@NUEW-EXMBCRA1.gfk.com>",
       "from_name": "Wirth, Ralph (GfK SE)",
       "from_email_hash": "42fb3501994dcb90257f7072958358c8df11514a9f4690539057642d995cfdb8",
-      "date": "2011-02-02T16:36:37+01:00",
+      "date": "2011-02-02T15:36:37Z",
       "subject": "[R-sig-DCM] segmenting consumers after a dcm",
       "subject_clean": "segmenting consumers after a dcm",
       "in_reply_to": "<D30F729B3BC6D94D94562FEC1BCBFFB53DE83D8F@TK5EX14MBXC115.redmond.corp.microsoft.com>",
@@ -104,7 +104,7 @@
       "message_id": "<4D499900.8060003@berkeley.edu>",
       "from_name": "Marcel Gerds",
       "from_email_hash": "d18e23d997d564e81d465cecf985480766ed601772cbd47cbf4445f4f8c23a42",
-      "date": "2011-02-02T09:48:49-08:00",
+      "date": "2011-02-02T17:48:49Z",
       "subject": "[R-sig-DCM] Inclusion of interaction without its main effect",
       "subject_clean": "Inclusion of interaction without its main effect",
       "in_reply_to": null,
@@ -120,7 +120,7 @@
       "message_id": "<4D49C9EB.9090902@berkeley.edu>",
       "from_name": "Marcel Gerds",
       "from_email_hash": "d18e23d997d564e81d465cecf985480766ed601772cbd47cbf4445f4f8c23a42",
-      "date": "2011-02-02T13:17:31-08:00",
+      "date": "2011-02-02T21:17:31Z",
       "subject": "[R-sig-DCM] Inclusion of interaction without its main effect",
       "subject_clean": "Inclusion of interaction without its main effect",
       "in_reply_to": null,
@@ -136,7 +136,7 @@
       "message_id": "<AANLkTi=XGcODyys_4ME+nyr7jFEGOE2r7q8wmSCgM7hP@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-23T10:22:50-05:00",
+      "date": "2011-02-23T15:22:50Z",
       "subject": "[R-sig-DCM] segmenting consumers after a dcm",
       "subject_clean": "segmenting consumers after a dcm",
       "in_reply_to": "<C59CC56FB0448245A59147448F0C0FCB01C33E48EB@NUEW-EXMBCRA1.gfk.com>",
@@ -158,7 +158,7 @@
       "message_id": "<AANLkTi=Ep6m_fuBZ2BqZKffKYT-zMDD4VVZp=reV1hB1@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-23T10:24:54-05:00",
+      "date": "2011-02-23T15:24:54Z",
       "subject": "[R-sig-DCM] Inclusion of interaction without its main effect",
       "subject_clean": "Inclusion of interaction without its main effect",
       "in_reply_to": "<4D49C9EB.9090902@berkeley.edu>",
@@ -176,7 +176,7 @@
       "message_id": "<AANLkTi=k1dtDacTG-jBOhXfL4A88qrFncLDdFgjvHHpY@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-23T10:37:13-05:00",
+      "date": "2011-02-23T15:37:13Z",
       "subject": "[R-sig-DCM] number of iterations",
       "subject_clean": "number of iterations",
       "in_reply_to": null,
@@ -229,7 +229,7 @@
       "message_id": "<AANLkTimwYE5sygB3ynvJrW+kL72TEohY43DVeCnDHYcd@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-23T11:17:43-05:00",
+      "date": "2011-02-23T16:17:43Z",
       "subject": "[R-sig-DCM] number of iterations",
       "subject_clean": "number of iterations",
       "in_reply_to": "<COL115-DS136D8CBBB12605B1E8403EB0DB0@phx.gbl>",
@@ -268,7 +268,7 @@
       "message_id": "<C59CC56FB0448245A59147448F0C0FCB01C41447C1@NUEW-EXMBCRA1.gfk.com>",
       "from_name": "Wirth, Ralph (GfK SE)",
       "from_email_hash": "42fb3501994dcb90257f7072958358c8df11514a9f4690539057642d995cfdb8",
-      "date": "2011-02-23T18:56:24+01:00",
+      "date": "2011-02-23T17:56:24Z",
       "subject": "[R-sig-DCM] number of iterations",
       "subject_clean": "number of iterations",
       "in_reply_to": null,
@@ -284,7 +284,7 @@
       "message_id": "<AANLkTikeQhBr4wvUZ34bPSyoQQdrFYJD4Q6h5YgFSWqf@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-23T13:58:20-05:00",
+      "date": "2011-02-23T18:58:20Z",
       "subject": "[R-sig-DCM] number of iterations",
       "subject_clean": "number of iterations",
       "in_reply_to": "<C59CC56FB0448245A59147448F0C0FCB01C41447C1@NUEW-EXMBCRA1.gfk.com>",
@@ -302,7 +302,7 @@
       "message_id": "<AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-24T12:31:36-05:00",
+      "date": "2011-02-24T17:31:36Z",
       "subject": "[R-sig-DCM] Weighting in DCMs",
       "subject_clean": "Weighting in DCMs",
       "in_reply_to": null,
@@ -318,7 +318,7 @@
       "message_id": "<4D66996A.8090701@dataanalyticscorp.com>",
       "from_name": "Data Analytics Corp.",
       "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
-      "date": "2011-02-24T12:46:18-05:00",
+      "date": "2011-02-24T17:46:18Z",
       "subject": "[R-sig-DCM] Weighting in DCMs",
       "subject_clean": "Weighting in DCMs",
       "in_reply_to": "<AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>",
@@ -355,7 +355,7 @@
       "message_id": "<AANLkTinYKKPStEa+gVP1yvBgbP0ix-sGvg1r9K++O4AX@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2011-02-24T13:33:44-05:00",
+      "date": "2011-02-24T18:33:44Z",
       "subject": "[R-sig-DCM] Weighting in DCMs",
       "subject_clean": "Weighting in DCMs",
       "in_reply_to": "<COL115-DS135E66A5A8E98527E9A519B0DA0@phx.gbl>",
@@ -396,7 +396,7 @@
       "message_id": "<C59CC56FB0448245A59147448F0C0FCB01C48669BF@NUEW-EXMBCRA1.gfk.com>",
       "from_name": "Wirth, Ralph (GfK SE)",
       "from_email_hash": "42fb3501994dcb90257f7072958358c8df11514a9f4690539057642d995cfdb8",
-      "date": "2011-02-25T14:10:15+01:00",
+      "date": "2011-02-25T13:10:15Z",
       "subject": "[R-sig-DCM] Weighting in DCMs",
       "subject_clean": "Weighting in DCMs",
       "in_reply_to": "<AANLkTin29pbHniwnsk83eE7yM3HP5FJEzfxjCpkVcDwn@mail.gmail.com>",
@@ -418,8 +418,8 @@
       "participants": [
         "Johnson, Timothy"
       ],
-      "started": "2011-02-01T11:38:05+00:00",
-      "last_reply": "2011-02-01T11:38:05+00:00",
+      "started": "2011-02-01T11:38:05Z",
+      "last_reply": "2011-02-01T11:38:05Z",
       "root_message_id": "msg-c51e95d6a802"
     },
     {
@@ -433,8 +433,8 @@
         "Shan, Ming (GfK Kynetec US)",
         "Wirth, Ralph (GfK SE)"
       ],
-      "started": "2011-02-01T14:09:05+01:00",
-      "last_reply": "2011-02-23T10:22:50-05:00",
+      "started": "2011-02-01T13:09:05Z",
+      "last_reply": "2011-02-23T15:22:50Z",
       "root_message_id": "msg-f03ec064df91"
     },
     {
@@ -444,8 +444,8 @@
       "participants": [
         "Marcel Gerds"
       ],
-      "started": "2011-02-02T09:48:49-08:00",
-      "last_reply": "2011-02-02T09:48:49-08:00",
+      "started": "2011-02-02T17:48:49Z",
+      "last_reply": "2011-02-02T17:48:49Z",
       "root_message_id": "msg-5675657040bd"
     },
     {
@@ -457,8 +457,8 @@
         "Dimitri Liakhovitski",
         "Marcel Gerds"
       ],
-      "started": "2011-02-02T13:17:31-08:00",
-      "last_reply": "2011-02-23T15:53:14+00:00",
+      "started": "2011-02-02T21:17:31Z",
+      "last_reply": "2011-02-23T15:53:14Z",
       "root_message_id": "msg-2512f9a646c7"
     },
     {
@@ -469,8 +469,8 @@
         "Chris Chapman",
         "Dimitri Liakhovitski"
       ],
-      "started": "2011-02-23T10:37:13-05:00",
-      "last_reply": "2011-02-23T17:47:03+00:00",
+      "started": "2011-02-23T15:37:13Z",
+      "last_reply": "2011-02-23T17:47:03Z",
       "root_message_id": "msg-70e9ac66c710"
     },
     {
@@ -481,8 +481,8 @@
         "Dimitri Liakhovitski",
         "Wirth, Ralph (GfK SE)"
       ],
-      "started": "2011-02-23T18:56:24+01:00",
-      "last_reply": "2011-02-23T13:58:20-05:00",
+      "started": "2011-02-23T17:56:24Z",
+      "last_reply": "2011-02-23T18:58:20Z",
       "root_message_id": "msg-9065b1456b2b"
     },
     {
@@ -495,8 +495,8 @@
         "Dimitri Liakhovitski",
         "Wirth, Ralph (GfK SE)"
       ],
-      "started": "2011-02-24T12:31:36-05:00",
-      "last_reply": "2011-02-25T14:10:15+01:00",
+      "started": "2011-02-24T17:31:36Z",
+      "last_reply": "2011-02-25T13:10:15Z",
       "root_message_id": "msg-ce6de0e86d44"
     }
   ]

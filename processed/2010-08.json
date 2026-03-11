@@ -8,7 +8,7 @@
       "message_id": "<4C631491.9060408@otago.ac.nz>",
       "from_name": "John Williams",
       "from_email_hash": "3723dc481a15bcd52358d13b3f53676a1cb81dc7cea3a1a5f958b0b0968c1ba5",
-      "date": "2010-08-12T09:22:25+12:00",
+      "date": "2010-08-11T21:22:25Z",
       "subject": "[R-sig-DCM] Fwd: [R] Choice Design -- partial profile",
       "subject_clean": "Choice Design -- partial profile",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<AANLkTimXG-_RTVjXWzha8GAY2YV-qtJ+KV_o9QWG4mc8@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2010-08-13T09:31:52-04:00",
+      "date": "2010-08-13T13:31:52Z",
       "subject": "[R-sig-DCM] Fwd: [R] Choice Design -- partial profile",
       "subject_clean": "Choice Design -- partial profile",
       "in_reply_to": "<4C631491.9060408@otago.ac.nz>",
@@ -42,7 +42,7 @@
       "message_id": "<AANLkTikROC1nMSoJDQj20k26NAq57uttpz7qF6z+1KH=@mail.gmail.com>",
       "from_name": "Dimitri Liakhovitski",
       "from_email_hash": "e6259cc60132ca40936713a7e8940a0d5eadc0d66f97a2a0d92aeb421970aa69",
-      "date": "2010-08-13T09:34:49-04:00",
+      "date": "2010-08-13T13:34:49Z",
       "subject": "[R-sig-DCM] Fwd: [R] Choice Design -- partial profile",
       "subject_clean": "Choice Design -- partial profile",
       "in_reply_to": "<AANLkTimXG-_RTVjXWzha8GAY2YV-qtJ+KV_o9QWG4mc8@mail.gmail.com>",
@@ -66,8 +66,8 @@
         "Dimitri Liakhovitski",
         "John Williams"
       ],
-      "started": "2010-08-12T09:22:25+12:00",
-      "last_reply": "2010-08-13T09:34:49-04:00",
+      "started": "2010-08-11T21:22:25Z",
+      "last_reply": "2010-08-13T13:34:49Z",
       "root_message_id": "msg-ea08be37bd35"
     }
   ]

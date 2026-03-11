@@ -8,7 +8,7 @@
       "message_id": "<1365433951.24053.YahooMailNeo@web160806.mail.bf1.yahoo.com>",
       "from_name": "Hey Sky",
       "from_email_hash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
-      "date": "2013-04-08T08:12:31-07:00",
+      "date": "2013-04-08T15:12:31Z",
       "subject": "[R-sig-DCM] ::",
       "subject_clean": "::",
       "in_reply_to": null,
@@ -28,8 +28,8 @@
       "participants": [
         "Hey Sky"
       ],
-      "started": "2013-04-08T08:12:31-07:00",
-      "last_reply": "2013-04-08T08:12:31-07:00",
+      "started": "2013-04-08T15:12:31Z",
+      "last_reply": "2013-04-08T15:12:31Z",
       "root_message_id": "msg-60f036d8c567"
     }
   ]

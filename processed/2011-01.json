@@ -8,7 +8,7 @@
       "message_id": "<4D4417D1.1090602@dataanalyticscorp.com>",
       "from_name": "Data Analytics Corp.",
       "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
-      "date": "2011-01-29T08:36:17-05:00",
+      "date": "2011-01-29T13:36:17Z",
       "subject": "[R-sig-DCM] Incorporating a \"None\" or constant alternative in a stated choice experiment",
       "subject_clean": "Incorporating a \"None\" or constant alternative in a stated choice experiment",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<4D471336.2090009@dataanalyticscorp.com>",
       "from_name": "Data Analytics Corp.",
       "from_email_hash": "4a3c7a98af6f95e819e753d09839cd8e6c7028534b31379e095019849fa6d49b",
-      "date": "2011-01-31T14:53:26-05:00",
+      "date": "2011-01-31T19:53:26Z",
       "subject": "[R-sig-DCM] segmenting consumers after a dcm",
       "subject_clean": "segmenting consumers after a dcm",
       "in_reply_to": null,
@@ -44,8 +44,8 @@
       "participants": [
         "Data Analytics Corp."
       ],
-      "started": "2011-01-29T08:36:17-05:00",
-      "last_reply": "2011-01-29T08:36:17-05:00",
+      "started": "2011-01-29T13:36:17Z",
+      "last_reply": "2011-01-29T13:36:17Z",
       "root_message_id": "msg-ade43d4502b4"
     },
     {
@@ -55,8 +55,8 @@
       "participants": [
         "Data Analytics Corp."
       ],
-      "started": "2011-01-31T14:53:26-05:00",
-      "last_reply": "2011-01-31T14:53:26-05:00",
+      "started": "2011-01-31T19:53:26Z",
+      "last_reply": "2011-01-31T19:53:26Z",
       "root_message_id": "msg-cc7bb5127f62"
     }
   ]

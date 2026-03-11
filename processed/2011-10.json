@@ -8,7 +8,7 @@
       "message_id": "<CAFDUNpT+bee-aQsTY=vn7WBVkoVCRM0TX4-GQ1FNpRMnq573Hg@mail.gmail.com>",
       "from_name": "John Tapper",
       "from_email_hash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
-      "date": "2011-10-21T11:31:05-05:00",
+      "date": "2011-10-21T16:31:05Z",
       "subject": "[R-sig-DCM] PPCE In R",
       "subject_clean": "PPCE In R",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAFDUNpQLPs-yWpvYghx_Q-_dOrsRiz9gMmv4uZZdMT+_wd7kzw@mail.gmail.com>",
       "from_name": "John Tapper",
       "from_email_hash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
-      "date": "2011-10-21T11:31:08-05:00",
+      "date": "2011-10-21T16:31:08Z",
       "subject": "[R-sig-DCM] PPCE In R",
       "subject_clean": "PPCE In R",
       "in_reply_to": null,
@@ -44,8 +44,8 @@
       "participants": [
         "John Tapper"
       ],
-      "started": "2011-10-21T11:31:05-05:00",
-      "last_reply": "2011-10-21T11:31:05-05:00",
+      "started": "2011-10-21T16:31:05Z",
+      "last_reply": "2011-10-21T16:31:05Z",
       "root_message_id": "msg-ca96ca37fd38"
     },
     {
@@ -55,8 +55,8 @@
       "participants": [
         "John Tapper"
       ],
-      "started": "2011-10-21T11:31:08-05:00",
-      "last_reply": "2011-10-21T11:31:08-05:00",
+      "started": "2011-10-21T16:31:08Z",
+      "last_reply": "2011-10-21T16:31:08Z",
       "root_message_id": "msg-f68c56f58716"
     }
   ]

@@ -8,7 +8,7 @@
       "message_id": "<1311585144.48062.YahooMailRC@web29712.mail.ird.yahoo.com>",
       "from_name": "Aline Deschamps",
       "from_email_hash": "caa320216e001d888e544446c5779494ddcc334e03251d122ed5629a1f8abfc4",
-      "date": "2011-07-25T10:12:24+01:00",
+      "date": "2011-07-25T09:12:24Z",
       "subject": "[R-sig-DCM] Balanced design of experiments for CBC",
       "subject_clean": "Balanced design of experiments for CBC",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
       "from_name": "Aline Deschamps",
       "from_email_hash": "caa320216e001d888e544446c5779494ddcc334e03251d122ed5629a1f8abfc4",
-      "date": "2011-07-25T15:33:04+01:00",
+      "date": "2011-07-25T14:33:04Z",
       "subject": "[R-sig-DCM] Re :  Balanced design of experiments for CBC",
       "subject_clean": "Re :  Balanced design of experiments for CBC",
       "in_reply_to": "<773F00EC3C27458F8FAA66C134B2BA92@Sawtooth.local>",
@@ -43,7 +43,7 @@
       "message_id": "<0F0E7CF0FE3B433AA615403C1328F3FF@Sawtooth.local>",
       "from_name": "Bryan Orme",
       "from_email_hash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
-      "date": "2011-07-25T08:42:55-06:00",
+      "date": "2011-07-25T14:42:55Z",
       "subject": "[R-sig-DCM] Re :  Balanced design of experiments for CBC",
       "subject_clean": "Re :  Balanced design of experiments for CBC",
       "in_reply_to": "<1311604384.22750.YahooMailRC@web29708.mail.ird.yahoo.com>",
@@ -87,8 +87,8 @@
       "participants": [
         "Aline Deschamps"
       ],
-      "started": "2011-07-25T10:12:24+01:00",
-      "last_reply": "2011-07-25T10:12:24+01:00",
+      "started": "2011-07-25T09:12:24Z",
+      "last_reply": "2011-07-25T09:12:24Z",
       "root_message_id": "msg-b478379844e3"
     },
     {
@@ -100,8 +100,8 @@
         "Bryan Orme",
         "Chris Chapman"
       ],
-      "started": "2011-07-25T15:33:04+01:00",
-      "last_reply": "2011-07-25T14:49:31+00:00",
+      "started": "2011-07-25T14:33:04Z",
+      "last_reply": "2011-07-25T14:49:31Z",
       "root_message_id": "msg-7f75d64d9b16"
     }
   ]
