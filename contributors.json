@@ -94,6 +94,17 @@
     }
   },
   {
+    "name": "Marcel Gerds",
+    "slug": "marcel-gerds",
+    "emailHash": "b61125c9844c700b76238e716ccaa82480162190a08921d8b241c452e2d7ae01",
+    "messageCount": 2,
+    "firstDate": "2011-02-02T17:48:49Z",
+    "lastDate": "2011-02-02T21:17:31Z",
+    "yearlyActivity": {
+      "2011": 2
+    }
+  },
+  {
     "name": "Hey Sky",
     "slug": "hey-sky",
     "emailHash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
@@ -103,17 +114,6 @@
     "yearlyActivity": {
       "2010": 1,
       "2013": 1
-    }
-  },
-  {
-    "name": "Marcel Gerds",
-    "slug": "marcel-gerds",
-    "emailHash": "b61125c9844c700b76238e716ccaa82480162190a08921d8b241c452e2d7ae01",
-    "messageCount": 2,
-    "firstDate": "2011-02-02T17:48:49Z",
-    "lastDate": "2011-02-02T21:17:31Z",
-    "yearlyActivity": {
-      "2011": 2
     }
   },
   {
@@ -139,34 +139,12 @@
     }
   },
   {
-    "name": "Michael Conklin",
-    "slug": "michael-conklin",
-    "emailHash": "32abc16a200fd21232d7656dff3c4baac4ad86b0c674f0b17625d3c7dedc8af1",
-    "messageCount": 1,
-    "firstDate": "2011-03-03T15:56:01Z",
-    "lastDate": "2011-03-03T15:56:01Z",
-    "yearlyActivity": {
-      "2011": 1
-    }
-  },
-  {
     "name": "Shan, Ming (GfK Kynetec US)",
     "slug": "shan-ming-gfk-kynetec-us",
     "emailHash": "074abe43b0c43cd2520e104826780c5b3cb70049dd5a1b64caba515f25897258",
     "messageCount": 1,
     "firstDate": "2011-02-01T13:09:05Z",
     "lastDate": "2011-02-01T13:09:05Z",
-    "yearlyActivity": {
-      "2011": 1
-    }
-  },
-  {
-    "name": "Bryan Orme",
-    "slug": "bryan-orme",
-    "emailHash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
-    "messageCount": 1,
-    "firstDate": "2011-07-25T14:42:55Z",
-    "lastDate": "2011-07-25T14:42:55Z",
     "yearlyActivity": {
       "2011": 1
     }
@@ -191,6 +169,28 @@
     "lastDate": "2024-09-16T21:20:00Z",
     "yearlyActivity": {
       "2024": 1
+    }
+  },
+  {
+    "name": "Michael Conklin",
+    "slug": "michael-conklin",
+    "emailHash": "32abc16a200fd21232d7656dff3c4baac4ad86b0c674f0b17625d3c7dedc8af1",
+    "messageCount": 1,
+    "firstDate": "2011-03-03T15:56:01Z",
+    "lastDate": "2011-03-03T15:56:01Z",
+    "yearlyActivity": {
+      "2011": 1
+    }
+  },
+  {
+    "name": "Bryan Orme",
+    "slug": "bryan-orme",
+    "emailHash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
+    "messageCount": 1,
+    "firstDate": "2011-07-25T14:42:55Z",
+    "lastDate": "2011-07-25T14:42:55Z",
+    "yearlyActivity": {
+      "2011": 1
     }
   }
 ]
