@@ -94,12 +94,12 @@
     }
   },
   {
-    "name": "Marcel Gerds",
-    "slug": "marcel-gerds",
-    "emailHash": "b61125c9844c700b76238e716ccaa82480162190a08921d8b241c452e2d7ae01",
+    "name": "Johnson, Timothy",
+    "slug": "johnson-timothy",
+    "emailHash": "6771fea6620489d55168e6ba90ef0aeae9e569b77fc9daeea6490eadb3092f96",
     "messageCount": 2,
-    "firstDate": "2011-02-02T17:48:49Z",
-    "lastDate": "2011-02-02T21:17:31Z",
+    "firstDate": "2011-02-01T11:38:05Z",
+    "lastDate": "2011-03-04T12:49:33Z",
     "yearlyActivity": {
       "2011": 2
     }
@@ -117,36 +117,14 @@
     }
   },
   {
-    "name": "Johnson, Timothy",
-    "slug": "johnson-timothy",
-    "emailHash": "6771fea6620489d55168e6ba90ef0aeae9e569b77fc9daeea6490eadb3092f96",
+    "name": "Marcel Gerds",
+    "slug": "marcel-gerds",
+    "emailHash": "b61125c9844c700b76238e716ccaa82480162190a08921d8b241c452e2d7ae01",
     "messageCount": 2,
-    "firstDate": "2011-02-01T11:38:05Z",
-    "lastDate": "2011-03-04T12:49:33Z",
+    "firstDate": "2011-02-02T17:48:49Z",
+    "lastDate": "2011-02-02T21:17:31Z",
     "yearlyActivity": {
       "2011": 2
-    }
-  },
-  {
-    "name": "Gosse, Michelle",
-    "slug": "gosse-michelle",
-    "emailHash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
-    "messageCount": 1,
-    "firstDate": "2010-07-13T20:56:46Z",
-    "lastDate": "2010-07-13T20:56:46Z",
-    "yearlyActivity": {
-      "2010": 1
-    }
-  },
-  {
-    "name": "Shan, Ming (GfK Kynetec US)",
-    "slug": "shan-ming-gfk-kynetec-us",
-    "emailHash": "074abe43b0c43cd2520e104826780c5b3cb70049dd5a1b64caba515f25897258",
-    "messageCount": 1,
-    "firstDate": "2011-02-01T13:09:05Z",
-    "lastDate": "2011-02-01T13:09:05Z",
-    "yearlyActivity": {
-      "2011": 1
     }
   },
   {
@@ -161,14 +139,14 @@
     }
   },
   {
-    "name": "mzyphur m@iii@g oii i@st@ts@org",
-    "slug": "mzyphur-m-iii-g-oii-i-st-ts-org",
-    "emailHash": "252b54e096b1cc2b7cae76e00ed703f3596525227cfc47687b655cf5c7e64f69",
+    "name": "Shan, Ming (GfK Kynetec US)",
+    "slug": "shan-ming-gfk-kynetec-us",
+    "emailHash": "074abe43b0c43cd2520e104826780c5b3cb70049dd5a1b64caba515f25897258",
     "messageCount": 1,
-    "firstDate": "2024-09-16T21:20:00Z",
-    "lastDate": "2024-09-16T21:20:00Z",
+    "firstDate": "2011-02-01T13:09:05Z",
+    "lastDate": "2011-02-01T13:09:05Z",
     "yearlyActivity": {
-      "2024": 1
+      "2011": 1
     }
   },
   {
@@ -191,6 +169,28 @@
     "lastDate": "2011-07-25T14:42:55Z",
     "yearlyActivity": {
       "2011": 1
+    }
+  },
+  {
+    "name": "mzyphur m@iii@g oii i@st@ts@org",
+    "slug": "mzyphur-m-iii-g-oii-i-st-ts-org",
+    "emailHash": "252b54e096b1cc2b7cae76e00ed703f3596525227cfc47687b655cf5c7e64f69",
+    "messageCount": 1,
+    "firstDate": "2024-09-16T21:20:00Z",
+    "lastDate": "2024-09-16T21:20:00Z",
+    "yearlyActivity": {
+      "2024": 1
+    }
+  },
+  {
+    "name": "Gosse, Michelle",
+    "slug": "gosse-michelle",
+    "emailHash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
+    "messageCount": 1,
+    "firstDate": "2010-07-13T20:56:46Z",
+    "lastDate": "2010-07-13T20:56:46Z",
+    "yearlyActivity": {
+      "2010": 1
     }
   }
 ]
