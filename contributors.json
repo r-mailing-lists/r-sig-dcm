@@ -72,17 +72,6 @@
     }
   },
   {
-    "name": "Johnson, Timothy",
-    "slug": "johnson-timothy",
-    "emailHash": "6771fea6620489d55168e6ba90ef0aeae9e569b77fc9daeea6490eadb3092f96",
-    "messageCount": 2,
-    "firstDate": "2011-02-01T11:38:05Z",
-    "lastDate": "2011-03-04T12:49:33Z",
-    "yearlyActivity": {
-      "2011": 2
-    }
-  },
-  {
     "name": "ravibabu manchala",
     "slug": "ravibabu-manchala",
     "emailHash": "670661c30d42307702aac25a0e5e7b1906fc9cf1064dc1fc663a98f6b22bb642",
@@ -128,6 +117,17 @@
     }
   },
   {
+    "name": "Johnson, Timothy",
+    "slug": "johnson-timothy",
+    "emailHash": "6771fea6620489d55168e6ba90ef0aeae9e569b77fc9daeea6490eadb3092f96",
+    "messageCount": 2,
+    "firstDate": "2011-02-01T11:38:05Z",
+    "lastDate": "2011-03-04T12:49:33Z",
+    "yearlyActivity": {
+      "2011": 2
+    }
+  },
+  {
     "name": "Shan, Ming (GfK Kynetec US)",
     "slug": "shan-ming-gfk-kynetec-us",
     "emailHash": "074abe43b0c43cd2520e104826780c5b3cb70049dd5a1b64caba515f25897258",
@@ -161,6 +161,17 @@
     }
   },
   {
+    "name": "Bryan Orme",
+    "slug": "bryan-orme",
+    "emailHash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
+    "messageCount": 1,
+    "firstDate": "2011-07-25T14:42:55Z",
+    "lastDate": "2011-07-25T14:42:55Z",
+    "yearlyActivity": {
+      "2011": 1
+    }
+  },
+  {
     "name": "Gosse, Michelle",
     "slug": "gosse-michelle",
     "emailHash": "09087b036e03a6f8bc5c8a109505915f2eab6056d59a959a1f2a67072a1be242",
@@ -178,17 +189,6 @@
     "messageCount": 1,
     "firstDate": "2011-03-03T15:56:01Z",
     "lastDate": "2011-03-03T15:56:01Z",
-    "yearlyActivity": {
-      "2011": 1
-    }
-  },
-  {
-    "name": "Bryan Orme",
-    "slug": "bryan-orme",
-    "emailHash": "474fffc038109747d941ef2d6c4f6a81f55df943aaa5a41fa36943f93a5491af",
-    "messageCount": 1,
-    "firstDate": "2011-07-25T14:42:55Z",
-    "lastDate": "2011-07-25T14:42:55Z",
     "yearlyActivity": {
       "2011": 1
     }
