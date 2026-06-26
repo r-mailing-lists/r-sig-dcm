@@ -72,6 +72,17 @@
     }
   },
   {
+    "name": "John Tapper",
+    "slug": "john-tapper",
+    "emailHash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
+    "messageCount": 2,
+    "firstDate": "2011-10-21T16:31:05Z",
+    "lastDate": "2011-10-21T16:31:08Z",
+    "yearlyActivity": {
+      "2011": 2
+    }
+  },
+  {
     "name": "Hey Sky",
     "slug": "hey-sky",
     "emailHash": "98357741f6e9c8881a27e3a95c35e78b313be20aa1647b23eecd34ffd1113dff",
@@ -84,12 +95,12 @@
     }
   },
   {
-    "name": "Marcel Gerds",
-    "slug": "marcel-gerds",
-    "emailHash": "b61125c9844c700b76238e716ccaa82480162190a08921d8b241c452e2d7ae01",
+    "name": "Johnson, Timothy",
+    "slug": "johnson-timothy",
+    "emailHash": "6771fea6620489d55168e6ba90ef0aeae9e569b77fc9daeea6490eadb3092f96",
     "messageCount": 2,
-    "firstDate": "2011-02-02T17:48:49Z",
-    "lastDate": "2011-02-02T21:17:31Z",
+    "firstDate": "2011-02-01T11:38:05Z",
+    "lastDate": "2011-03-04T12:49:33Z",
     "yearlyActivity": {
       "2011": 2
     }
@@ -106,25 +117,25 @@
     }
   },
   {
-    "name": "John Tapper",
-    "slug": "john-tapper",
-    "emailHash": "56e7442c623663248bfbc2f489bab4a75a2b57cac8e831aaa71d3a6839bb57c7",
+    "name": "Marcel Gerds",
+    "slug": "marcel-gerds",
+    "emailHash": "b61125c9844c700b76238e716ccaa82480162190a08921d8b241c452e2d7ae01",
     "messageCount": 2,
-    "firstDate": "2011-10-21T16:31:05Z",
-    "lastDate": "2011-10-21T16:31:08Z",
+    "firstDate": "2011-02-02T17:48:49Z",
+    "lastDate": "2011-02-02T21:17:31Z",
     "yearlyActivity": {
       "2011": 2
     }
   },
   {
-    "name": "Johnson, Timothy",
-    "slug": "johnson-timothy",
-    "emailHash": "6771fea6620489d55168e6ba90ef0aeae9e569b77fc9daeea6490eadb3092f96",
-    "messageCount": 2,
-    "firstDate": "2011-02-01T11:38:05Z",
-    "lastDate": "2011-03-04T12:49:33Z",
+    "name": "Jonathan Frye",
+    "slug": "jonathan-frye",
+    "emailHash": "092208f3e2929108184a0c8c016b22c8b75aa9560f3561a41acadd49bafb4afb",
+    "messageCount": 1,
+    "firstDate": "2013-07-24T18:41:36Z",
+    "lastDate": "2013-07-24T18:41:36Z",
     "yearlyActivity": {
-      "2011": 2
+      "2013": 1
     }
   },
   {
@@ -169,17 +180,6 @@
     "lastDate": "2011-03-03T15:56:01Z",
     "yearlyActivity": {
       "2011": 1
-    }
-  },
-  {
-    "name": "Jonathan Frye",
-    "slug": "jonathan-frye",
-    "emailHash": "092208f3e2929108184a0c8c016b22c8b75aa9560f3561a41acadd49bafb4afb",
-    "messageCount": 1,
-    "firstDate": "2013-07-24T18:41:36Z",
-    "lastDate": "2013-07-24T18:41:36Z",
-    "yearlyActivity": {
-      "2013": 1
     }
   },
   {
