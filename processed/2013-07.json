@@ -13,11 +13,14 @@
       "subject_clean": "Utility scores from mlogit/clogit for CBC",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl>",
+      "body_plain": "Hello Everyone,\n\nI am a graduate student working on a CBC study. I want to give participants\n3 choices per task with a None option, so I have been looking at doing a\nmultinomial or conditional logit model. My issue is that in my experience,\nlogistic regressions involve dummy coding or having levels of a factor\ncompare with a base level. So if you have a factor with 3 attributes, the\nanalysis yields 2 coeefficents which give their relation to the third\nattribute.\n\nI thought that the utility scores were equal to the coeeficients, but when\nI look at other analysis software such as XLstat or Sawtooth, they have a\nutility score for each attribute.\n\nCan anyone explain where I am going wrong? I would greatly appreciate it.\n\nI have also considered using the\nrhierMnlRwMixture<http://127.0.0.1:13720/help/library/bayesm/html/rhierMnlRwMixture.html>\ncommand\nin the bayesm package, but can not figure out if I am setting up the data\ncorrectly.\n\nThanks for your time,\n\nJonathan Frye\nNew York University\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello Everyone,\n\nI am a graduate student working on a CBC study. I want to give participants\n3 choices per task with a None option, so I have been looking at doing a\nmultinomial or conditional logit m",
       "thread_id": "thread-3b3ce7ac1b3b",
       "thread_depth": 0,
-      "month": "2013-07"
+      "month": "2013-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl"
+      ]
     },
     {
       "id": "msg-d19306ca2dea",
@@ -31,11 +34,14 @@
       "references": [
         "<CAGJ_uQdKHA3EmyCNibnKurEbCPheRopNU=xhfcx_Y+VaSFzzOg@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl>",
+      "body_plain": "Hi Jonathan --\n\nYes, in order to estimate the model, it's necessary to use one of the\nlevels as the reference attribute. In classic regression terms, it is the\n\"intercept\" and then the other levels are in reference to that. However,\nwhen the utilities are reported, they are reported for all levels because\nthe utilities are zero-sum.\n\nFor instance, suppose that we do regression gives utilities of Brand B =\n0.5 and Brand C = -0.7 (with Brand A as the reference). Sawtooth, etc.,\nwill then report Brand A = 0.2 in order to have sum(utility)==0.  Why?\nBecause it is a forced choice, any preference must pick one of the brands,\nand thus p(A | B | C) == 1.0.  To get p(choice)==1.0, it requires\nexp(utilities)==1.0, which requires sum(utilities) = 0 because exp(0)==1.\n Does that make sense?\n\nAs for using R, there are several options and it depends partly on the\ncomplexity of your analysis and how it was fielded. The package\n\"ChoiceModelR\" is a fairly easy-to-use package that has much of the\nfunctionality from bayesm but a simpler interface. There are even easier\noptions (such as my own Rcbc code) if you do not require the None option.\nIf you need None, then I'd suggest looking first at ChoiceModelR.\n\nI hope that helps,\n\n-- Chris\n\n\nOn Thu, Jul 25, 2013 at 3:41 AM, Jonathan Frye <jonathanmfrye at gmail.com>wrote:\n\n> Hello Everyone,\n>\n> I am a graduate student working on a CBC study. I want to give participants\n> 3 choices per task with a None option, so I have been looking at doing a\n> multinomial or conditional logit model. My issue is that in my experience,\n> logistic regressions involve dummy coding or having levels of a factor\n> compare with a base level. So if you have a factor with 3 attributes, the\n> analysis yields 2 coeefficents which give their relation to the third\n> attribute.\n>\n> I thought that the utility scores were equal to the coeeficients, but when\n> I look at other analysis software such as XLstat or Sawtooth, they have a\n> utility score for each attribute.\n>\n> Can anyone explain where I am going wrong? I would greatly appreciate it.\n>\n> I have also considered using the\n> rhierMnlRwMixture<\n> http://127.0.0.1:13720/help/library/bayesm/html/rhierMnlRwMixture.html>\n> command\n> in the bayesm package, but can not figure out if I am setting up the data\n> correctly.\n>\n> Thanks for your time,\n>\n> Jonathan Frye\n> New York University\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-SIG-DCM mailing list\n> R-SIG-DCM at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Jonathan --\n\nYes, in order to estimate the model, it's necessary to use one of the\nlevels as the reference attribute. In classic regression terms, it is the\n\"intercept\" and then the other levels ar",
       "thread_id": "thread-3b3ce7ac1b3b",
       "thread_depth": 1,
-      "month": "2013-07"
+      "month": "2013-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl"
+      ]
     },
     {
       "id": "msg-15af7cb944c2",

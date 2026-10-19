@@ -13,11 +13,14 @@
       "subject_clean": "PPCE In R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/50690daa/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/50690daa/attachment.pl>",
+      "body_plain": "Hi.  I am looking for an efficient way to program a partial profile conjoint\nexperiment in R.  I am just beginning my search for this information, so any\ninsight you could provide would be most helpful.  For context, I am\nexperienced using AlgDesign to create full profile, D-optimal blocked\ndesigns.  Its the PPCE designs where I could use some advice.\n\nThanks so much.\n\nJohn\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi.  I am looking for an efficient way to program a partial profile conjoint\nexperiment in R.  I am just beginning my search for this information, so any\ninsight you could provide would be most helpfu",
       "thread_id": "thread-ca96ca37fd38",
       "thread_depth": 0,
-      "month": "2011-10"
+      "month": "2011-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/50690daa/attachment.pl"
+      ]
     },
     {
       "id": "msg-f68c56f58716",
@@ -29,11 +32,14 @@
       "subject_clean": "PPCE In R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/934de0a4/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/934de0a4/attachment.pl>",
+      "body_plain": "Hi.  I am looking for an efficient way to program a partial profile conjoint\nexperiment in R.  I am just beginning my search for this information, so any\ninsight you could provide would be most helpful.  For context, I am\nexperienced using AlgDesign to create full profile, D-optimal blocked\ndesigns.  Its the PPCE designs where I could use some advice.\n\nThanks so much.\n\nJohn\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi.  I am looking for an efficient way to program a partial profile conjoint\nexperiment in R.  I am just beginning my search for this information, so any\ninsight you could provide would be most helpfu",
       "thread_id": "thread-f68c56f58716",
       "thread_depth": 0,
-      "month": "2011-10"
+      "month": "2011-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111021/934de0a4/attachment.pl"
+      ]
     }
   ],
   "threads": [

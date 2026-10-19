@@ -13,11 +13,14 @@
       "subject_clean": "Testing the DCM list",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl>",
+      "body_plain": "Hi all - this is a test message to see whether the configuration is working.  Cheers!\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all - this is a test message to see whether the configuration is working.  Cheers!\n\n\n\t[[alternative HTML version deleted]]",
       "thread_id": "thread-a3ddb3fe1007",
       "thread_depth": 0,
-      "month": "2010-07"
+      "month": "2010-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl"
+      ]
     },
     {
       "id": "msg-12d64d3e50e6",

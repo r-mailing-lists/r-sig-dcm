@@ -15,11 +15,14 @@
       "references": [
         "<7ADD720CA6C5634FA7ADE02B53C990C43439DA@TK5EX14MBXC293.redmond.corp.microsoft.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111129/04b34c76/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111129/04b34c76/attachment.pl>",
+      "body_plain": "Hello R-SIG-DCM --\n\nI wanted to share the following CFP that may be of interest.  I know the due date is tomorrow, and apologize for the late post to this list ... but please consider: proposals are short abstracts, not full papers; incomplete work may be proposed (with an explanation of what remains to be done); and work under review elsewhere may be submitted.\n\nThis SIG has many advanced research practitioners, and there is a special category for practitioner-led papers (as opposed to academic papers). These will comprise 50% of papers at ART Forum.\n\nBest, and thank you for considering ART Forum,\n\n-- Chris\n\nChris Chapman, PhD\n\nChair, 2012 AMA Advanced Research Techniques Forum\n\nSenior Researcher, Microsoft\n\n\n________________________________\nFrom: Chris Chapman\nSent: Wednesday, November 09, 2011 10:25 AM\nTo: marketing-society at list.informs.org\nSubject: CFP: 2012 Advanced Research Techniques Forum (ART Forum), Seattle WA\n\n\nGreetings –\n\n\n\nThe Call for Presentations is now available for the 2012 AMA Advanced Research Techniques Forum (ART Forum).\n\n\n\nThe ART Forum presents advanced quantitative methods in marketing research.  The committee welcomes submissions from practitioners and academics, with categories for both full papers and poster presentations. On the practitioner side, we encourage submissions from industry and client-side practitioners as well as research suppliers.\n\nThe topic list is broad: a presentation at ART Forum must combine an advanced analytic method with application to a marketing problem. For 2012, newly suggested topics include sentiment analysis, predictive analytics, and neuropsychology, alongside topics that are often presented at ART Forum such as conjoint/choice models, segmentation, Bayesian methods in marketing, demand estimation, and pricing research.\n\nThe 2012 conference will be in Seattle at the Westin Hotel, June 24-27, 2012.\n\nSubmissions are due on November 30, 2011, and require an abstract of approximately 2 pages. Full details are available in the CFP here:\nhttp://www.marketingpower.com/Calendar/Pages/2012ARTForum.aspx\n\nBest wishes, and thank you for considering a submission to ART Forum,\n\nChris Chapman, PhD\n\nChair, 2012 Advanced Research Techniques Forum\n\nSenior Researcher, Microsoft\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello R-SIG-DCM --\n\nI wanted to share the following CFP that may be of interest.  I know the due date is tomorrow, and apologize for the late post to this list ... but please consider: proposals are s",
       "thread_id": "thread-d1e26169a719",
       "thread_depth": 0,
-      "month": "2011-11"
+      "month": "2011-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20111129/04b34c76/attachment.pl"
+      ]
     }
   ],
   "threads": [

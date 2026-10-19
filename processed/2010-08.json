@@ -31,11 +31,14 @@
       "references": [
         "<4C631491.9060408@otago.ac.nz>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0d432c34/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0d432c34/attachment.pl>",
+      "body_plain": "John,\ndid you recommend to Marcel to join this list?\nDimitri\n\nI am not sure it's the appropriate\n\n\nOn Wed, Aug 11, 2010 at 5:22 PM, John Williams <john.williams at otago.ac.nz>wrote:\n\n>\n>\n> -------- Original Message --------\n> Subject: [R] Choice Design -- partial profile\n> Date: Wed, 11 Aug 2010 23:22:07 +1200\n> From: Marcel Gerds <Marcel.Gerds at gmx.de>\n> To: r-help at r-project.org <r-help at r-project.org>\n>\n> Dear R community,\n>\n> I have a question concerning the generation of an experimental design for\n> discrete choice experiments (=choice based conjoint analysis, CBC). I\n> understand that there is an article \"Design and Analysis of Choice\n> Experiments Using R\" by Aizaki and Nishimura (available at\n> http://www.jstage.jst.go.jp/article/air/17/2/86/_pdf). The authors use\n> gen.factorial-function of the AlgDesign package.\n> My problem is that I want to generate a partial profile design that is that\n> only a subset of attributes are shown in each choice set (say 4 of 13).\n> However this cannot be done with the R packages I checked so far.\n> Does any of you know about a package which provide such a functionality or\n> can give some hints about programming it?\n>\n> Thanks in adavance.\n>\n> Regards\n> Marcel\n>\n> --\n>\n> ______________________________________________\n> R-help at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-help\n> PLEASE do read the posting guide\n> http://www.R-project.org/posting-guide.html\n> and provide commented, minimal, self-contained, reproducible code.\n>\n> --\n> Department of Marketing\n> University of Otago\n>\n> +64 03 479 5040\n> http://marketing.otago.ac.nz/staff/williamsj.asp\n>\n> _______________________________________________\n> R-SIG-DCM mailing list\n> R-SIG-DCM at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "John,\ndid you recommend to Marcel to join this list?\nDimitri\n\nI am not sure it's the appropriate\n\n\nOn Wed, Aug 11, 2010 at 5:22 PM, John Williams <john.williams at otago.ac.nz>wrote:\n\n>\n>\n> -------- O",
       "thread_id": "thread-ea08be37bd35",
       "thread_depth": 1,
-      "month": "2010-08"
+      "month": "2010-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0d432c34/attachment.pl"
+      ]
     },
     {
       "id": "msg-ad10be55c80e",
@@ -50,11 +53,14 @@
         "<4C631491.9060408@otago.ac.nz>",
         "<AANLkTimXG-_RTVjXWzha8GAY2YV-qtJ+KV_o9QWG4mc8@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0b8c7d90/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0b8c7d90/attachment.pl>",
+      "body_plain": "Just in case, I did recommend to him that he join this list.\nDimitri\n\nOn Fri, Aug 13, 2010 at 9:31 AM, Dimitri Liakhovitski <dimitri.dcm at gmail.com\n> wrote:\n\n> John,\n> did you recommend to Marcel to join this list?\n> Dimitri\n>\n> I am not sure it's the appropriate\n>\n>\n>\n> On Wed, Aug 11, 2010 at 5:22 PM, John Williams <john.williams at otago.ac.nz>wrote:\n>\n>>\n>>\n>> -------- Original Message --------\n>> Subject: [R] Choice Design -- partial profile\n>> Date: Wed, 11 Aug 2010 23:22:07 +1200\n>> From: Marcel Gerds <Marcel.Gerds at gmx.de>\n>> To: r-help at r-project.org <r-help at r-project.org>\n>>\n>> Dear R community,\n>>\n>> I have a question concerning the generation of an experimental design for\n>> discrete choice experiments (=choice based conjoint analysis, CBC). I\n>> understand that there is an article \"Design and Analysis of Choice\n>> Experiments Using R\" by Aizaki and Nishimura (available at\n>> http://www.jstage.jst.go.jp/article/air/17/2/86/_pdf). The authors use\n>> gen.factorial-function of the AlgDesign package.\n>> My problem is that I want to generate a partial profile design that is\n>> that only a subset of attributes are shown in each choice set (say 4 of 13).\n>> However this cannot be done with the R packages I checked so far.\n>> Does any of you know about a package which provide such a functionality or\n>> can give some hints about programming it?\n>>\n>> Thanks in adavance.\n>>\n>> Regards\n>> Marcel\n>>\n>> --\n>>\n>> ______________________________________________\n>> R-help at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-help\n>> PLEASE do read the posting guide\n>> http://www.R-project.org/posting-guide.html\n>> and provide commented, minimal, self-contained, reproducible code.\n>>\n>> --\n>> Department of Marketing\n>> University of Otago\n>>\n>> +64 03 479 5040\n>> http://marketing.otago.ac.nz/staff/williamsj.asp\n>>\n>> _______________________________________________\n>> R-SIG-DCM mailing list\n>> R-SIG-DCM at r-project.org\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-dcm\n>>\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Just in case, I did recommend to him that he join this list.\nDimitri\n\nOn Fri, Aug 13, 2010 at 9:31 AM, Dimitri Liakhovitski <dimitri.dcm at gmail.com\n> wrote:\n\n> John,\n> did you recommend to Marcel to",
       "thread_id": "thread-ea08be37bd35",
       "thread_depth": 2,
-      "month": "2010-08"
+      "month": "2010-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0b8c7d90/attachment.pl"
+      ]
     }
   ],
   "threads": [
