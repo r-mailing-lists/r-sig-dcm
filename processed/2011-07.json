@@ -18,6 +18,7 @@
       "thread_id": "thread-b478379844e3",
       "thread_depth": 0,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2011-July/000046.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/73ad04dc/attachment.pl"
       ]
@@ -40,6 +41,7 @@
       "thread_id": "thread-7f75d64d9b16",
       "thread_depth": 0,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2011-July/000047.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/e2e3c066/attachment.pl"
       ]
@@ -63,6 +65,7 @@
       "thread_id": "thread-7f75d64d9b16",
       "thread_depth": 1,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2011-July/000048.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20110725/4108f06c/attachment.pl"
       ]
@@ -85,7 +88,8 @@
       "body_snippet": "Hi Aline --\n\nIf I understand the question properly (you want to ensure that every respondent sees all the combinations), then I'd suggest to do this:\n\n1. generate all the combinations (\"expand.grid\")\n",
       "thread_id": "thread-7f75d64d9b16",
       "thread_depth": 1,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2011-July/000049.html"
     }
   ],
   "threads": [

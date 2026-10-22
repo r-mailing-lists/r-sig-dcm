@@ -17,7 +17,8 @@
       "body_snippet": "Good morning,\n\nDoes anyone have any experience incorporating a None alternative in a \nstated choice experiment.  I'm particularly interested in how it's \nhandled in the estimation.  Since the design m",
       "thread_id": "thread-ade43d4502b4",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2011-January/000007.html"
     },
     {
       "id": "msg-cc7bb5127f62",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi,\n\nI just completed a dcm (not a conjoint) for a client.  Now they would \nlike to segment the consumers based on utilities from the model, \nclaiming that they had this done for them before although ",
       "thread_id": "thread-cc7bb5127f62",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2011-January/000008.html"
     }
   ],
   "threads": [

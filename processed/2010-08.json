@@ -17,7 +17,8 @@
       "body_snippet": "-------- Original Message --------\nSubject: [R] Choice Design -- partial profile\nDate: Wed, 11 Aug 2010 23:22:07 +1200\nFrom: Marcel Gerds <Marcel.Gerds at gmx.de>\nTo: r-help at r-project.org <r-help a",
       "thread_id": "thread-ea08be37bd35",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-August/000004.html"
     },
     {
       "id": "msg-541f4560fe37",
@@ -36,6 +37,7 @@
       "thread_id": "thread-ea08be37bd35",
       "thread_depth": 1,
       "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-August/000005.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0d432c34/attachment.pl"
       ]
@@ -58,6 +60,7 @@
       "thread_id": "thread-ea08be37bd35",
       "thread_depth": 2,
       "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-August/000006.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100813/0b8c7d90/attachment.pl"
       ]

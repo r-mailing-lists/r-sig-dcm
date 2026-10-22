@@ -18,6 +18,7 @@
       "thread_id": "thread-3b3ce7ac1b3b",
       "thread_depth": 0,
       "month": "2013-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2013-July/000058.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130724/27a52c81/attachment.pl"
       ]
@@ -39,6 +40,7 @@
       "thread_id": "thread-3b3ce7ac1b3b",
       "thread_depth": 1,
       "month": "2013-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2013-July/000059.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20130725/e4e7bfc7/attachment.pl"
       ]
@@ -60,7 +62,8 @@
       "body_snippet": "Hi Jonathan and Chris,\n\nCould you both please join this list?  Every time a non-member posts to \nit I have to manually approve it (which is why your messages are slow to \nappear).\n\nThanks,\n\nJohn\n\nOn 2",
       "thread_id": "thread-3b3ce7ac1b3b",
       "thread_depth": 2,
-      "month": "2013-07"
+      "month": "2013-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2013-July/000060.html"
     },
     {
       "id": "msg-4118e541b0ec",
@@ -79,7 +82,8 @@
       "body_snippet": "Hi,\n\nAs a comment, the \"sum to zero\" is called effects coding, in contrast to \ndummy coding.  Dummy coding just uses 1 and 0 while effects coding uses \n1, 0, and -1.  For dummy coding, the estimates s",
       "thread_id": "thread-3b3ce7ac1b3b",
       "thread_depth": 2,
-      "month": "2013-07"
+      "month": "2013-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2013-July/000061.html"
     }
   ],
   "threads": [

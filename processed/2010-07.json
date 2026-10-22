@@ -18,6 +18,7 @@
       "thread_id": "thread-a3ddb3fe1007",
       "thread_depth": 0,
       "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-July/000000.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-dcm/attachments/20100713/5bd8d12e/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "Welcome to the R-SIG-DCM list.  This is just a short message to say hi, \nand to test that the system is actually working.  (After having existed \nfor about 24 hours and having less than a dozen member",
       "thread_id": "thread-12d64d3e50e6",
       "thread_depth": 0,
-      "month": "2010-07"
+      "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-July/000001.html"
     },
     {
       "id": "msg-97c8e25c92b8",
@@ -54,7 +56,8 @@
       "body_snippet": "I found the process to join this group to be as quick as the process to join the R mail list.\n\nI'm looking forward to seeing the discussions develop in this list. :)\n\nCheers\nMichelle\n\n-----Original Me",
       "thread_id": "thread-12d64d3e50e6",
       "thread_depth": 1,
-      "month": "2010-07"
+      "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-July/000002.html"
     },
     {
       "id": "msg-4904a4655854",
@@ -66,11 +69,12 @@
       "subject_clean": "a  discrete choice dynamic model with panel data",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hey, all\n\nI just visited this forum but it seems few people here. I am totally new to R \nand \n\nsome kind new to the dynamic mode. any suggestion are appreciated.\n\nI am modeling the labour market choices, such as un/employment, schooling? etc. \npeople choose one of them in each period to maximize their present value of life \ntime utility.\n\nhere is my model:\nVijt = X_ij*beta + ipsilon_ijt\nipsilon_ijt = mu_j + sigma_t\n\nwhere?i means individual, j the decision/choice and t the period.\nthus Vijt?is the utility individual i can get from choice j at time t.\nX are know vector of variables with parameter vector beta\n\nipsilon is the residual which consist of a well behaved sigma and \nunkonw hetrogeneity among individuals mu, which have the form\nmu_j = alpa_j + gama_j*eta\n\neta is individual types. that is, the intercept and slope of the laten \nvariable mu both depend on the his/er choice. the model will be\nVijt = X_ij*beta + alpa_j + gama_j*eta + sigma_t\n\nalpa, beta, gama, plus eta,?are parameters that need to be estimated.\n\nthe model will be estimated with simulated maximum likelihood method\nwith probability for individual i and choice j at peroid t. \n\nPRijt?= exp(Vijt)/(exp(Vi1t)+ exp(Vi2t)+ ....+ exp(ViJt))\n\nif I write?a function to represent the upper maximu likelihood for all i at each \nt and every choice j,?can the command optim be used to get the estimates? any \nsuggestions are apprecited\n\n\nNan",
+      "body_plain": "Hey, all\n\nI just visited this forum but it seems few people here. I am totally new to R \nand \n\nsome kind new to the dynamic mode. any suggestion are appreciated.\n\nI am modeling the labour market choices, such as un/employment, schooling  etc. \npeople choose one of them in each period to maximize their present value of life \ntime utility.\n\nhere is my model:\nVijt = X_ij*beta + ipsilon_ijt\nipsilon_ijt = mu_j + sigma_t\n\nwhere i means individual, j the decision/choice and t the period.\nthus Vijt is the utility individual i can get from choice j at time t.\nX are know vector of variables with parameter vector beta\n\nipsilon is the residual which consist of a well behaved sigma and \nunkonw hetrogeneity among individuals mu, which have the form\nmu_j = alpa_j + gama_j*eta\n\neta is individual types. that is, the intercept and slope of the laten \nvariable mu both depend on the his/er choice. the model will be\nVijt = X_ij*beta + alpa_j + gama_j*eta + sigma_t\n\nalpa, beta, gama, plus eta, are parameters that need to be estimated.\n\nthe model will be estimated with simulated maximum likelihood method\nwith probability for individual i and choice j at peroid t. \n\nPRijt = exp(Vijt)/(exp(Vi1t)+ exp(Vi2t)+ ....+ exp(ViJt))\n\nif I write a function to represent the upper maximu likelihood for all i at each \nt and every choice j, can the command optim be used to get the estimates? any \nsuggestions are apprecited\n\n\nNan",
       "body_snippet": "Hey, all\n\nI just visited this forum but it seems few people here. I am totally new to R \nand \n\nsome kind new to the dynamic mode. any suggestion are appreciated.\n\nI am modeling the labour market choic",
       "thread_id": "thread-4904a4655854",
       "thread_depth": 0,
-      "month": "2010-07"
+      "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2010-July/000003.html"
     }
   ],
   "threads": [
