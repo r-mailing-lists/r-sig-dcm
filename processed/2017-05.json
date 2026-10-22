@@ -17,7 +17,8 @@
       "body_snippet": "Hello all,\n\nI am new to the group. I am looking for a choice based sampling estimator\nin R. Is there any package in R which handles this?\n\nAny leads would be most welcome. Thanks a lot in advance.\n\nre",
       "thread_id": "thread-0e8bbeed1358",
       "thread_depth": 0,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2017-May/000062.html"
     },
     {
       "id": "msg-8cf8cbd798f7",
@@ -35,7 +36,8 @@
       "body_snippet": "What exactly are you trying to do?\n\nAmong the R packages that can handle estimation of choice models are\nmlogit, bayesm, RSGHB, and ChoiceModelR. Choice-based conjoint models can\nbe fit by any of thos",
       "thread_id": "thread-0e8bbeed1358",
       "thread_depth": 1,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2017-May/000063.html"
     },
     {
       "id": "msg-ea41a0edc17a",
@@ -54,7 +56,8 @@
       "body_snippet": "Dear Cris\n\nThanks for the response and thanks for the link. For a newcomer to R it has\nsome very good material.\n\n\nI am aware of some of the models and that they can perform for Choice based\nconjoint (",
       "thread_id": "thread-0e8bbeed1358",
       "thread_depth": 2,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2017-May/000064.html"
     },
     {
       "id": "msg-42939da4e7d4",
@@ -74,7 +77,8 @@
       "body_snippet": "Not sure -- personally don't know of an existing function for such models,\nbut you could write your own likelihood function. That should work with\nbayesm (see the reference book), and is documented fo",
       "thread_id": "thread-0e8bbeed1358",
       "thread_depth": 3,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-dcm/2017-May/000065.html"
     }
   ],
   "threads": [
